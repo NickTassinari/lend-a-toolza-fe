@@ -1598,6 +1598,8 @@ GEM
     orderly (0.1.1)
       capybara (>= 1.1)
       rspec (>= 2.14)
+    nokogiri (1.15.3-x86_64-linux)
+      racc (~> 1.4)
     pg (1.5.3)
     pry (0.14.2)
       coderay (~> 1.1)
@@ -1726,6 +1728,7 @@ GEM
 PLATFORMS
   x86_64-darwin-21
   x86_64-darwin-22
+  x86_64-linux
 
 DEPENDENCIES
   aws-sdk (~> 3)
