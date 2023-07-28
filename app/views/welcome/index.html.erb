@@ -1,0 +1,16 @@
+<h1>Lend-A-ToolZa</h1>
+<%= button_to  "Log In", user_login_path, method: :get, local: true%>
+<%= button_to  "My Shed", user_show_path, method: :get, local: true%>
+
+<%= form_with method: :get, url: tool_path  do |f|%>
+  <%= f.label :tool, "Tool" %>
+  <%= f.text_field :tool%>
+  <%= f.label :location, "Location" %>
+  <%= f.text_field :location%>
+
+  <%= f.number_field :radius%>
+  <%= f.submit "Search Tools" %>
+<% end %>
+
+
+#implement chat bot here bruh
