@@ -35,4 +35,5 @@
 
 /node_modules
 
-/coverage 
+/coverage
+/config/application.yml
