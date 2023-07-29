@@ -7,4 +7,6 @@ Rails.application.routes.draw do
 
   get "/dashboard", to: "users#show", as: :dashboard
   resources :tools, only: [:new]
+  get "/auth/google_oauth2/callback", to: "sessions#create"
+  delete "logout", to: "sessions#destroy", as: :logout
 end
