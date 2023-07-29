@@ -1,0 +1,7 @@
+<% @tools.each do |tool| %>
+  <div id="tool#{tool.id}">
+  <h3><%= tool.name %></h3>
+  <p>Description: <%= tool.description %></p>
+  <p>Status: <%= tool.status %></p>
+</div>
+<% end %>

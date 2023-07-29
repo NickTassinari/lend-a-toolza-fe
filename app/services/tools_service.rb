@@ -1,7 +1,8 @@
 class ToolsService 
 
-  def self.get_tool(id)
-    get_url("/api/v1/tools/#{id}")
+  def self.search_tools_by_keyword(keyword, location)
+    response = conn.get("/api/v1/search/#{keyword}/#{location}")
+    JSON.parse(response.body, symbolize_names: true)
   end
 
   def self.get_tools 
@@ -15,8 +16,8 @@ class ToolsService
     Faraday.new(url: "https://lend-a-toolza-be.onrender.com" )
   end
 
-  def get_url(url)
-    response = conn.get(url)
-    JSON.parse(response.body, symbolize_names: true)
-  end
+  # def get_url(url)
+  #   response = conn.get(url)
+  #   JSON.parse(response.body, symbolize_names: true)
+  # end
 end

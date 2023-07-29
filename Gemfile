@@ -89,4 +89,5 @@ group :test do
   gem "webdrivers"
   gem 'vcr'
   gem 'webmock'
+  gem 'rack-test'
 end
