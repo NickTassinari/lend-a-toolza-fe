@@ -1,7 +1,15 @@
-<% @tools.each do |tool| %>
-  <div id="tool#{tool.id}">
-  <h3><%= tool.name %></h3>
-  <p>Description: <%= tool.description %></p>
-  <p>Status: <%= tool.status %></p>
+<div class="container mt-4">
+  <div class="row">
+    <% @search_results.each do |tool| %>
+      <div class="col-md-6 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title"><%= tool.name %></h3>
+            <p class="card-text">Description: <%= tool.description %></p>
+            <p class="card-text">Status: <%= tool.status %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
 </div>
-<% end %>

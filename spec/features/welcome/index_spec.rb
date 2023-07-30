@@ -32,6 +32,21 @@ RSpec.describe "User can login" do
         expect(page).to have_link("Logout")
         expect(page).to_not have_link("Login with Google")
       end
+
+      it 'can search backend database for tools by name and location' do 
+        tools_search = File.read('spec/fixtures/hammer_search.json')
+        stub_request(:get, "https://lend-a-toolza-be.onrender.com/api/v1/search?name=hammer&location=IN")
+          .to_return(status: 200, body: tools_search, headers: { 'Content-Type': 'application/json' })
+
+        fill_in :name, with: "hammer"
+        fill_in :location, with: "IN"
+
+        click_button('Search')
+
+        expect(current_path).to eq("/tools")
+        expect(page).to have_content("Slammer Hammer")
+
+      end
     end
   end
 end

@@ -2,19 +2,10 @@ require 'rails_helper'
 require 'webmock/rspec'
 
 RSpec.describe ToolsService do 
-  before :each do 
+  it 'returns a list of tools' do 
     tools_response = File.read('spec/fixtures/tools_index.json')
     stub_request(:get, "https://lend-a-toolza-be.onrender.com/api/v1/tools")
       .to_return(status: 200, body: tools_response)
-
-    tools_search = File.read('spec/fixtures/hammer_search.json')
-    stub_request(:get, "https://lend-a-toolza-be.onrender.com/api/v1/tools/search/hammer/IN")
-      .to_return(status: 200, body: tools_search, headers: { 'Content-Type': 'application/json' })
-
-      
-  end
-  it 'returns a list of tools' do 
-    
 
       tools = ToolsService.get_tools
       expect(tools).to be_a Hash
@@ -47,15 +38,18 @@ RSpec.describe ToolsService do
       expect(tools[:data][1][:attributes][:borrow_id]).to eq("nil")
   end
 
-  xit 'returns tools based on keyword' do 
+  it 'returns tools based on keyword' do 
+    tools_search = File.read('spec/fixtures/hammer_search.json')
+    stub_request(:get, "https://lend-a-toolza-be.onrender.com/api/v1/search?name=hammer&location=IN")
+      .to_return(status: 200, body: tools_search, headers: { 'Content-Type': 'application/json' })
 
     keyword = "hammer"
     location = "IN"
     search = ToolsService.search_tools_by_keyword(keyword, location)
     expect(search).to be_a(Hash)
-    expect(search[:results]).to be_an(Array)
+    expect(search[:data]).to be_an(Array)
 
-    tool_data = search[:results].first
+    tool_data = search[:data].first
     expect(tool_data[:attributes][:name]).to eq("Kobalt Hammer")
   end 
 

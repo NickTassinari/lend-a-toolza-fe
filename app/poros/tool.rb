@@ -14,4 +14,11 @@ class Tool
     @borrow_id = response[:attributes][:borrow_id]
 
   end
+
+  def self.find(id)
+    tool_data = ToolsService.get_tools_by_id(id)
+    Tool.new(tool_data) if tool_data
+  end
+
+
 end
