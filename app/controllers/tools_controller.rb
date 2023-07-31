@@ -6,7 +6,6 @@ class ToolsController < ApplicationController
   end
 
   def show 
-    # require 'pry'; binding.pry
-    @tool = Tool.find(params[:id])
+    @tool = ToolFacade.get_tools_by_id(params[:id])
   end
 end

@@ -10,4 +10,8 @@ class ToolFacade
       Tool.new(tool)
     end
   end
+
+  def self.get_tools_by_id(id)
+    ToolsService.get_tools_by_id(id)[:attributes]
+  end
 end

@@ -14,10 +14,10 @@ RSpec.describe Tool do
             "image": "image.jpg",
             "status": "available",
             "user_id": "12",
-            "location": "123 Sunnyside Dr, Lebanon, IN, 46052",
+            "address": "123 Sunnyside Dr, Lebanon, IN, 46052",
             "latitude": "53.076645",
             "longitude": "10.3398",
-            "borrow_id": "33"
+            "borrower_id": "33"
           }
         }
 
@@ -29,36 +29,9 @@ RSpec.describe Tool do
     expect(tool.image).to eq("image.jpg")
     expect(tool.status).to eq("available")
     expect(tool.user_id).to eq("12")
-    expect(tool.location).to eq("123 Sunnyside Dr, Lebanon, IN, 46052")
+    expect(tool.address).to eq("123 Sunnyside Dr, Lebanon, IN, 46052")
     expect(tool.latitude).to eq("53.076645")
     expect(tool.longitude).to eq("10.3398")
-    expect(tool.borrow_id).to eq("33")
-  end
-
-
-  describe 'class methods' do 
-    it "#find" do 
-      tool_data = {
-        "id": "2425",
-        "type": "tool",
-        "attributes": {
-          "name": "Crazy Thors Hammer",
-          "description": "Crazy Shit",
-          "image": "image.jpg",
-          "status": "available",
-          "user_id": "12",
-          "location": "123 Sunnyside Dr, Lebanon, IN, 46052",
-          "latitude": "53.076645",
-          "longitude": "10.3398",
-          "borrow_id": "33"
-        }
-      }
-
-      allow(ToolsService).to receive(:get_tools_by_id).with("2425").and_return(tool_data)
-
-      tool = Tool.find("2425")
-
-      expect(tool).to be_a(Tool)
-    end
+    expect(tool.borrower_id).to eq("33")
   end
 end

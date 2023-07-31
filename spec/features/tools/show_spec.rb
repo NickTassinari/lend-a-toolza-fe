@@ -11,10 +11,10 @@ RSpec.describe "Tool Show Page" do
         "image": "image.jpg",
         "status": "available",
         "user_id": "12",
-        "location": "123 Sunnyside Dr, Lebanon, IN, 46052",
+        "address": "123 Sunnyside Dr, Lebanon, IN, 46052",
         "latitude": "53.076645",
         "longitude": "10.3398",
-        "borrow_id": "33"
+        "borrower_id": "33"
       }
     }
 
