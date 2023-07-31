@@ -110,6 +110,7 @@ git push origin feature/AmazingFeature
 
 ## How To Use Lend-A-Toolza
  (this is where we will do a basic walk thru with screen shots of working app)
+ ```
 ## Schema
 ```
     t.string "name"
