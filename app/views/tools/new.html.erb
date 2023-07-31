@@ -1,6 +1,6 @@
 <h1>Add a New Tool</h1>
 <div id="tool_form">
-  <%= form_with url:  do |f| %>
+  <%= form_with url: user_tools_path, method: :post do |f| %>
     <p>
       <%= f.label :name %><br />
       <%= f.text_field :name %>
@@ -10,8 +10,7 @@
       <%= f.text_area :description %>
     </p>
     <p>
-      <%= f.label :photo, "Tool Photos" %><br />
-      <%= f.file_field :photo %>
+      <%= f.file_field :image, id: "upload_image", name: "image" %>
     </p>
     <p>
       <%= f.submit "Add Tool" %>

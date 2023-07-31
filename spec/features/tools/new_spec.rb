@@ -17,18 +17,18 @@ RSpec.describe "New Tool Page" do
       }
     )
   end
-  
+
   describe "As a visitor" do
     it "Has a form to create a new tool" do
       visit new_tool_path
-# save_and_open_page
+save_and_open_page
       expect(current_path).to eq(new_tool_path)
       expect(page).to have_content("Add a New Tool")
 
       within("#tool_form") do
         expect(page).to have_field("Name")
         expect(page).to have_field("Description")
-        expect(page).to have_field("Photo")
+        expect(page).to have_field("upload_image")
       end
     end
 
@@ -40,7 +40,7 @@ RSpec.describe "New Tool Page" do
       within("#tool_form") do
         fill_in "Name", with: "Hammer"
         fill_in "Description", with: "A tool to hammer nails"
-        fill_in "Tool photo", with: "https://images-na.ssl-images-amazon.com/images/I/71lZ%2BQK%2BZEL._AC_SL1500_.jpg"
+        attach_file("image", Rails.root.join("spec/images/astro.jpeg"))
       end
 
       click_button "Add Tool"
