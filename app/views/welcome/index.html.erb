@@ -1,1 +1,9 @@
+<%= form_with url: "/tools", method: :get, local: true do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :location %>
+  <%= f.text_field :location %>
+
+  <%= f.submit "Search" %>
+<% end %>
 

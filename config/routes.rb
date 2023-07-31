@@ -9,4 +9,8 @@ Rails.application.routes.draw do
   resources :tools, only: [:new]
   get "/auth/google_oauth2/callback", to: "sessions#create"
   delete "logout", to: "sessions#destroy", as: :logout
+
+  resources :tools, only: [:index, :show]
+
+  resources :users, only: [:show]
 end
