@@ -108,9 +108,12 @@ git push origin feature/AmazingFeature
 ```
 4. Open a Pull Request
 ```
+
 ## How To Use Lend-A-Toolza
  (this is where we will do a basic walk thru with screen shots of working app)
  ```
+ ```
+
 ## Schema
 ```
     t.string "name"
