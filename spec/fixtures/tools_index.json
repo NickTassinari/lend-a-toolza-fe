@@ -1,0 +1,34 @@
+{
+  "data": [
+    {
+      "id": "2425",
+      "type": "tool",
+      "attributes": {
+        "name": "Item Excepturi Rem",
+        "description": "Perferendis reprehenderit fugiat sit eos. Corporis ipsum ut. Natus molestiae quia rerum fugit quis. A cumque doloremque magni.",
+        "image": "image.jpg",
+        "status": "unavailable",
+        "user_id": "12",
+        "address": "123 Sunnyside Dr, Lebanon, IN, 46052",
+        "latitude": "53.076645",
+        "longitude": "10.3398",
+        "borrower_id": "33"
+      }
+    },
+    {
+      "id": "2427",
+      "type": "tool",
+      "attributes": {
+        "name": "Item Illum Minus",
+        "description": "Aut voluptatem aut officiis minima cum at. Est ea sed est quia repudiandae. Eum omnis rerum in adipisci aut. Deleniti sunt voluptatibus rerum aut quo omnis.",
+        "image": "image.jpg",
+        "status": "available",
+        "user_id": "16",
+        "address": "123 Sunnyside Dr, Lebanon, IN, 46052",
+        "latitude": "53.076645",
+        "longitude": "10.3398",
+        "borrower_id": "nil"
+      }
+    }
+  ]
+}

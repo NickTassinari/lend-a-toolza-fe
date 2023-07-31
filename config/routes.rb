@@ -6,10 +6,13 @@ Rails.application.routes.draw do
   root "welcome#index"
 
   get "/dashboard", to: "users#show", as: :dashboard
-  post "dashboard/tools", to: "tools#create", as: :user_tools 
+  post "dashboard/tools", to: "tools#create", as: :user_tools
 
   get "/auth/google_oauth2/callback", to: "sessions#create"
   delete "logout", to: "sessions#destroy", as: :logout
 
   resources :tools, only: [:new]
+  resources :tools, only: [:index, :show]
+
+  resources :users, only: [:show]
 end
