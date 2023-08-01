@@ -2,9 +2,8 @@ require "rails_helper"
 
 RSpec.describe "User can login" do
   before(:each) do
-    @user1 = User.create!(id: 2, name: "Test User", email: "test@example.com", google_id: '123456789')
+    @user1 = User.create!(name: "Test User", email: "test@example.com", google_id: '123456789')
     OmniAuth.config.test_mode = true
-    # OmniAuth.config.mock_auth[:google_oauth2] = OmniAuth::AuthHash.new(Faker::Omniauth.google)
     OmniAuth.config.mock_auth[:google_oauth2] = OmniAuth::AuthHash.new(
       provider: 'google_oauth2',
       uid: '123456789',
@@ -33,7 +32,19 @@ RSpec.describe "User can login" do
         expect(page).to_not have_link("Login with Google")
       end
 
-      it 'can search backend database for tools by name and location' do 
+      it "I can logout" do
+        click_link "Login with Google"
+
+        expect(page).to have_link("Logout")
+
+        click_link "Logout"
+
+        expect(current_path).to eq(root_path)
+        expect(page).to_not have_link("Logout")
+        expect(page).to have_link("Login with Google")
+      end
+
+      it 'can search backend database for tools by name and location' do
         tools_search = File.read('spec/fixtures/hammer_search.json')
         stub_request(:get, "https://lend-a-toolza-be.onrender.com/api/v1/search?name=hammer&location=IN")
           .to_return(status: 200, body: tools_search, headers: { 'Content-Type': 'application/json' })

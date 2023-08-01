@@ -1,4 +1,4 @@
-class ToolsService 
+class ToolsService
 
   def self.user_tools(user_id)
     response = conn.get("/api/v1/users/#{user_id}/tools")
@@ -9,7 +9,6 @@ class ToolsService
     response = conn.get("/api/v1/users/#{user_id}/tools/borrowed")
     JSON.parse(response.body, symbolize_names: true)
   end
-
 
   def self.search_tools_by_keyword(keyword, location)
     response = conn.get("/api/v1/search?name=#{keyword}&location=#{location}")
@@ -25,10 +24,19 @@ class ToolsService
     JSON.parse(response.body, symbolize_names: true)
   end
 
+  def self.post_tool(attributes, user_id)
+    response = conn.post do |r|
+      r.url "/api/v1/users/#{user_id}/tools"
+      r.headers['Content-Type'] = 'application/json'
+      r.body = attributes.to_json
+    end
+    JSON.parse(response.body, symbolize_names: true)
+  end
 
-  private 
+  private
 
-  def self.conn 
+
+  def self.conn
     Faraday.new(url: "https://lend-a-toolza-be.onrender.com" )
   end
 
