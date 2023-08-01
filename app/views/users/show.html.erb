@@ -1,18 +1,18 @@
 <h1 id="title"><%= @user.name %>'s Shed</h1>
 <div id="tool_box">
   <h2>My Toolbox</h2>
-  <% @user_tools.each do |tool| %>
   <ul id="tools">
-    <li id="tool-<%= tool.name %>"><%= tool.name %> <%= tool.status %></li>
-  </ul>
-  <% end %>
-  <div id="borrowed_tools">
-  <h2>Borrowed Tools</h2>
-  <% @borrowed_tools.each do |tool| %>
-    <ul id="borrow_tools">
-      <li><%= tool.name %></li>
-    </ul>
+    <% @user_tools.each do |tool| %>
+      <li><%= tool.name %> <%= tool.status %></li>
     <% end %>
+  </ul>
+<div id="borrowed_tools">
+  <h2>Borrowed Tools</h2>
+    <ul id="borrow_tools">
+      <% @borrowed_tools.each do |tool| %>
+        <li><%= tool.name %></li>
+      <% end %>
+    </ul>
   </div>
-  <%= button_to "Add Tool", new_tool_path %>
+<%= button_to "Add Tool", new_tool_path %>
 </div>
