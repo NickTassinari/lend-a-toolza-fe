@@ -80,6 +80,4 @@ RSpec.describe ToolsService do
     tool_data = search[:data].first
     expect(tool_data[:attributes][:name]).to eq("Kobalt Hammer")
   end
-
-
 end
