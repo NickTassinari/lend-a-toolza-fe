@@ -1,9 +1,18 @@
 {
-  "data": {
-    "id": "72",
-    "attributes": {
-      "name": "Hanks Hardware Howdy",
-      "formatted_address": "123 Hermes Way, Denver, CO, 80218"
+  "data": [
+    {
+      "id": "72",
+      "attributes": {
+        "name": "Hanks Hardware Howdy",
+        "formatted_address": "123 Hermes Way, Denver, CO, 80218"
+      }
+    },
+    {
+      "id": "73",
+      "attributes": {
+        "name": "Rickys Used Shit",
+        "formatted_address": "18 Paimon Dr, Denver, CO, 80218"
+      }
     }
-  }
+  ]
 }
