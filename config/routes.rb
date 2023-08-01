@@ -4,7 +4,8 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   root "welcome#index"
-
+  post "/welcome", to: "welcome#create", as: :welcome
+  get '/result', to: 'welcome#result', as: :result
   get "/dashboard", to: "users#show", as: :dashboard
   resources :tools, only: [:new]
   get "/auth/google_oauth2/callback", to: "sessions#create"
