@@ -1,6 +1,9 @@
 <h1>Add a New Tool</h1>
 <div id="tool_form">
   <%= form_with url: user_tools_path, method: :post do |f| %>
+    <%= f.hidden_field :status, value: "available"%>
+    <%= f.hidden_field :address, value: current_user.location %>
+    <%= f.hidden_field :borrower_id, value: nil %>
     <p>
       <%= f.label :name %><br />
       <%= f.text_field :name %>
@@ -15,5 +18,8 @@
     <p>
       <%= f.submit "Add Tool" %>
     </p>
+    <% flash.each do |type, message| %>
+      <h4 class="error_msg"><%= message %></h4>
+    <% end %>
   <% end %>
 </div>
