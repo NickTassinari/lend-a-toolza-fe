@@ -12,9 +12,9 @@ RSpec.describe StoresService do
 
     search = StoresService.get_stores(location, radius)
     expect(search).to be_a(Hash)
-    expect(search[:data][:id]).to eq("72")
-    expect(search[:data][:attributes][:name]).to eq("Hanks Hardware Howdy")
-    expect(search[:data][:attributes][:formatted_address]).to eq("123 Hermes Way, Denver, CO, 80218")
+    expect(search[:data][0][:id]).to eq("72")
+    expect(search[:data][0][:attributes][:name]).to eq("Hanks Hardware Howdy")
+    expect(search[:data][0][:attributes][:formatted_address]).to eq("123 Hermes Way, Denver, CO, 80218")
 
   end
 
