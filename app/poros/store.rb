@@ -1,8 +1,9 @@
 class Store 
-  attr_reader :id, :name, :location
+  attr_reader :id, :name, :formatted_address
 
   def initialize(data)
-    require 'pry'; binding.pry
     @id = data[:id]
+    @name = data[:attributes][:name]
+    @formatted_address = data[:attributes][:formatted_address]
   end
 end
