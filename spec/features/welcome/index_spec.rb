@@ -21,27 +21,27 @@ RSpec.describe "User can login" do
 
   describe "As a visitor" do
     describe "When I visit the root path" do
-      it "I can login with Google" do
+      it "I can login" do
 
-        expect(page).to have_link("Login with Google")
+        expect(page).to have_link("Login")
 
-        click_link "Login with Google"
+        click_link "Login"
 
         expect(current_path).to eq(root_path)
         expect(page).to have_link("Logout")
-        expect(page).to_not have_link("Login with Google")
+        expect(page).to_not have_link("Login")
       end
 
       it "I can logout" do
-        click_link "Login with Google"
+        click_link "Login"
 
         expect(page).to have_link("Logout")
 
         click_link "Logout"
-
+save_and_open_page
         expect(current_path).to eq(root_path)
         expect(page).to_not have_link("Logout")
-        expect(page).to have_link("Login with Google")
+        expect(page).to have_link("Login")
       end
 
       it 'can search backend database for tools by name and location' do
@@ -64,7 +64,7 @@ RSpec.describe "User can login" do
         stub_request(:get, "https://lend-a-toolza-be.onrender.com/api/v1/chat_request?project=deck")
           .to_return(status: 200, body: chat_prompt, headers: {'Content-Type': 'application/json' })
         
-        expect(page).to have_content("What kind of project can we help you with?")
+        expect(page).to have_content("Not sure what you are looking for?")
 
         fill_in :project, with: "deck"
 

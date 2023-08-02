@@ -1,17 +1,217 @@
-<%= form_with url: "/tools", method: :get, local: true do |f| %>
-  <%= f.label :tool %>
-  <%= f.text_field :tool %>
-  <%= f.label :location %>
-  <%= f.text_field :location %>
 
-  <%= f.submit "Search" %>
-<% end %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to Lend-A-Toolza</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <link href="https://fonts.googleapis.com/css?family=Helvetica" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  </head>
+
+  <style>
+    body {
+      font-family: 'Helvetica', sans-serif;
+      color: #193549;
+      background-color: #17A589;
+    }
+
+    /* Pink background and cobalt blue font for the welcome message */
+    .welcome-message {
+      background-color: #DAF7A6;
+      color: #193549;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      border-radius: 10px;
+    }
+
+    .bebas-neue-font {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 36px;
+      font-weight: 800;
+    }
+
+    .form-container {
+      display: flex;
+      justify-content: flex-start;
+      gap: 24px; /* Add some space between the forms */
+      margin-top: 20px; /* Add margin to the top of the forms */
+    }
+
+    /* Style the form fields to align with each other and make them rounded */
+    .centered-text-field {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      margin: 0 auto;
+      border: 2px solid #193549; /* Add a border to the text fields */
+      border-radius: 10px; /* Make the text fields rounded */
+      padding: 8px; /* Add some padding to the text fields */
+      font-size: 16px; /* Set the font size for the text fields */
+      color: #193549; /* Set the text color for the text fields */
+    }
+
+    /* Style the form submit buttons as rounded buttons with the same background color */
+    .search-form input[type="submit"],
+    .project-form input[type="submit"] {
+      background-color: #FF3346; /* Red background color for the buttons */
+      border: none;
+      border-radius: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      color: #193549;
+      cursor: pointer;
+      margin-top: 10px; /* Add some space between the buttons and the text fields */
+    }
 
 
-<h2>What kind of project can we help you with?</h2>
-<%= form_with url: "/welcome", method: :post, local: true do |f| %>
-  <%= f.label :project %>
-  <%= f.text_field :project %>
-  <%= f.submit "Submit" %>
-<% end %>
+    .search-form, .project-form {
+      background-color: #E1FF33; /* Yellow background color for the forms */
+      padding: 20px;
+      border: 2px solid #193549;
+      border-radius: 10px;
+    }
 
+    .project-form {
+      width: 48%;
+      display: flex;
+      flex-direction: column; /* Set the form elements to be in a column */
+    }
+
+    .project-form .centered-text-field {
+      margin-bottom: 10px; /* Add some space between the project text field and the button */
+    }
+  </style>
+
+  <body>
+    <div class="welcome-message">
+      <h1>
+        <span class="bebas-neue-font">Welcome to Lend-A-Toolza</span>
+      </h1>
+      <p>We are here to help you find the right tools for your projects!</p>
+    </div>
+
+    <div class="form-container">
+      <div class="search-form">
+        <h3>What tools are you looking for?</h3>
+        <%= form_with url: "/tools", method: :get, local: true do |f| %>
+          <%= f.label :tool %>
+          <%= f.text_field :name, class: "centered-text-field" %>
+          <br>
+          <%= f.label :location %>
+          <%= f.text_field :location, class: "centered-text-field" %>
+
+          <%= f.submit "Search" %>
+        <% end %>
+      </div>
+
+      <div class="project-form">
+        <h3>Not sure what you are looking for?</h3>
+        <%= form_with url: "/welcome", method: :post, local: true do |f| %>
+          <%= f.label :project %>
+          <%= f.text_field :project, class: "centered-text-field" %>
+          <%= f.submit "Submit" %>
+        <% end %>
+      </div>
+    </div>
+  </body>
+</html>
+
+</div>
+
+<style>
+
+  body {
+    font-family: 'Helvetica', sans-serif;
+    color: #193549;
+    background-color: #17A589;
+  }
+
+  /* Pink background and cobalt blue font for the welcome message */
+  .welcome-message {
+    background-color: #DAF7A6;
+    color: #193549;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+
+  .bebas-neue-font {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  }
+
+  .form-container {
+    display: flex;
+    justify-content: flex-start; /* Align forms from the start (left) of the container */
+    gap: 24px; /* Add some space between the forms */
+    margin-top: 20px; /* Add margin to the top of the forms */
+  }
+
+
+  .search-form, .project-form {
+    background-color: #E1FF33;
+    padding: 20px;
+    border: 2px solid #193549;
+    border-radius: 10px;
+  }
+  /* Custom font for the forms */
+  body {
+    font-family: 'Helvetica', sans-serif;
+    color: #193549;
+  }
+
+  .welcome-message h1, .welcome-message p {
+    font-family: 'Helvetica', sans-serif;
+    color: #193549;
+  }
+
+  /* Center the text_field elements */
+  .centered-text-field {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border: 2px solid #193549; /* Add a border to the text fields */
+    border-radius: 10px; /* Make the text fields rounded */
+    padding: 8px; /* Add some padding to the text fields */
+    font-size: 16px; /* Set the font size for the text fields */
+    color: #193549; /* Set the text color for the text fields */
+  }
+
+  input[type="submit"] {
+    background-color: #E1FF33;
+    border: 2px solid #193549;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #193549;
+    cursor: pointer;
+  }
+
+  /* Style the form fields to align with each other */
+  .form-field {
+    margin-bottom: 10px; /* Adjust as needed for spacing between fields */
+  }
+
+   
+  /* Optional styling for the form containers */
+  .search-form {
+    width: 48%; /* Adjust this value to control the width of each form */
+    margin-right: 24px; /* Adjust as needed for spacing between forms */
+  }
+
+  .project-form .centered-text-field {
+    border: 2px solid #193549; /* Add a border to the text field */
+    border-radius: 10px; /* Make the text field rounded */
+    padding: 8px; /* Add some padding to the text field */
+    font-size: 16px; /* Set the font size for the text field */
+    color: #193549; /* Set the text color for the text field */
+  }
+</style>
