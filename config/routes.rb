@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   post "dashboard/tools", to: "tools#create", as: :user_tools
 
   get "/auth/google_oauth2/callback", to: "sessions#create"
-  delete "logout", to: "sessions#destroy", as: :logout
+  delete "/logout", to: "sessions#destroy", as: :logout
 
   resources :tools, only: [:new]
   resources :tools, only: [:index, :show]

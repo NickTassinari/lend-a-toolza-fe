@@ -10,9 +10,9 @@
   <body>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <% if current_user %>
-      <%= link_to "Logout", logout_path, method: :delete %>
+      <%= button_to "Logout", logout_path, method: :delete %>
     <% else %>
-      <%= link_to "Login with Google", "/auth/google_oauth2" %>
+      <%= button_to "Login with Google", "/auth/google_oauth2" %>
     <% end %>
 
     <%= yield %>
