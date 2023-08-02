@@ -1,30 +1,36 @@
 require 'rails_helper'
-require 'webmock/rspec'
+# require 'webmock/rspec'
 
-RSpec.describe ToolsService do 
-  # let!(:user_tools) { ToolsService.new.user_tools(1) }
-
-  xit "establishes a connection for a users tools" do
-    expect(user_tools).to be_a(Hash)
-    expect(user_tools).to have_key(:data)
-    expect(user_tools[:data]).to be_an(Array)
-    expect(user_tools[:data][0]).to have_key(:id)
-    expect(user_tools[:data][0][:id]).to be_a(String)
-    expect(user_tools[:data][0]).to have_key(:attributes)
-    expect(user_tools[:data][0][:attributes]).to be_a(Hash)
-    expect(user_tools[:data][0][:attributes]).to have_key(:name)
-    expect(user_tools[:data][0][:attributes][:name]).to be_a(String)
-    expect(user_tools[:data][0][:attributes]).to have_key(:description)
-    expect(user_tools[:data][0][:attributes][:description]).to be_a(String)
-    expect(user_tools[:data][0][:attributes]).to have_key(:image)
-    expect(user_tools[:data][0][:attributes][:image]).to be_a(String)
-    expect(user_tools[:data][0][:attributes]).to have_key(:status)
-    expect(user_tools[:data][0][:attributes][:status]).to be_a(String)
-    expect(user_tools[:data][0][:attributes]).to have_key(:location)
-    expect(user_tools[:data][0][:attributes][:location]).to be_a(String)
+RSpec.describe ToolsService do
+  before(:each) do
+    # @user1 = User.create!(id: 2, name: "Test User", email: "test@example.com", google_id: '123456789', location: "46052")
+    stubbed_response = File.read("spec/fixtures/users_tools.json")
+    stub_request(:get, "https://lend-a-toolza-be.onrender.com/api/v1/users/2/tools")
+    .to_return(status: 200, body: stubbed_response)
+    @user_tools = ToolsService.user_tools(2)
   end
 
-  it 'returns a list of tools' do 
+  it "establishes a connection for a users tools" do
+    expect(@user_tools).to be_a(Hash)
+    expect(@user_tools).to have_key(:data)
+    expect(@user_tools[:data]).to be_an(Array)
+    expect(@user_tools[:data][0]).to have_key(:id)
+    expect(@user_tools[:data][0][:id]).to be_a(String)
+    expect(@user_tools[:data][0]).to have_key(:attributes)
+    expect(@user_tools[:data][0][:attributes]).to be_a(Hash)
+    expect(@user_tools[:data][0][:attributes]).to have_key(:name)
+    expect(@user_tools[:data][0][:attributes][:name]).to be_a(String)
+    expect(@user_tools[:data][0][:attributes]).to have_key(:description)
+    expect(@user_tools[:data][0][:attributes][:description]).to be_a(String)
+    expect(@user_tools[:data][0][:attributes]).to have_key(:image)
+    expect(@user_tools[:data][0][:attributes][:image]).to be_a(String)
+    expect(@user_tools[:data][0][:attributes]).to have_key(:status)
+    expect(@user_tools[:data][0][:attributes][:status]).to be_a(String)
+    expect(@user_tools[:data][0][:attributes]).to have_key(:location)
+    expect(@user_tools[:data][0][:attributes][:location]).to be_a(String)
+  end
+
+  it 'returns a list of tools' do
     tools_response = File.read('spec/fixtures/tools_index.json')
     stub_request(:get, "https://lend-a-toolza-be.onrender.com/api/v1/tools")
       .to_return(status: 200, body: tools_response)
@@ -60,7 +66,7 @@ RSpec.describe ToolsService do
       expect(tools[:data][1][:attributes][:borrower_id]).to eq("nil")
   end
 
-  it 'returns tools based on keyword' do 
+  it 'returns tools based on keyword' do
     tools_search = File.read('spec/fixtures/hammer_search.json')
     stub_request(:get, "https://lend-a-toolza-be.onrender.com/api/v1/search?name=hammer&location=IN")
       .to_return(status: 200, body: tools_search, headers: { 'Content-Type': 'application/json' })
@@ -73,7 +79,5 @@ RSpec.describe ToolsService do
 
     tool_data = search[:data].first
     expect(tool_data[:attributes][:name]).to eq("Kobalt Hammer")
-  end 
-
-
+  end
 end
