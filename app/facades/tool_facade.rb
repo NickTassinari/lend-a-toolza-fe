@@ -6,9 +6,12 @@ class ToolFacade
   end
 
   def self.search_tools_by_keyword(keyword, location)
-    ToolsService.search_tools_by_keyword(keyword,location)[:data].map do |tool|
-      Tool.new(tool)
-    end
+    response = ToolsService.search_tools_by_keyword(keyword,location)
+      if response.nil? || !response.key?(:data) || response[:data].empty?
+        []
+      else  
+        response[:data].map { |tool| Tool.new(tool) }
+      end
   end
 
   def self.get_tools_by_id(id)

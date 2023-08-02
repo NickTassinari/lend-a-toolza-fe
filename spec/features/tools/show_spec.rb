@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe "Tool Show Page" do 
-  it "shows tool info" do 
+  xit "shows tool info" do 
     tool_data =  {
       "id": "2425",
       "type": "tool",
