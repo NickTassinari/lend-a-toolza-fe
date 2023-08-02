@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe "welcome result page" do 
   it "displays chat results" do 
     chat_prompt = File.read('spec/fixtures/chat_response.json')
-    stub_request(:get, "https://lend-a-toolza-be.onrender.com/api/v1/chat_request")
+    stub_request(:get, "https://lend-a-toolza-be.onrender.com/api/v1/chat_request?project=deck")
       .to_return(status: 200, body: chat_prompt, headers: {'Content-Type': 'application/json' })
     visit root_path
     expect(page).to have_content("What kind of project can we help you with?")
@@ -19,10 +19,10 @@ RSpec.describe "welcome result page" do
     visit root_path 
 
     tools_search = File.read('spec/fixtures/hammer_search.json')
-    stub_request(:get, "https://lend-a-toolza-be.onrender.com/api/v1/search?name=hammer&location=IN")
+    stub_request(:get, "https://lend-a-toolza-be.onrender.com/api/v1/tools/search?name=hammer&location=IN")
       .to_return(status: 200, body: tools_search, headers: { 'Content-Type': 'application/json' })
 
-    fill_in :name, with: "hammer"
+    fill_in :tool, with: "hammer"
     fill_in :location, with: "IN"
 
     click_button('Search')

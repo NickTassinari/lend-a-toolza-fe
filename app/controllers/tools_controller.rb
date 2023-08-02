@@ -25,8 +25,9 @@ class ToolsController < ApplicationController
   end
 
   def index
-    keyword = params[:name]
+    keyword = params[:tool]
     location = params[:location]
+    radius = params[:radius]
     @search_results = ToolFacade.search_tools_by_keyword(keyword, location)
   end
 

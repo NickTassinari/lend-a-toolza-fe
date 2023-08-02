@@ -16,4 +16,6 @@ Rails.application.routes.draw do
   resources :tools, only: [:index, :show]
 
   resources :users, only: [:show]
+
+  resources :stores, only: [:index]
 end

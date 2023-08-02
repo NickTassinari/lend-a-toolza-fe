@@ -1,7 +1,18 @@
-<% @search_results.each do |tool| %>
-  <div id="tool#{tool.id}">
-  <h3><%= tool.name %></h3>
-  <p>Description: <%= tool.description %></p>
-  <p>Status: <%= tool.status %></p>
-</div>
+<% if @search_results != [] %>
+  <% @search_results.each do |tool| %>
+    <div id="tool#{tool.id}">
+    <h3><%= link_to (tool.name), ("/tools/#{tool.id}") %></h3>
+    <p>Description: <%= tool.description %></p>
+    <p>Status: <%= tool.status %></p>
+  </div>
+  <% end %>
+<% else %>
+  <h2>Sorry that's a rare tool! We don't have that tool but you can search for a local hardware store below!</h2>
+  <%= form_with url: "/stores", method: :get, local: true do |f| %>
+    <%= f.label :location %>
+    <%= f.text_field :location %>
+    <%= f.label :radius %>
+    <%= f.number_field :radius, min: 0 %>
+    <%= f.submit "Submit" %>
+  <% end %>
 <% end %>
