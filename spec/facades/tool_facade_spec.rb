@@ -23,7 +23,7 @@ RSpec.describe ToolFacade do
 
   it 'returns tools based on keyword' do 
     tools_search = File.read('spec/fixtures/hammer_search.json')
-    stub_request(:get, "https://lend-a-toolza-be.onrender.com/api/v1/search?name=hammer&location=IN")
+    stub_request(:get, "https://lend-a-toolza-be.onrender.com/api/v1/tools/search?name=hammer&location=IN")
       .to_return(status: 200, body: tools_search, headers: { 'Content-Type': 'application/json' })
 
     keyword = "hammer"
