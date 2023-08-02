@@ -5,7 +5,7 @@ RSpec.describe ChatFacade do
   it "exists and returns chat text" do 
     
     chat_prompt = File.read('spec/fixtures/chat_response.json')
-    stub_request(:get, "https://lend-a-toolza-be.onrender.com/api/v1/chat_request")
+    stub_request(:get, "https://lend-a-toolza-be.onrender.com/api/v1/chat_request?project=deck")
     .to_return(status: 200, body: chat_prompt, headers: {'Content-Type': 'application/json' })
     
     project = "deck"
