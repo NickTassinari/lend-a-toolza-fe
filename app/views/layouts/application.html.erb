@@ -2,19 +2,36 @@
 <html>
   <head>
     <title>LendAToolzaFe</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      /* Add a new class for the rounded button with the desired color */
+      .login-btn {
+        background-color: #E1FF33;
+        border-radius: 25px;
+        padding: 10px 20px;
+        color: #193549;
+        text-decoration: none;
+      }
+    </style>
   </head>
 
-  <body>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    <% if current_user %>
-      <%= link_to "Logout", logout_path, method: :delete %>
-    <% else %>
-      <%= link_to "Login with Google", "/auth/google_oauth2" %>
-    <% end %>
+  <body style="background-color: #17A589;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger"> <!-- Change bg-warning to bg-danger -->
+      <div class="container d-flex justify-content-end"> <!-- Use Bootstrap utility classes to position the button -->
+        <% if current_user %>
+          <%= link_to "Logout", logout_path, method: :delete, class: "btn btn-primary" %>
+        <% else %>
+          <%= link_to "Login", "/auth/google_oauth2", class: "login-btn ml-2" %>
+        <% end %>
+      </div>
+    </nav>
 
-    <%= yield %>
+    <div class="container mt-4" style="color: #17A589;">
+      <%= yield %>
+    </div>
   </body>
 </html>
+
