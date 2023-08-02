@@ -1,7 +1,7 @@
 class ChatService 
   def self.chat_request(project)
     response = conn.get("/api/v1/chat_request", { project: project})
-    JSON.parse(response.body, symbolize_names: true)
+    JSON.parse(response.body)
   end
 
 
