@@ -10,7 +10,7 @@ RSpec.describe ChatService do
     project = "deck"
 
     chat = ChatService.chat_request(project)
-    expect(chat).to be_a(Hash)
-    expect(chat[:choices][0][:text]).to eq("You will need a drill, a circular saw, a hammer, a level, a tape measure, a post hole digger, a framing square, a screwdriver, deck screws, and lag screws. You may also need decking boards, joist hangers, and other hardware specific to your project.")
+    expect(chat).to be_a(String)
+    expect(chat).to eq("You will need a drill, a circular saw, a hammer, a level, a tape measure, a post hole digger, a framing square, a screwdriver, deck screws, and lag screws. You may also need decking boards, joist hangers, and other hardware specific to your project.")
   end
 end
