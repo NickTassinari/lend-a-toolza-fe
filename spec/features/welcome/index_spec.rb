@@ -46,10 +46,10 @@ RSpec.describe "User can login" do
 
       it 'can search backend database for tools by name and location' do
         tools_search = File.read('spec/fixtures/hammer_search.json')
-        stub_request(:get, "https://lend-a-toolza-be.onrender.com/api/v1/search?name=hammer&location=IN")
+        stub_request(:get, "https://lend-a-toolza-be.onrender.com/api/v1/tools/search?name=hammer&location=IN")
           .to_return(status: 200, body: tools_search, headers: { 'Content-Type': 'application/json' })
 
-        fill_in :name, with: "hammer"
+        fill_in :tool, with: "hammer"
         fill_in :location, with: "IN"
 
         click_button('Search')
@@ -61,7 +61,7 @@ RSpec.describe "User can login" do
 
       it "can take in user project to be consumed by backend chat bot" do 
         chat_prompt = File.read('spec/fixtures/chat_response.json')
-        stub_request(:get, "https://lend-a-toolza-be.onrender.com/api/v1/chat_request")
+        stub_request(:get, "https://lend-a-toolza-be.onrender.com/api/v1/chat_request?project=deck")
           .to_return(status: 200, body: chat_prompt, headers: {'Content-Type': 'application/json' })
         
         expect(page).to have_content("What kind of project can we help you with?")
