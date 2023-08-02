@@ -23,25 +23,25 @@ RSpec.describe "User can login" do
     describe "When I visit the root path" do
       it "I can login with Google" do
 
-        expect(page).to have_link("Login with Google")
+        expect(page).to have_button("Login with Google")
 
-        click_link "Login with Google"
+        click_button "Login with Google"
 
         expect(current_path).to eq(root_path)
-        expect(page).to have_link("Logout")
-        expect(page).to_not have_link("Login with Google")
+        expect(page).to have_button("Logout")
+        expect(page).to_not have_button("Login with Google")
       end
 
       it "I can logout" do
-        click_link "Login with Google"
+        click_button "Login with Google"
 
-        expect(page).to have_link("Logout")
+        expect(page).to have_button("Logout")
 
-        click_link "Logout"
+        click_button "Logout"
 
         expect(current_path).to eq(root_path)
-        expect(page).to_not have_link("Logout")
-        expect(page).to have_link("Login with Google")
+        expect(page).to_not have_button("Logout")
+        expect(page).to have_button("Login with Google")
       end
 
       it 'can search backend database for tools by name and location' do
@@ -59,11 +59,11 @@ RSpec.describe "User can login" do
 
       end
 
-      it "can take in user project to be consumed by backend chat bot" do 
+      it "can take in user project to be consumed by backend chat bot" do
         chat_prompt = File.read('spec/fixtures/chat_response.json')
         stub_request(:get, "https://lend-a-toolza-be.onrender.com/api/v1/chat_request")
           .to_return(status: 200, body: chat_prompt, headers: {'Content-Type': 'application/json' })
-        
+
         expect(page).to have_content("What kind of project can we help you with?")
 
         fill_in :project, with: "deck"

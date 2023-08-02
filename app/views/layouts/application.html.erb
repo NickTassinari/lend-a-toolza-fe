@@ -12,7 +12,7 @@
     <% if current_user %>
       <%= button_to "Logout", logout_path, method: :delete %>
     <% else %>
-      <%= button_to "Login with Google", "/auth/google_oauth2" %>
+      <%= button_to "Login with Google", "/auth/google_oauth2", method: :get %>
     <% end %>
 
     <%= yield %>

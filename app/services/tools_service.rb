@@ -33,6 +33,15 @@ class ToolsService
     JSON.parse(response.body, symbolize_names: true)
   end
 
+  def self.update_tool(user_id, tool_id, status, borrower_id)
+    response = conn.patch do |r|
+      r.url "/api/v1/users/#{user_id}/tools/#{tool_id}"
+      r.headers['Content-Type'] = 'application/json'
+      r.body = {status: status, borrower_id: borrower_id}.to_json
+    end
+    JSON.parse(response.body, symbolize_names: true)
+  end
+
   private
 
 

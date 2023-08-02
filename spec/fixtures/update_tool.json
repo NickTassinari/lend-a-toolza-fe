@@ -1,0 +1,17 @@
+{
+  "data": {
+    "id": "2425",
+    "type": "tool",
+    "attributes": {
+      "name": "Item Excepturi Rem",
+      "description": "Perferendis reprehenderit fugiat sit eos. Corporis ipsum ut. Natus molestiae quia rerum fugit quis. A cumque doloremque magni.",
+      "image": "https://lend-a-toolza.s3.us-east-2.amazonaws.com/astro.jpeg",
+      "status": "unavailable",
+      "user_id": "12",
+      "location": "123 Sunnyside Dr, Lebanon, IN, 46052",
+      "latitude": "53.076645",
+      "longitude": "10.3398",
+      "borrower_id": "33"
+    }
+  }
+}

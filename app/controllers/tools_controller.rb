@@ -4,19 +4,21 @@ class ToolsController < ApplicationController
   end
 
   def create
-    attributes = {
-      name: params[:name],
-      status: params[:status],
-      description: params[:description],
-      user_id: current_user.id,
-      address: params[:address]
-    }
-    response = ToolsService.post_tool(attributes, current_user.id)
-    if status == 200 && params_check(params)
+    if params_check(params)
       Aws.config.update(access_key_id: ENV['AWS_ACCESS_KEY'], secret_access_key: ENV['AWS_SECRET_ACCESS_KEY'])
       bucket = Aws::S3::Resource.new.bucket(ENV['BUCKET_NAME'])
       file = bucket.object(params[:image].original_filename)
       file.upload_file(params[:image], acl: 'public-read')
+
+      attributes = {
+        name: params[:name],
+        status: params[:status],
+        description: params[:description],
+        user_id: current_user.id,
+        image: file.public_url,
+        address: params[:address]
+      }
+      response = ToolsService.post_tool(attributes, current_user.id)
       redirect_to dashboard_path
     else
       redirect_to new_tool_path
@@ -31,8 +33,20 @@ class ToolsController < ApplicationController
   end
 
   def show
+    @tool_id = params[:id]
     @tool = ToolFacade.get_tools_by_id(params[:id])
   end
+
+  def update
+    # require 'pry'; binding.pry
+    if params[:status] == "borrowed"
+      ToolsService.update_tool(current_user.id, params[:id], params[:status], current_user.id)
+    else
+      ToolsService.update_tool(current_user.id, params[:id], params[:status], nil)
+    end
+    redirect_to tool_path(params[:id])
+  end
+  # button_to "Borrow This Tool", tool_path(@tool_id), method: :patch, params: { status: "Borrowed" }
 
   private
 
