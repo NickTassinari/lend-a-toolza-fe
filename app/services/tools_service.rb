@@ -11,8 +11,12 @@ class ToolsService
   end
 
   def self.search_tools_by_keyword(keyword, location)
-    response = conn.get("/api/v1/search?name=#{keyword}&location=#{location}")
-    JSON.parse(response.body, symbolize_names: true)
+    response = conn.get("/api/v1/tools/search?name=#{keyword}&location=#{location}")
+    begin    
+      JSON.parse(response.body, symbolize_names: true)
+    rescue JSON::ParserError
+      {}
+    end
   end
 
   def self.get_tools_by_id(id)
