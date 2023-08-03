@@ -38,7 +38,7 @@ RSpec.describe "User can login" do
         expect(page).to have_link("Logout")
 
         click_link "Logout"
-save_and_open_page
+
         expect(current_path).to eq(root_path)
         expect(page).to_not have_link("Logout")
         expect(page).to have_link("Login")
@@ -71,7 +71,16 @@ save_and_open_page
         click_button("Submit")
 
         expect(current_path).to eq(result_path)
-        expect(page).to have_content(["1. Hammer","2. Nails","3. Drill","4. Circular Saw","5. Screws","6. Safety Glasses","7. Tape Measure","8. Level","9. Post Hole Digger","10. Pressure-treated Lumber","11. Deck Screws","12. Joist Hangers","13. Flashing","14. Deck Boards","15. Railing Posts","16. Deck Railing","17. Deck Stain or Sealer"])
+        expect(page).to have_content(["1. Hammer", "2. Saw", "3. Safety glasses", "4. Drill", "5. Screwdriver", "6. Level", "7. Tape measure", "8. Chalk line", "9. Nails", "10. Deck screws", "11. Post hole digger", "12. Circular saw", "13. Hacksaw", "14. Shovel", "15. Carpenter’s square", "16. Socket wrench set", "17. Deck boards", "18. Joist hangers", "19. Lag bolts", "20. Galvanized joist hangers"])
+      end
+
+      it "has a button to bring user to their show page (shed)" do 
+
+        click_link "Login"
+
+        click_button "My Shed"
+        save_and_open_page
+        expect(current_path).to eq("/dashboard")
       end
     end
   end
