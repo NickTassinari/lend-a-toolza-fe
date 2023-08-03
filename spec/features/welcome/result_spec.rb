@@ -12,7 +12,7 @@ RSpec.describe "welcome result page" do
       
     click_button("Submit")
     expect(current_path).to eq(result_path)
-    expect(page).to have_content(["1. Circular saw","2. Hammer","3. Drill","4. Deck screws","5. Level","6. Chalk line","7. Tape measure","8. Safety glasses","9. Post hole digger","10. Shovel","11. Joist hangers","12. Nails","13. Deck boards","14. Railing posts","15. Lumber","16. Joist brackets","17. Lag screws","18. Deck railing","19. Paint/stain","20. Deck fasteners"])
+    expect(page).to have_content(["1. Safety glasses", "2. Hammer", "3. Tape measure", "4. Circular saw", "5. Drill", "6. Post hole digger", "7. Level", "8. Nails or screws", "9. Carpenter's square", "10. Framing square", "11. Joist hangers", "12. Deck screws", "13. Wood preservative", "14. Wood sealant", "15. Deck boards"])
   end
 
   it "has secondary tool search after chatbot results", :vcr do 

@@ -17,7 +17,7 @@ RSpec.describe "User Show Page" do
     it "I can visit my dashboard" do
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user1)
 
-      visit "/dashboard"
+      visit dashboard_path(@user1.id) 
 
       within "#title" do
         expect(page).to have_content("#{@user1.name}'s Shed")

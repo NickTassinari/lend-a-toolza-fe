@@ -17,7 +17,7 @@ class ToolsController < ApplicationController
       bucket = Aws::S3::Resource.new.bucket(ENV['BUCKET_NAME'])
       file = bucket.object(params[:image].original_filename)
       file.upload_file(params[:image], acl: 'public-read')
-      redirect_to dashboard_path
+      redirect_to dashboard_path(current_user.id)
     else
       redirect_to new_tool_path
       flash[:error] = "Please fill out all fields"

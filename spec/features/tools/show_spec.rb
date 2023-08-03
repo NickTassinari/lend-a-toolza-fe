@@ -1,28 +1,13 @@
 require 'rails_helper'
 
 RSpec.describe "Tool Show Page" do 
-  xit "shows tool info" do 
-    tool_data =  {
-      "id": "2425",
-      "type": "tool",
-      "attributes": {
-        "name": "Crazy Thors Hammer",
-        "description": "Crazy Shit",
-        "image": "image.jpg",
-        "status": "available",
-        "user_id": "12",
-        "address": "123 Sunnyside Dr, Lebanon, IN, 46052",
-        "latitude": "53.076645",
-        "longitude": "10.3398",
-        "borrower_id": "33"
-      }
-    }
+  it "shows tool info" do 
+    saw_show = File.read('spec/fixtures/slam_saw_show.json')
+    stub_request(:get, "https://lend-a-toolza-be.onrender.com/api/v1/tools/1266")
+      .to_return(status: 200, body: saw_show, headers: { 'Content-Type': 'application/json' })
 
-    allow(ToolsService).to receive(:get_tools_by_id).with("2425").and_return(tool_data)
-    tool = Tool.new(tool_data)
+    visit "/tools/#{1266}"
 
-    visit "/tools/#{tool.id}"
-
-    expect(page).to have_content("Crazy Thors Hammer")
+    expect(page).to have_content("Slammer Saw")
   end
 end
