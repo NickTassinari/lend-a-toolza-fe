@@ -31,7 +31,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-danger"> 
       <div class="container d-flex justify-content-end"> 
         <% if current_user %>
-          <%= link_to "My Tool Shed", dashboard_path, class: "my-tool-shed-btn" %>
+          <%= link_to "My Tool Shed", dashboard_path(current_user.id), class: "my-tool-shed-btn" %>
           <%= button_to "Logout", logout_path, method: :delete, class: "btn btn-primary ml-2" %>
         <% else %>
           <%= link_to "Login", "/auth/google_oauth2", class: "login-btn ml-2" %>

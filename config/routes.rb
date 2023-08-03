@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   root "welcome#index"
   post "/welcome", to: "welcome#create", as: :welcome
   get '/result', to: 'welcome#result', as: :result
-  get "/dashboard", to: "users#show", as: :dashboard
+  # get "/dashboard", to: "users#show", as: :dashboard
   post "dashboard/tools", to: "tools#create", as: :user_tools
 
   get "/auth/google_oauth2/callback", to: "sessions#create"
@@ -15,7 +15,7 @@ Rails.application.routes.draw do
   resources :tools, only: [:new]
   resources :tools, only: [:index, :show]
 
-  resources :users, only: [:show]
+  resources :users, only: [:show], as: :dashboard
 
   resources :stores, only: [:index]
 end

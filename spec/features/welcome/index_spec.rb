@@ -49,7 +49,7 @@ RSpec.describe "User can login" do
         expect(page).to have_link("My Tool Shed")
 
         click_link "My Tool Shed"
-        expect(current_path).to eq(dashboard_path)
+        expect(current_path).to eq(dashboard_path(@user1.id))
       end
 
       it 'can search backend database for tools by name and location' do
