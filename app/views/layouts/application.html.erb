@@ -15,14 +15,24 @@
         color: #193549;
         text-decoration: none;
       }
+
+      .my-tool-shed-btn {
+        background-color: #193549;
+        border-radius: 25px;
+        padding: 10px 20px;
+        color: #E1FF33;
+        text-decoration: none;
+        margin-left: 5px; /
+      }
     </style>
   </head>
 
   <body style="background-color: #17A589;">
-    <nav class="navbar navbar-expand-lg navbar-light bg-danger"> <!-- Change bg-warning to bg-danger -->
-      <div class="container d-flex justify-content-end"> <!-- Use Bootstrap utility classes to position the button -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger"> 
+      <div class="container d-flex justify-content-end"> 
         <% if current_user %>
-          <%= link_to "Logout", logout_path, method: :delete, class: "btn btn-primary" %>
+          <%= link_to "My Tool Shed", dashboard_path, class: "my-tool-shed-btn" %>
+          <%= button_to "Logout", logout_path, method: :delete, class: "btn btn-primary ml-2" %>
         <% else %>
           <%= link_to "Login", "/auth/google_oauth2", class: "login-btn ml-2" %>
         <% end %>
@@ -34,4 +44,3 @@
     </div>
   </body>
 </html>
-

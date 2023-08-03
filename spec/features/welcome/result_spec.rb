@@ -6,7 +6,7 @@ RSpec.describe "welcome result page" do
     # stub_request(:get, "https://lend-a-toolza-be.onrender.com/api/v1/chat_request?project=deck")
     #   .to_return(status: 200, body: chat_prompt, headers: {'Content-Type': 'application/json' })
     visit root_path
-    expect(page).to have_content("What kind of project can we help you with?")
+    expect(page).to have_content("What tools are you looking for?")
       
     fill_in :project, with: "deck"
       

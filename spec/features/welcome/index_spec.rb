@@ -28,20 +28,28 @@ RSpec.describe "User can login" do
         click_link "Login"
 
         expect(current_path).to eq(root_path)
-        expect(page).to have_link("Logout")
+        expect(page).to have_button("Logout")
         expect(page).to_not have_link("Login")
       end
 
       it "I can logout" do
         click_link "Login"
 
-        expect(page).to have_link("Logout")
+        expect(page).to have_button("Logout")
 
-        click_link "Logout"
-save_and_open_page
+        click_button "Logout"
         expect(current_path).to eq(root_path)
         expect(page).to_not have_link("Logout")
         expect(page).to have_link("Login")
+      end
+
+      it "I can go to my dashboard" do
+        click_link "Login"
+
+        expect(page).to have_link("My Tool Shed")
+
+        click_link "My Tool Shed"
+        expect(current_path).to eq(dashboard_path)
       end
 
       it 'can search backend database for tools by name and location' do
