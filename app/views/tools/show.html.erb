@@ -3,7 +3,9 @@
 <img src="<%= @tool[:image] %>" alt="<%= @tool[:name] %>">
 <p><%= @tool[:address] %></p>
 <p><%= @tool[:status] %></p>
-<%= form_with url: "/tools/#{@tool_id}", method: :patch, local: true do |form| %>
-  <%= form.hidden_field :status, value: "unavailable" %>
-  <%= form.submit "Borrow This Tool" %>
+<% if @tool[:status] == "available" %>
+  <%= form_with url: "/tools/#{@tool_id}", method: :patch do |form| %>
+    <%= form.hidden_field :status, value: "unavailable" %>
+    <%= form.submit "Borrow This Tool" %>
+  <% end %>
 <% end %>
