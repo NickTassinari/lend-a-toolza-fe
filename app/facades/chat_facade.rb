@@ -1,6 +1,5 @@
 class ChatFacade 
   def self.chat_request(project)
-    ChatService.chat_request(project)
-    # ChatService.chat_request(project)[:choices][0][:text]
+    ChatApiService.chat_request(project)
   end
 end

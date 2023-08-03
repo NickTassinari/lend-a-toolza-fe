@@ -41,6 +41,7 @@ class ToolsService
 
 
   def self.conn
+    # Faraday.new(url: "http://localhost:3000")
     Faraday.new(url: "https://lend-a-toolza-be.onrender.com" )
   end
 

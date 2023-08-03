@@ -8,6 +8,6 @@ class WelcomeController < ApplicationController
     
     def result 
       @project = params[:project]
-      @chat_results = ChatFacade.chat_request(@project)
+      @chat_results = ChatApiService.chat_request(@project)
   end
 end
