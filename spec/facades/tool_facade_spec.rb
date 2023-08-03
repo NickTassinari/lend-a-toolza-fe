@@ -1,7 +1,7 @@
 require 'rails_helper'
 require "./app/facades/tool_facade"
 
-RSpec.describe ToolFacade do
+RSpec.describe ToolFacade, :vcr do
   
   it "exists and returns attributes" do 
     tools_response = File.read('spec/fixtures/tools_index.json')
@@ -46,7 +46,4 @@ RSpec.describe ToolFacade do
   it "returns tools by id" do 
     
   end
-
-
-
 end
