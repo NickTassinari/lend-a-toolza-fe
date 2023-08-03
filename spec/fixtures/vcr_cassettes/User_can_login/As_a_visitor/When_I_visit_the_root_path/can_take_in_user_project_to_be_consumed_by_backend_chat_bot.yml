@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 03 Aug 2023 02:52:17 GMT
+      - Thu, 03 Aug 2023 14:12:24 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -27,13 +27,13 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - 7f0b4264da7e2917-DEN
+      - 7f0f27acfbb78eb0-DEN
       Cf-Cache-Status:
       - DYNAMIC
       Cache-Control:
       - max-age=0, private, must-revalidate
       Etag:
-      - W/"43f36ff1a207057b9d2fee2001ead1a1"
+      - W/"110aab9eadd095b53e2e07d56f4a9279"
       Vary:
       - Accept-Encoding
       Referrer-Policy:
@@ -49,9 +49,9 @@ http_interactions:
       X-Render-Origin-Server:
       - Render
       X-Request-Id:
-      - a95d800e-6bf9-4221-883d-3371f74a933f
+      - 54c5ce62-ab76-402c-bf51-24c5e6854df8
       X-Runtime:
-      - '3.926421'
+      - '3.816369'
       X-Xss-Protection:
       - '0'
       Server:
@@ -60,9 +60,7 @@ http_interactions:
       - h3=":443"; ma=86400
     body:
       encoding: ASCII-8BIT
-      string: '{"tools":["1. Hammer","2. Nails","3. Drill","4. Circular Saw","5. Screws","6.
-        Safety Glasses","7. Tape Measure","8. Level","9. Post Hole Digger","10. Pressure-treated
-        Lumber","11. Deck Screws","12. Joist Hangers","13. Flashing","14. Deck Boards","15.
-        Railing Posts","16. Deck Railing","17. Deck Stain or Sealer"]}'
-  recorded_at: Thu, 03 Aug 2023 02:52:16 GMT
+      string: !binary |-
+        eyJ0b29scyI6WyIxLiBIYW1tZXIiLCIyLiBTYXciLCIzLiBTYWZldHkgZ2xhc3NlcyIsIjQuIERyaWxsIiwiNS4gU2NyZXdkcml2ZXIiLCI2LiBMZXZlbCIsIjcuIFRhcGUgbWVhc3VyZSIsIjguIENoYWxrIGxpbmUiLCI5LiBOYWlscyIsIjEwLiBEZWNrIHNjcmV3cyIsIjExLiBQb3N0IGhvbGUgZGlnZ2VyIiwiMTIuIENpcmN1bGFyIHNhdyIsIjEzLiBIYWNrc2F3IiwiMTQuIFNob3ZlbCIsIjE1LiBDYXJwZW50ZXLigJlzIHNxdWFyZSIsIjE2LiBTb2NrZXQgd3JlbmNoIHNldCIsIjE3LiBEZWNrIGJvYXJkcyIsIjE4LiBKb2lzdCBoYW5nZXJzIiwiMTkuIExhZyBib2x0cyIsIjIwLiBHYWx2YW5pemVkIGpvaXN0IGhhbmdlcnMiXX0=
+  recorded_at: Thu, 03 Aug 2023 14:12:24 GMT
 recorded_with: VCR 6.2.0

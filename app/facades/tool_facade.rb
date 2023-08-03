@@ -15,7 +15,8 @@ class ToolFacade
   end
 
   def self.get_tools_by_id(id)
-    ToolsService.get_tools_by_id(id)[:attributes]
+    tool_data = ToolsService.get_tools_by_id(id)[:data][0]
+      Tool.new(tool_data)
   end
 
   def self.users_tools(user_id)

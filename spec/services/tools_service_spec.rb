@@ -4,13 +4,14 @@ require 'rails_helper'
 RSpec.describe ToolsService do
   before(:each) do
     # @user1 = User.create!(id: 2, name: "Test User", email: "test@example.com", google_id: '123456789', location: "46052")
+  end
+  
+  it "establishes a connection for a users tools" do
     stubbed_response = File.read("spec/fixtures/users_tools.json")
     stub_request(:get, "https://lend-a-toolza-be.onrender.com/api/v1/users/2/tools")
     .to_return(status: 200, body: stubbed_response)
     @user_tools = ToolsService.user_tools(2)
-  end
 
-  it "establishes a connection for a users tools" do
     expect(@user_tools).to be_a(Hash)
     expect(@user_tools).to have_key(:data)
     expect(@user_tools[:data]).to be_an(Array)
@@ -79,5 +80,13 @@ RSpec.describe ToolsService do
 
     tool_data = search[:data].first
     expect(tool_data[:attributes][:name]).to eq("Kobalt Hammer")
+  end
+
+  it "returns a tool based on id" do 
+    saw_show = File.read('spec/fixtures/slam_saw_show.json')
+    stub_request(:get, "https://lend-a-toolza-be.onrender.com/api/v1/tools/1266")
+      .to_return(status: 200, body: saw_show, headers: { 'Content-Type': 'application/json' })
+    
+      expect(ToolsService.get_tools_by_id(1266)).to be_a (Hash)
   end
 end
