@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://lend-a-toolza-be.onrender.com/api/v1/chat_request?project=deck
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 03 Aug 2023 02:35:00 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7f0b2a26b9d92918-DEN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"119476a801e448a94a25d20477fac3da"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - dcc7f3e1-6312-44ad-b5df-7dd602d67083
+      X-Runtime:
+      - '1.817959'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"tools":["1. Hammer","2. Nails","3. Screws","4. Drill","5. Circular
+        saw","6. Safety glasses","7. Tape measure","8. Level","9. Post hole digger","10.
+        Shovel","11. Joist hangers","12. Deck screws","13. Deck boards","14. Lumber"]}'
+  recorded_at: Thu, 03 Aug 2023 02:35:00 GMT
+recorded_with: VCR 6.2.0
