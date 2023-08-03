@@ -59,10 +59,10 @@ RSpec.describe "User can login" do
 
       end
 
-      it "can take in user project to be consumed by backend chat bot" do 
-        chat_prompt = File.read('spec/fixtures/chat_response.json')
-        stub_request(:get, "https://lend-a-toolza-be.onrender.com/api/v1/chat_request?project=deck")
-          .to_return(status: 200, body: chat_prompt, headers: {'Content-Type': 'application/json' })
+      it "can take in user project to be consumed by backend chat bot", :vcr do 
+        # chat_prompt = File.read('spec/fixtures/chat_response.json')
+        # stub_request(:get, "https://lend-a-toolza-be.onrender.com/api/v1/chat_request?project=deck")
+        #   .to_return(status: 200, body: chat_prompt, headers: {'Content-Type': 'application/json' })
         
         expect(page).to have_content("What kind of project can we help you with?")
 
@@ -71,7 +71,7 @@ RSpec.describe "User can login" do
         click_button("Submit")
 
         expect(current_path).to eq(result_path)
-        expect(page).to have_content("You will need a drill, a circular saw, a hammer, a level, a tape measure, a post hole digger, a framing square, a screwdriver, deck screws, and lag screws. You may also need decking boards, joist hangers, and other hardware specific to your project.")
+        expect(page).to have_content(["1. Hammer","2. Nails","3. Drill","4. Circular Saw","5. Screws","6. Safety Glasses","7. Tape Measure","8. Level","9. Post Hole Digger","10. Pressure-treated Lumber","11. Deck Screws","12. Joist Hangers","13. Flashing","14. Deck Boards","15. Railing Posts","16. Deck Railing","17. Deck Stain or Sealer"])
       end
     end
   end
