@@ -1,4 +1,6 @@
-class Store 
+# frozen_string_literal: true
+
+class Store
   attr_reader :id, :name, :formatted_address
 
   def initialize(data)

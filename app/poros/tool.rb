@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Tool
   attr_reader :id, :name, :description, :image, :status, :user_id, :address, :latitude, :longitude, :borrower_id
 
@@ -12,6 +14,5 @@ class Tool
     @latitude = response[:attributes][:latitude]
     @longitude = response[:attributes][:longitude]
     @borrower_id = response[:attributes][:borrower_id]
-
   end
 end
