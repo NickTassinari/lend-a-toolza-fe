@@ -3,8 +3,9 @@
 require 'rails_helper'
 require './app/facades/tool_facade'
 
-RSpec.describe ToolFacade do
-  it 'exists and returns attributes' do
+RSpec.describe ToolFacade, :vcr do
+  
+  it "exists and returns attributes" do 
     tools_response = File.read('spec/fixtures/tools_index.json')
     stub_request(:get, 'https://lend-a-toolza-be.onrender.com/api/v1/tools')
       .to_return(status: 200, body: tools_response)
