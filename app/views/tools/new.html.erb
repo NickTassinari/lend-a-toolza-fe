@@ -1,6 +1,6 @@
 <h1>Add a New Tool</h1>
 <div id="tool_form">
-  <%= form_with url: user_tools_path, method: :post do |f| %>
+  <%= form_with url: dashboard_tools_path(current_user.id), method: :post do |f| %>
     <%= f.hidden_field :status, value: "available"%>
     <%= f.hidden_field :address, value: current_user.location %>
     <%= f.hidden_field :borrower_id, value: nil %>
