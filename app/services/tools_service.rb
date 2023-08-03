@@ -20,7 +20,8 @@ class ToolsService
   end
 
   def self.get_tools_by_id(id)
-    JSON.parse(conn.get("/api/v1/tools/#{id}").body, symbolize_names: true)
+    response = conn.get("/api/v1/tools/#{id}")
+    JSON.parse(response.body, symbolize_names: true)
   end
 
   def self.get_tools

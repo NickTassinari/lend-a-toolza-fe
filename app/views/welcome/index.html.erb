@@ -99,7 +99,7 @@
         <h3>What tools are you looking for?</h3>
         <%= form_with url: "/tools", method: :get, local: true do |f| %>
           <%= f.label :tool %>
-          <%= f.text_field :name, class: "centered-text-field" %>
+          <%= f.text_field :tool, class: "centered-text-field" %>
           <br>
           <%= f.label :location %>
           <%= f.text_field :location, class: "centered-text-field" %>
@@ -116,6 +116,7 @@
           <%= f.submit "Submit" %>
         <% end %>
       </div>
+      
     </div>
   </body>
 </html>
