@@ -1,5 +1,6 @@
-class StoreFacade
+# frozen_string_literal: true
 
+class StoreFacade
   def self.get_stores(location, radius)
     location = location.gsub(' ', '%20')
     radius = (radius.to_i * 1600)

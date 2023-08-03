@@ -9,10 +9,10 @@
           "image": "image.jpg",
           "status": "unavailable",
           "user_id": "12",
-          "location": "123 Sunnyside Dr, Lebanon, IN, 46052",
+          "address": "123 Sunnyside Dr, Lebanon, IN, 46052",
           "latitude": "53.076645",
           "longitude": "10.3398",
-          "borrow_id": "2"
+          "borrower_id": "2"
         }
       },
       {
@@ -24,10 +24,10 @@
               "image": "image.jpg",
               "status": "unavailable",
               "user_id": "52",
-              "location": "123 Sunnyside Dr, Lebanon, IN, 46052",
+              "address": "123 Sunnyside Dr, Lebanon, IN, 46052",
               "latitude": "53.076645",
               "longitude": "10.3398",
-              "borrow_id": "2"
+              "borrower_id": "2"
           }
       }
   ]

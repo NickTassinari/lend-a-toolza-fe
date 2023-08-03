@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class StoresController < ApplicationController
-  def index 
+  def index
     radius = params[:radius]
     location = params[:location]
     @stores = StoreFacade.get_stores(location, radius)

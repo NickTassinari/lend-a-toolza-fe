@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 03 Aug 2023 14:12:24 GMT
+      - Thu, 03 Aug 2023 20:45:08 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -27,13 +27,13 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - 7f0f27acfbb78eb0-DEN
+      - 7f1166f60e062918-DEN
       Cf-Cache-Status:
       - DYNAMIC
       Cache-Control:
       - max-age=0, private, must-revalidate
       Etag:
-      - W/"110aab9eadd095b53e2e07d56f4a9279"
+      - W/"f1e4f1bcfa26dc9999b7ef9feae0a231"
       Vary:
       - Accept-Encoding
       Referrer-Policy:
@@ -49,9 +49,9 @@ http_interactions:
       X-Render-Origin-Server:
       - Render
       X-Request-Id:
-      - 54c5ce62-ab76-402c-bf51-24c5e6854df8
+      - 77dbe797-ea26-43dc-8caf-8cd5e6607faf
       X-Runtime:
-      - '3.816369'
+      - '3.830994'
       X-Xss-Protection:
       - '0'
       Server:
@@ -60,7 +60,9 @@ http_interactions:
       - h3=":443"; ma=86400
     body:
       encoding: ASCII-8BIT
-      string: !binary |-
-        eyJ0b29scyI6WyIxLiBIYW1tZXIiLCIyLiBTYXciLCIzLiBTYWZldHkgZ2xhc3NlcyIsIjQuIERyaWxsIiwiNS4gU2NyZXdkcml2ZXIiLCI2LiBMZXZlbCIsIjcuIFRhcGUgbWVhc3VyZSIsIjguIENoYWxrIGxpbmUiLCI5LiBOYWlscyIsIjEwLiBEZWNrIHNjcmV3cyIsIjExLiBQb3N0IGhvbGUgZGlnZ2VyIiwiMTIuIENpcmN1bGFyIHNhdyIsIjEzLiBIYWNrc2F3IiwiMTQuIFNob3ZlbCIsIjE1LiBDYXJwZW50ZXLigJlzIHNxdWFyZSIsIjE2LiBTb2NrZXQgd3JlbmNoIHNldCIsIjE3LiBEZWNrIGJvYXJkcyIsIjE4LiBKb2lzdCBoYW5nZXJzIiwiMTkuIExhZyBib2x0cyIsIjIwLiBHYWx2YW5pemVkIGpvaXN0IGhhbmdlcnMiXX0=
-  recorded_at: Thu, 03 Aug 2023 14:12:24 GMT
+      string: '{"tools":["1. Hammer","2. Nails","3. Drill","4. Screws","5. Saw","6.
+        Level","7. Tape Measure","8. Safety Glasses","9. Work Gloves","10. Chalk Line","11.
+        Post Hole Digger","12. Circular Saw","13. Joist Hangers","14. Deck Boards","15.
+        Lag Bolts"]}'
+  recorded_at: Thu, 03 Aug 2023 20:45:08 GMT
 recorded_with: VCR 6.2.0
