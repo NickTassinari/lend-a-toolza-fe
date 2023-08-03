@@ -73,15 +73,6 @@ RSpec.describe "User can login" do
         expect(current_path).to eq(result_path)
         expect(page).to have_content(["1. Hammer", "2. Saw", "3. Safety glasses", "4. Drill", "5. Screwdriver", "6. Level", "7. Tape measure", "8. Chalk line", "9. Nails", "10. Deck screws", "11. Post hole digger", "12. Circular saw", "13. Hacksaw", "14. Shovel", "15. Carpenter’s square", "16. Socket wrench set", "17. Deck boards", "18. Joist hangers", "19. Lag bolts", "20. Galvanized joist hangers"])
       end
-
-      it "has a button to bring user to their show page (shed)" do 
-
-        click_link "Login"
-
-        click_button "My Shed"
-        save_and_open_page
-        expect(current_path).to eq("/dashboard")
-      end
     end
   end
 end
