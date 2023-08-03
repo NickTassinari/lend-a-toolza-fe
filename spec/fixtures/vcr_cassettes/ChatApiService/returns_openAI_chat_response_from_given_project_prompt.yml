@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 03 Aug 2023 14:12:32 GMT
+      - Thu, 03 Aug 2023 20:37:13 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -27,13 +27,13 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - 7f0f27e48fc51f38-DEN
+      - 7f115b60ccc72900-DEN
       Cf-Cache-Status:
       - DYNAMIC
       Cache-Control:
       - max-age=0, private, must-revalidate
       Etag:
-      - W/"f301ef59f3e3181664bfb54353a51208"
+      - W/"557a9e5d932fd656d37c0348521040e7"
       Vary:
       - Accept-Encoding
       Referrer-Policy:
@@ -49,9 +49,9 @@ http_interactions:
       X-Render-Origin-Server:
       - Render
       X-Request-Id:
-      - '08858a9d-f773-4194-b18b-eaeb4ac2bc05'
+      - ef1db7b7-5d7d-4e3e-9114-306ea86465ca
       X-Runtime:
-      - '2.933837'
+      - '3.163402'
       X-Xss-Protection:
       - '0'
       Server:
@@ -60,10 +60,7 @@ http_interactions:
       - h3=":443"; ma=86400
     body:
       encoding: ASCII-8BIT
-      string: '{"tools":["1. Deck boards","2. Hammer","3. Nails","4. Drill","5. Screws","6.
-        Circular saw","7. Level","8. Tape measure","9. Safety glasses","10. Work gloves","11.
-        Post hole digger","12. Spade","13. Shovel","14. Chalk line","15. Joist hangers","16.
-        Galvanized lag screws","17. Deck screws","18. Deck fasteners","19. Railing
-        posts","20. Railing hardware","21. Paint or sealer"]}'
-  recorded_at: Thu, 03 Aug 2023 14:12:32 GMT
+      string: '{"tools":["1. Hammer","2. Nails","3. Drill","4. Screws","5. Saw","6.
+        Level","7. Tape Measure","8. Chalk Line","9. Safety Glasses","10. Work Gloves"]}'
+  recorded_at: Thu, 03 Aug 2023 20:37:13 GMT
 recorded_with: VCR 6.2.0

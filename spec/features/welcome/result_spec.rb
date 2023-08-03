@@ -4,9 +4,6 @@ require 'rails_helper'
 
 RSpec.describe 'welcome result page' do
   it 'displays chat results', :vcr do
-    # chat_prompt = File.read('spec/fixtures/chat_response.json')
-    # stub_request(:get, "https://lend-a-toolza-be.onrender.com/api/v1/chat_request?project=deck")
-    #   .to_return(status: 200, body: chat_prompt, headers: {'Content-Type': 'application/json' })
     visit root_path
     expect(page).to have_content('What tools are you looking for?')
 
@@ -14,8 +11,7 @@ RSpec.describe 'welcome result page' do
 
     click_button('Submit')
     expect(current_path).to eq(result_path)
-    expect(page).to have_content(['1. Safety glasses', '2. Hammer', '3. Tape measure', '4. Circular saw', '5. Drill',
-                                  '6. Post hole digger', '7. Level', '8. Nails or screws', "9. Carpenter's square", '10. Framing square', '11. Joist hangers', '12. Deck screws', '13. Wood preservative', '14. Wood sealant', '15. Deck boards'])
+    expect(page).to have_content(["1. Hammer", "2. Nails", "3. Drill", "4. Screws", "5. Safety glasses", "6. Circular saw", "7. Tape measure", "8. Level", "9. Posthole digger", "10. Deck screws", "11. Deck boards", "12. Joist hangers", "13. Lag screws", "14. Decking screws", "15. Decking materials (wood or composite)", "16. Railing materials (wood or composite)", "17. Sealant", "18. Paint or stain", "19. Sandpaper", "20. Protective clothing"])
   end
 
   it 'has secondary tool search after chatbot results', :vcr do

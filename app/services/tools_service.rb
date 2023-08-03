@@ -3,12 +3,20 @@
 class ToolsService
   def self.user_tools(user_id)
     response = conn.get("/api/v1/users/#{user_id}/tools")
-    JSON.parse(response.body, symbolize_names: true)
+    begin
+      JSON.parse(response.body, symbolize_names: true)
+    rescue JSON::ParserError
+    {}
+    end
   end
 
   def self.user_b_tools(user_id)
-    response = conn.get("/api/v1/users/#{user_id}/tools/borrowed")
-    JSON.parse(response.body, symbolize_names: true)
+    response = conn.get("/api/v1/users/#{user_id}/tools")
+    begin
+      JSON.parse(response.body, symbolize_names: true)
+    rescue JSON::ParserError
+    {}
+    end
   end
 
   def self.search_tools_by_keyword(keyword, location)

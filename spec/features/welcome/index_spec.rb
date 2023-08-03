@@ -21,7 +21,7 @@ RSpec.describe 'User can login' do
     visit root_path
   end
 
-  describe 'As a visitor' do
+  describe 'As a visitor', :vcr do
     describe 'When I visit the root path' do
       it 'I can login' do
         expect(page).to have_link('Login')
@@ -68,10 +68,6 @@ RSpec.describe 'User can login' do
       end
 
       it 'can take in user project to be consumed by backend chat bot', :vcr do
-        # chat_prompt = File.read('spec/fixtures/chat_response.json')
-        # stub_request(:get, "https://lend-a-toolza-be.onrender.com/api/v1/chat_request?project=deck")
-        #   .to_return(status: 200, body: chat_prompt, headers: {'Content-Type': 'application/json' })
-
         expect(page).to have_content('Not sure what you are looking for?')
 
         fill_in :project, with: 'deck'
@@ -79,8 +75,7 @@ RSpec.describe 'User can login' do
         click_button('Submit')
 
         expect(current_path).to eq(result_path)
-        expect(page).to have_content(['1. Hammer', '2. Saw', '3. Safety glasses', '4. Drill', '5. Screwdriver',
-                                      '6. Level', '7. Tape measure', '8. Chalk line', '9. Nails', '10. Deck screws', '11. Post hole digger', '12. Circular saw', '13. Hacksaw', '14. Shovel', '15. Carpenter’s square', '16. Socket wrench set', '17. Deck boards', '18. Joist hangers', '19. Lag bolts', '20. Galvanized joist hangers'])
+        expect(page).to have_content(["1. Hammer", "2. Nails", "3. Drill", "4. Screws", "5. Saw", "6. Level", "7. Tape Measure", "8. Safety Glasses", "9. Work Gloves", "10. Chalk Line", "11. Post Hole Digger", "12. Circular Saw", "13. Joist Hangers", "14. Deck Boards", "15. Lag Bolts"])
       end
     end
   end

@@ -29,8 +29,8 @@ RSpec.describe ToolsService do
     expect(@user_tools[:data][0][:attributes][:image]).to be_a(String)
     expect(@user_tools[:data][0][:attributes]).to have_key(:status)
     expect(@user_tools[:data][0][:attributes][:status]).to be_a(String)
-    expect(@user_tools[:data][0][:attributes]).to have_key(:location)
-    expect(@user_tools[:data][0][:attributes][:location]).to be_a(String)
+    expect(@user_tools[:data][0][:attributes]).to have_key(:address)
+    expect(@user_tools[:data][0][:attributes][:address]).to be_a(String)
   end
 
   it 'returns a list of tools' do
