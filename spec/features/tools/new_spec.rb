@@ -17,7 +17,7 @@ RSpec.describe 'New Tool Page' do
       .to_return(status: 200, body: stubbed_response)
 
     stubbed_response = File.read('spec/fixtures/users_borrowed_tools.json')
-    stub_request(:get, "https://lend-a-toolza-be.onrender.com/api/v1/users/#{@user1.id}/tools/borrowed")
+    stub_request(:get, "https://lend-a-toolza-be.onrender.com/api/v1/users/#{@user1.id}/tools")
       .to_return(status: 200, body: stubbed_response)
   end
 
@@ -47,6 +47,7 @@ RSpec.describe 'New Tool Page' do
         fill_in 'Name', with: 'Hammer'
         fill_in 'Description', with: 'A tool to hammer nails'
         attach_file('image', Rails.root.join('spec/images/astro.jpeg'))
+        fill_in 'Address', with: '4530 32nd St, San Diego, CA 92116'
       end
 
       click_button 'Add Tool'
@@ -59,7 +60,7 @@ RSpec.describe 'New Tool Page' do
 
       within('#tool_form') do
         fill_in 'Name', with: 'Hammer'
-        # fill_in "Description", with: "A tool to hammer nails"
+
         attach_file('image', Rails.root.join('spec/images/astro.jpeg'))
       end
 

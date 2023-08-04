@@ -2,11 +2,14 @@
 <div id="tool_form">
   <%= form_with url: dashboard_tools_path(current_user.id), method: :post do |f| %>
     <%= f.hidden_field :status, value: "available"%>
-    <%= f.hidden_field :address, value: current_user.location %>
     <%= f.hidden_field :borrower_id, value: nil %>
     <p>
       <%= f.label :name %><br />
       <%= f.text_field :name %>
+    </p>
+    <p>
+      <%= f.label :address %><br/>
+      <%= f.text_field :address %>
     </p>
     <p>
       <%= f.label :description %><br />

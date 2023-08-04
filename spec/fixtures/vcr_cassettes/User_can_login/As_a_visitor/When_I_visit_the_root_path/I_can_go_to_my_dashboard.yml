@@ -2248,4 +2248,2954 @@ http_interactions:
       encoding: ASCII-8BIT
       string: '{"data":[]}'
   recorded_at: Thu, 03 Aug 2023 21:55:48 GMT
+- request:
+    method: get
+    uri: https://lend-a-toolza-be.onrender.com/api/v1/users/93/tools
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 03 Aug 2023 22:05:56 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7f11dd6c3cd82b8d-LAX
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"8fe32e407a1038ee38753b70e5374b3a"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 77d66c9b-3efa-4f54-98ce-510c5ff8e64e
+      X-Runtime:
+      - '0.005759'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[]}'
+  recorded_at: Thu, 03 Aug 2023 22:05:56 GMT
+- request:
+    method: get
+    uri: https://lend-a-toolza-be.onrender.com/api/v1/users/93/tools
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 03 Aug 2023 22:05:56 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7f11dd6e5b21090c-LAX
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"8fe32e407a1038ee38753b70e5374b3a"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - c0df8d87-9369-41a1-ac9c-c26ffbc52769
+      X-Runtime:
+      - '0.003358'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[]}'
+  recorded_at: Thu, 03 Aug 2023 22:05:56 GMT
+- request:
+    method: get
+    uri: https://lend-a-toolza-be.onrender.com/api/v1/users/102/tools
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 502
+      message: Bad Gateway
+    headers:
+      Date:
+      - Thu, 03 Aug 2023 22:45:16 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7f12170c0acc0c93-LAX
+      Cf-Cache-Status:
+      - DYNAMIC
+      X-Render-Routing:
+      - no-deploy
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: UTF-8
+      string: |
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <title>502</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com" />
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+            <link
+                    href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap"
+                    rel="stylesheet"
+            />
+            <style>
+                * {
+                    margin: 0;
+                    padding: 0;
+                }
+
+                html {
+                    font-size: 16px;
+                }
+
+                body {
+                    background: #232a55;
+                    color: #e2e7f0;
+                    font-family: "Inter", sans-serif;
+                    line-height: 1.4;
+                    font-weight: 500;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                    display: flex;
+                    flex-direction: column;
+                    min-height: 100vh;
+                }
+
+                main {
+                    flex: 1;
+                    width: 100%;
+                    max-width: 880px;
+                    margin: 4rem auto;
+                }
+
+                .wrapper {
+                    display: flex;
+                    padding: 0 2rem;
+                }
+
+                h1 {
+                    font-size: 2.25rem;
+                    font-weight: 700;
+                }
+
+                p {
+                    font-weight: 600;
+                    font-size: 1.3rem;
+                }
+
+                .svg-502 {
+                    margin-right: 2.5rem;
+                }
+
+                ul {
+                    list-style: none;
+                    padding-left: 2rem;
+                }
+
+                li {
+                    position: relative;
+                    padding-left: 2rem;
+                    font-size: 1.25rem;
+                }
+
+                li:before {
+                    content: "";
+                    position: absolute;
+                    width: 1rem;
+                    height: 1rem;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    margin: auto;
+                    border-radius: 0.8px 0.8px 0.8px 4.7px;
+                    transform: matrix(-0.91, -0.41, -0.41, 0.91, 0, 0);
+                }
+
+                .red-radish:before {
+                    background: #ff5c88;
+                }
+
+                .aurora-light:before {
+                    background: #8afadc;
+                }
+
+                .gold:before {
+                    background: #ffda5d;
+                }
+
+                a {
+                    color: inherit;
+                    text-decoration: none;
+                }
+
+                h1 {
+                    display: inline-block;
+                    margin-right: 1rem;
+                }
+
+                p {
+                    margin-bottom: 2rem;
+                }
+
+                ul {
+                    margin-bottom: 3.5rem;
+                }
+
+                li {
+                    margin-bottom: 2.5rem;
+                }
+
+                ul:last-of-type li:last-of-type {
+                    margin-bottom: 5rem;
+                }
+
+                header {
+                    margin-top: 0.75rem;
+                    margin-bottom: 1.5rem;
+                }
+
+                .tag {
+                    display: inline-block;
+                    padding: 6px 8px;
+                    font-family: inherit;
+                    font-weight: inherit;
+                    font-size: 1rem;
+                    font-weight: 700;
+                    line-height: 1.2;
+                    border: 1.5px solid #98a2b8;
+                    border-radius: 4px;
+                    color: #98a2b8;
+                    white-space: nowrap;
+                    vertical-align: text-bottom;
+                }
+
+                a {
+                    text-transform: uppercase;
+                    font-size: 0.9375rem;
+                    font-family: inherit;
+                    letter-spacing: 0.4px;
+                    white-space: nowrap;
+                    color: #fff;
+                }
+
+                .link-primary, .link-tertiary {
+                    display: inline-block;
+                    margin-right: 1rem;
+                    margin-bottom: 1rem;
+                }
+
+               .link-tertiary {
+                    border-bottom: 1px solid #fff;
+                }
+
+                .link-primary {
+                    padding: 11px 20px;
+                    background: #4f65f1;
+                    border-radius: 48px;
+                }
+
+                .link-primary:hover {
+                    background: #4448ec;
+                }
+
+                .text-502,
+                .text-or {
+                    display: none;
+                }
+
+                .powered-by {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  width: 100%;
+                  background: #181B38;
+                  padding: 2.5rem 0;
+                }
+
+                .logo {
+                  display: flex;
+                  align-items: baseline;
+                  font-size: 0.75rem;
+                  color: #fff;
+                }
+
+                .logo span {
+                  margin-right: 0.5rem;
+                }
+
+                @media screen and (max-width: 720px) {
+                    ul {
+                        padding-left: 0;
+                    }
+
+                    h1 {
+                        display: block;
+                    }
+
+                    p {
+                        margin-bottom: 1.5rem;
+                    }
+
+                    li {
+                        margin-bottom: 2rem;
+                    }
+
+                    .link-primary, .link-tertiary {
+                        margin-right: 0;
+                    }
+
+                    .tag {
+                        margin: 1rem auto 2rem;
+                    }
+
+                    .svg-502 {
+                        display: none;
+                    }
+
+                    .text-502 {
+                        display: inline;
+                    }
+
+                    footer {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+
+                    .text-or {
+                        display: block;
+                        margin: 1.5rem auto;
+                        text-transform: uppercase;
+                    }
+                }
+            </style>
+        </head>
+        <body>
+        <main>
+            <div class="wrapper">
+                <div>
+                    <svg    class="svg-502"
+                            width="170"
+                            height="600"
+                            viewBox="0 0 170 600"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <title>502</title>
+                        <path
+                                d="M150.708 149.832V147.928C150.708 106.516 120.958 94.854 79.784 94.854H72.882L75.738 62.01H140.474C143.092 62.01 145.234 60.106 145.234 57.488V33.688C145.234 31.07 143.092 29.166 140.474 29.166H47.892C45.512 29.166 43.37 31.308 43.132 33.688L35.754 122.462V122.7C35.754 124.366 37.182 126.032 39.086 126.032H75.976C102.394 126.032 109.772 131.982 109.772 147.928V149.832C109.772 166.254 105.012 175.774 82.402 175.774C73.596 175.774 54.556 174.584 39.562 172.918C39.324 172.918 39.086 172.918 39.086 172.918C36.706 172.918 34.802 174.584 34.802 177.202V196.004C34.802 199.336 37.182 200.526 39.562 201.24C53.366 205.524 71.216 208.142 86.448 208.142C128.098 208.142 150.708 187.436 150.708 149.832Z"
+                                fill="#181B38"
+                        />
+                        <path
+                                d="M156.896 324.936V304.468C156.896 247.348 133.096 224.024 92.636 224.024C52.176 224.024 28.614 247.348 28.614 304.468V324.936C28.614 382.056 52.176 405.142 92.636 405.142C133.096 405.142 156.896 382.056 156.896 324.936ZM116.198 324.936C116.198 362.54 105.964 371.346 92.636 371.346C79.308 371.346 69.312 362.54 69.312 324.936V304.468C69.312 266.864 79.308 257.82 92.636 257.82C105.964 257.82 116.198 266.864 116.198 304.468V324.936Z"
+                                fill="#181B38"
+                        />
+                        <path
+                                d="M151.66 466.482C151.66 436.018 134.762 421.024 90.97 421.024C73.358 421.024 53.604 424.356 40.276 428.402C37.896 429.116 35.754 430.544 35.754 432.924V451.488C35.754 454.106 37.42 456.248 40.038 456.248C40.276 456.248 40.276 456.248 40.514 456.248C55.032 454.82 72.882 453.154 87.4 453.154C106.678 453.154 112.628 457.2 112.628 467.434C112.628 478.62 109.058 480.524 88.352 495.042L66.456 510.512C48.368 523.364 34.088 544.784 34.088 570.964V595.24C34.088 597.858 36.23 600 38.848 600H144.758C147.376 600 149.518 597.858 149.518 595.24V570.726C149.518 568.108 147.376 566.204 144.758 566.204H69.55V565.252C69.55 548.592 83.83 538.358 104.06 524.792L124.29 511.226C141.902 499.326 151.66 485.76 151.66 466.482Z"
+                                fill="#181B38"
+                        />
+                        <path
+                                d="M134.708 140.832V138.928C134.708 97.516 104.958 85.854 63.784 85.854H56.882L59.738 53.01H124.474C127.092 53.01 129.234 51.106 129.234 48.488V24.688C129.234 22.07 127.092 20.166 124.474 20.166H31.892C29.512 20.166 27.37 22.308 27.132 24.688L19.754 113.462V113.7C19.754 115.366 21.182 117.032 23.086 117.032H59.976C86.394 117.032 93.772 122.982 93.772 138.928V140.832C93.772 157.254 89.012 166.774 66.402 166.774C57.596 166.774 38.556 165.584 23.562 163.918C23.324 163.918 23.086 163.918 23.086 163.918C20.706 163.918 18.802 165.584 18.802 168.202V187.004C18.802 190.336 21.182 191.526 23.562 192.24C37.366 196.524 55.216 199.142 70.448 199.142C112.098 199.142 134.708 178.436 134.708 140.832Z"
+                                fill="#E2E7F0"
+                        />
+                        <path
+                                d="M140.896 315.936V295.468C140.896 238.348 117.096 215.024 76.636 215.024C36.176 215.024 12.614 238.348 12.614 295.468V315.936C12.614 373.056 36.176 396.142 76.636 396.142C117.096 396.142 140.896 373.056 140.896 315.936ZM100.198 315.936C100.198 353.54 89.964 362.346 76.636 362.346C63.308 362.346 53.312 353.54 53.312 315.936V295.468C53.312 257.864 63.308 248.82 76.636 248.82C89.964 248.82 100.198 257.864 100.198 295.468V315.936Z"
+                                fill="#E2E7F0"
+                        />
+                        <path
+                                d="M135.66 457.482C135.66 427.018 118.762 412.024 74.97 412.024C57.358 412.024 37.604 415.356 24.276 419.402C21.896 420.116 19.754 421.544 19.754 423.924V442.488C19.754 445.106 21.42 447.248 24.038 447.248C24.276 447.248 24.276 447.248 24.514 447.248C39.032 445.82 56.882 444.154 71.4 444.154C90.678 444.154 96.628 448.2 96.628 458.434C96.628 469.62 93.058 471.524 72.352 486.042L50.456 501.512C32.368 514.364 18.088 535.784 18.088 561.964V586.24C18.088 588.858 20.23 591 22.848 591H128.758C131.376 591 133.518 588.858 133.518 586.24V561.726C133.518 559.108 131.376 557.204 128.758 557.204H53.55V556.252C53.55 539.592 67.83 529.358 88.06 515.792L108.29 502.226C125.902 490.326 135.66 476.76 135.66 457.482Z"
+                                fill="#E2E7F0"
+                        />
+                    </svg>
+                </div>
+                <div>
+                    <header>
+                        <h1><span class="text-502">502 </span>Bad Gateway</h1>
+                        <span class="tag">Request ID: 7f12170c20340c93-LAX</span>
+                    </header>
+                    <p>If you are a visitor:</p>
+                    <ul>
+                        <li class="red-radish">Try again later or contact the site owner.</li>
+                    </ul>
+                    <p>If you are the site owner, your application was unable to serve this request. Common reasons include:</p>
+                    <ul>
+                        <li class="aurora-light">
+                            You recently created a service and it has not yet completed a
+                            successful deploy.
+                        </li>
+                        <li class="gold">
+                            Your application has crashed or failed its health check.
+                        </li>
+                    </ul>
+                    <footer>
+                        <a href="https://dashboard.render.com/" class="link-primary">
+                            Check Dashboard
+                        </a>
+                        <span class="text-or">or</span>
+                        <a href="https://status.render.com/" class="link-tertiary"> View System Status </a>
+                    </footer>
+                </div>
+            </div>
+        </main>
+        <div class="powered-by">
+          <div class="logo">
+            <span>Powered by</span>
+            <a href="https://render.com/">
+              <svg width="75" height="24" viewBox="0 0 75 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <title>Render</title>
+                <g clip-path="url(#clip0_70_62)">
+                <path d="M7.21155 9.97638C7.21155 9.87119 7.1692 9.7703 7.09382 9.69593C7.01844 9.62155 6.9162 9.57976 6.8096 9.57976C5.51151 9.56992 4.24737 9.98875 3.21833 10.7696L3.03877 10.9045V10.1549C3.03877 10.0494 2.99628 9.94814 2.92064 9.87351C2.845 9.79887 2.74241 9.75694 2.63544 9.75694H0.401951C0.295222 9.7573 0.192989 9.79939 0.117649 9.87399C0.0423086 9.94858 4.96047e-06 10.0496 5.58636e-06 10.1549V23.3754C-0.000552896 23.4834 0.0407821 23.5874 0.115527 23.6663C0.190273 23.7451 0.292758 23.7927 0.401951 23.7993H2.76252C2.87208 23.7934 2.9751 23.746 3.05021 23.6671C3.12531 23.5881 3.16672 23.4837 3.16585 23.3754V13.1452L3.22386 13.1152C4.47528 12.4678 5.54713 12.1925 6.81513 12.1925C6.9221 12.1925 7.02468 12.1506 7.10032 12.0759C7.17596 12.0013 7.21845 11.9001 7.21845 11.7945L7.21155 9.97638Z" fill="#E2E7F0"/>
+                <path d="M20.4551 15.8927C20.4551 11.9988 18.1595 9.57959 14.4674 9.57959C10.6841 9.57959 8.42578 11.9388 8.42578 15.8927V17.7627C8.42578 23.6996 13.4991 24.0009 14.5171 24.0009C16.8653 24.0009 17.8722 23.8646 19.4675 23.5743C19.8571 23.5088 19.9151 23.3916 19.9151 23.0291V21.3527C19.9151 21.1019 19.6457 21.0801 19.5642 21.0801H19.4869C18.3404 21.1877 16.5862 21.3322 14.7727 21.3322C11.8983 21.3322 11.5958 19.0152 11.5958 18.0135V17.8295H20.0573C20.2452 17.8295 20.4607 17.7695 20.4607 17.3061L20.4551 15.8927ZM17.2658 15.6747H11.6151V15.4648C11.6151 13.5089 12.7339 12.2469 14.4674 12.2469C16.1677 12.2469 17.2658 13.5089 17.2658 15.4648V15.6747Z" fill="#E2E7F0"/>
+                <path d="M34.9269 15.1287C34.9269 12.2433 34.4034 9.57471 30.605 9.57471C28.9254 9.57471 27.9695 9.84729 26.5123 10.7714L26.3438 10.8763V10.1526C26.3438 10.047 26.3013 9.94582 26.2257 9.87118C26.15 9.79654 26.0474 9.75461 25.9405 9.75461H23.7111C23.6044 9.75498 23.5022 9.79706 23.4268 9.87166C23.3515 9.94626 23.3092 10.0473 23.3092 10.1526V23.3731C23.3086 23.4811 23.35 23.5851 23.4247 23.6639C23.4994 23.7428 23.6019 23.7904 23.7111 23.797H26.0731C26.1825 23.7907 26.2853 23.7432 26.3604 23.6644C26.4354 23.5855 26.4769 23.4813 26.4764 23.3731V13.1442L26.5344 13.1143C27.7679 12.4764 28.6767 12.1915 29.4806 12.1915C31.5815 12.1915 31.7694 12.948 31.7694 15.1287V23.3704C31.7688 23.4785 31.8104 23.5828 31.8854 23.6617C31.9604 23.7405 32.0633 23.788 32.1727 23.7943H34.5319C34.6411 23.7876 34.7436 23.74 34.8183 23.6612C34.8931 23.5824 34.9344 23.4783 34.9338 23.3704L34.9269 15.1287Z" fill="#E2E7F0"/>
+                <path d="M49.4493 22.7686V5.17988C49.4507 5.12682 49.4414 5.074 49.4219 5.02454C49.4024 4.97508 49.3731 4.92998 49.3356 4.89188C49.2981 4.85378 49.2533 4.82346 49.2038 4.8027C49.1543 4.78194 49.1011 4.77116 49.0473 4.771H46.6868C46.6332 4.77152 46.5803 4.78256 46.5311 4.80348C46.4819 4.8244 46.4374 4.85478 46.4003 4.89285C46.3631 4.93091 46.334 4.97589 46.3147 5.02517C46.2953 5.07446 46.2861 5.12705 46.2876 5.17988V9.77162L46.1633 9.75526C45.3531 9.6436 44.5364 9.58487 43.7184 9.57945C39.8399 9.57945 37.7086 11.7942 37.7086 15.8108V17.7571C37.7086 21.7805 39.844 23.9953 43.7226 23.9953C45.45 23.9788 47.1693 23.7596 48.8443 23.3424C49.4009 23.2034 49.4493 23.0807 49.4493 22.7686ZM46.2862 21.2898L46.1992 21.3075C45.3768 21.4345 44.5452 21.4942 43.7129 21.4861C41.1852 21.4861 40.862 19.4962 40.862 17.7625V15.8108C40.862 14.0771 41.1852 12.0873 43.7129 12.0873C44.5413 12.1001 45.3682 12.1602 46.1895 12.2672L46.2834 12.2808L46.2862 21.2898Z" fill="#E2E7F0"/>
+                <path d="M64.3337 15.8927C64.3337 11.9988 62.0395 9.57959 58.3446 9.57959C54.5627 9.57959 52.3058 11.9388 52.3058 15.8927V17.7627C52.3058 23.6996 57.3791 24.0009 58.3971 24.0009C60.7452 24.0009 61.7508 23.8646 63.3461 23.5743C63.737 23.5088 63.7964 23.3916 63.7964 23.0291V21.3527C63.7964 21.1019 63.5202 21.0801 63.4442 21.0801H63.3669C62.2204 21.1877 60.4662 21.3322 58.6526 21.3322C55.7796 21.3322 55.4688 19.0152 55.4688 18.0135V17.8295H63.9304C64.1183 17.8295 64.3337 17.7695 64.3337 17.3061V15.8927ZM61.1444 15.6747H55.4937V15.4648C55.4937 13.5089 56.6139 12.2469 58.3446 12.2469C60.0463 12.2469 61.1444 13.5089 61.1444 15.4648V15.6747Z" fill="#E2E7F0"/>
+                <path d="M74.3975 9.97641C74.3975 9.87122 74.3552 9.77034 74.2798 9.69596C74.2044 9.62158 74.1022 9.57979 73.9956 9.57979C72.6954 9.56909 71.429 9.9874 70.3974 10.7683L70.222 10.9046V10.155C70.2212 10.0494 70.1783 9.94837 70.1025 9.87385C70.0268 9.79933 69.9242 9.75733 69.8172 9.75697H67.5893C67.4823 9.75697 67.3797 9.7989 67.3041 9.87354C67.2285 9.94817 67.186 10.0494 67.186 10.155V23.3755C67.1851 23.4837 67.2265 23.5882 67.3016 23.6671C67.3767 23.746 67.4797 23.7934 67.5893 23.7993H69.9457C70.0554 23.7934 70.1586 23.7461 70.2339 23.6672C70.3092 23.5883 70.3509 23.4839 70.3504 23.3755V13.1452L70.407 13.1153C71.6585 12.4679 72.7303 12.1925 73.9983 12.1925C74.105 12.1922 74.2073 12.1501 74.2826 12.0755C74.358 12.0009 74.4003 11.8999 74.4003 11.7946L74.3975 9.97641Z" fill="#E2E7F0"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_70_62">
+                <rect width="74.4" height="24" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+          </div>
+        </body>
+        </html>
+  recorded_at: Thu, 03 Aug 2023 22:45:16 GMT
+- request:
+    method: get
+    uri: https://lend-a-toolza-be.onrender.com/api/v1/users/111/tools
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 502
+      message: Bad Gateway
+    headers:
+      Date:
+      - Thu, 03 Aug 2023 22:53:25 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7f1222fcbb202eb1-LAX
+      Cf-Cache-Status:
+      - DYNAMIC
+      X-Render-Routing:
+      - no-deploy
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: UTF-8
+      string: |
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <title>502</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com" />
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+            <link
+                    href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap"
+                    rel="stylesheet"
+            />
+            <style>
+                * {
+                    margin: 0;
+                    padding: 0;
+                }
+
+                html {
+                    font-size: 16px;
+                }
+
+                body {
+                    background: #232a55;
+                    color: #e2e7f0;
+                    font-family: "Inter", sans-serif;
+                    line-height: 1.4;
+                    font-weight: 500;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                    display: flex;
+                    flex-direction: column;
+                    min-height: 100vh;
+                }
+
+                main {
+                    flex: 1;
+                    width: 100%;
+                    max-width: 880px;
+                    margin: 4rem auto;
+                }
+
+                .wrapper {
+                    display: flex;
+                    padding: 0 2rem;
+                }
+
+                h1 {
+                    font-size: 2.25rem;
+                    font-weight: 700;
+                }
+
+                p {
+                    font-weight: 600;
+                    font-size: 1.3rem;
+                }
+
+                .svg-502 {
+                    margin-right: 2.5rem;
+                }
+
+                ul {
+                    list-style: none;
+                    padding-left: 2rem;
+                }
+
+                li {
+                    position: relative;
+                    padding-left: 2rem;
+                    font-size: 1.25rem;
+                }
+
+                li:before {
+                    content: "";
+                    position: absolute;
+                    width: 1rem;
+                    height: 1rem;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    margin: auto;
+                    border-radius: 0.8px 0.8px 0.8px 4.7px;
+                    transform: matrix(-0.91, -0.41, -0.41, 0.91, 0, 0);
+                }
+
+                .red-radish:before {
+                    background: #ff5c88;
+                }
+
+                .aurora-light:before {
+                    background: #8afadc;
+                }
+
+                .gold:before {
+                    background: #ffda5d;
+                }
+
+                a {
+                    color: inherit;
+                    text-decoration: none;
+                }
+
+                h1 {
+                    display: inline-block;
+                    margin-right: 1rem;
+                }
+
+                p {
+                    margin-bottom: 2rem;
+                }
+
+                ul {
+                    margin-bottom: 3.5rem;
+                }
+
+                li {
+                    margin-bottom: 2.5rem;
+                }
+
+                ul:last-of-type li:last-of-type {
+                    margin-bottom: 5rem;
+                }
+
+                header {
+                    margin-top: 0.75rem;
+                    margin-bottom: 1.5rem;
+                }
+
+                .tag {
+                    display: inline-block;
+                    padding: 6px 8px;
+                    font-family: inherit;
+                    font-weight: inherit;
+                    font-size: 1rem;
+                    font-weight: 700;
+                    line-height: 1.2;
+                    border: 1.5px solid #98a2b8;
+                    border-radius: 4px;
+                    color: #98a2b8;
+                    white-space: nowrap;
+                    vertical-align: text-bottom;
+                }
+
+                a {
+                    text-transform: uppercase;
+                    font-size: 0.9375rem;
+                    font-family: inherit;
+                    letter-spacing: 0.4px;
+                    white-space: nowrap;
+                    color: #fff;
+                }
+
+                .link-primary, .link-tertiary {
+                    display: inline-block;
+                    margin-right: 1rem;
+                    margin-bottom: 1rem;
+                }
+
+               .link-tertiary {
+                    border-bottom: 1px solid #fff;
+                }
+
+                .link-primary {
+                    padding: 11px 20px;
+                    background: #4f65f1;
+                    border-radius: 48px;
+                }
+
+                .link-primary:hover {
+                    background: #4448ec;
+                }
+
+                .text-502,
+                .text-or {
+                    display: none;
+                }
+
+                .powered-by {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  width: 100%;
+                  background: #181B38;
+                  padding: 2.5rem 0;
+                }
+
+                .logo {
+                  display: flex;
+                  align-items: baseline;
+                  font-size: 0.75rem;
+                  color: #fff;
+                }
+
+                .logo span {
+                  margin-right: 0.5rem;
+                }
+
+                @media screen and (max-width: 720px) {
+                    ul {
+                        padding-left: 0;
+                    }
+
+                    h1 {
+                        display: block;
+                    }
+
+                    p {
+                        margin-bottom: 1.5rem;
+                    }
+
+                    li {
+                        margin-bottom: 2rem;
+                    }
+
+                    .link-primary, .link-tertiary {
+                        margin-right: 0;
+                    }
+
+                    .tag {
+                        margin: 1rem auto 2rem;
+                    }
+
+                    .svg-502 {
+                        display: none;
+                    }
+
+                    .text-502 {
+                        display: inline;
+                    }
+
+                    footer {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+
+                    .text-or {
+                        display: block;
+                        margin: 1.5rem auto;
+                        text-transform: uppercase;
+                    }
+                }
+            </style>
+        </head>
+        <body>
+        <main>
+            <div class="wrapper">
+                <div>
+                    <svg    class="svg-502"
+                            width="170"
+                            height="600"
+                            viewBox="0 0 170 600"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <title>502</title>
+                        <path
+                                d="M150.708 149.832V147.928C150.708 106.516 120.958 94.854 79.784 94.854H72.882L75.738 62.01H140.474C143.092 62.01 145.234 60.106 145.234 57.488V33.688C145.234 31.07 143.092 29.166 140.474 29.166H47.892C45.512 29.166 43.37 31.308 43.132 33.688L35.754 122.462V122.7C35.754 124.366 37.182 126.032 39.086 126.032H75.976C102.394 126.032 109.772 131.982 109.772 147.928V149.832C109.772 166.254 105.012 175.774 82.402 175.774C73.596 175.774 54.556 174.584 39.562 172.918C39.324 172.918 39.086 172.918 39.086 172.918C36.706 172.918 34.802 174.584 34.802 177.202V196.004C34.802 199.336 37.182 200.526 39.562 201.24C53.366 205.524 71.216 208.142 86.448 208.142C128.098 208.142 150.708 187.436 150.708 149.832Z"
+                                fill="#181B38"
+                        />
+                        <path
+                                d="M156.896 324.936V304.468C156.896 247.348 133.096 224.024 92.636 224.024C52.176 224.024 28.614 247.348 28.614 304.468V324.936C28.614 382.056 52.176 405.142 92.636 405.142C133.096 405.142 156.896 382.056 156.896 324.936ZM116.198 324.936C116.198 362.54 105.964 371.346 92.636 371.346C79.308 371.346 69.312 362.54 69.312 324.936V304.468C69.312 266.864 79.308 257.82 92.636 257.82C105.964 257.82 116.198 266.864 116.198 304.468V324.936Z"
+                                fill="#181B38"
+                        />
+                        <path
+                                d="M151.66 466.482C151.66 436.018 134.762 421.024 90.97 421.024C73.358 421.024 53.604 424.356 40.276 428.402C37.896 429.116 35.754 430.544 35.754 432.924V451.488C35.754 454.106 37.42 456.248 40.038 456.248C40.276 456.248 40.276 456.248 40.514 456.248C55.032 454.82 72.882 453.154 87.4 453.154C106.678 453.154 112.628 457.2 112.628 467.434C112.628 478.62 109.058 480.524 88.352 495.042L66.456 510.512C48.368 523.364 34.088 544.784 34.088 570.964V595.24C34.088 597.858 36.23 600 38.848 600H144.758C147.376 600 149.518 597.858 149.518 595.24V570.726C149.518 568.108 147.376 566.204 144.758 566.204H69.55V565.252C69.55 548.592 83.83 538.358 104.06 524.792L124.29 511.226C141.902 499.326 151.66 485.76 151.66 466.482Z"
+                                fill="#181B38"
+                        />
+                        <path
+                                d="M134.708 140.832V138.928C134.708 97.516 104.958 85.854 63.784 85.854H56.882L59.738 53.01H124.474C127.092 53.01 129.234 51.106 129.234 48.488V24.688C129.234 22.07 127.092 20.166 124.474 20.166H31.892C29.512 20.166 27.37 22.308 27.132 24.688L19.754 113.462V113.7C19.754 115.366 21.182 117.032 23.086 117.032H59.976C86.394 117.032 93.772 122.982 93.772 138.928V140.832C93.772 157.254 89.012 166.774 66.402 166.774C57.596 166.774 38.556 165.584 23.562 163.918C23.324 163.918 23.086 163.918 23.086 163.918C20.706 163.918 18.802 165.584 18.802 168.202V187.004C18.802 190.336 21.182 191.526 23.562 192.24C37.366 196.524 55.216 199.142 70.448 199.142C112.098 199.142 134.708 178.436 134.708 140.832Z"
+                                fill="#E2E7F0"
+                        />
+                        <path
+                                d="M140.896 315.936V295.468C140.896 238.348 117.096 215.024 76.636 215.024C36.176 215.024 12.614 238.348 12.614 295.468V315.936C12.614 373.056 36.176 396.142 76.636 396.142C117.096 396.142 140.896 373.056 140.896 315.936ZM100.198 315.936C100.198 353.54 89.964 362.346 76.636 362.346C63.308 362.346 53.312 353.54 53.312 315.936V295.468C53.312 257.864 63.308 248.82 76.636 248.82C89.964 248.82 100.198 257.864 100.198 295.468V315.936Z"
+                                fill="#E2E7F0"
+                        />
+                        <path
+                                d="M135.66 457.482C135.66 427.018 118.762 412.024 74.97 412.024C57.358 412.024 37.604 415.356 24.276 419.402C21.896 420.116 19.754 421.544 19.754 423.924V442.488C19.754 445.106 21.42 447.248 24.038 447.248C24.276 447.248 24.276 447.248 24.514 447.248C39.032 445.82 56.882 444.154 71.4 444.154C90.678 444.154 96.628 448.2 96.628 458.434C96.628 469.62 93.058 471.524 72.352 486.042L50.456 501.512C32.368 514.364 18.088 535.784 18.088 561.964V586.24C18.088 588.858 20.23 591 22.848 591H128.758C131.376 591 133.518 588.858 133.518 586.24V561.726C133.518 559.108 131.376 557.204 128.758 557.204H53.55V556.252C53.55 539.592 67.83 529.358 88.06 515.792L108.29 502.226C125.902 490.326 135.66 476.76 135.66 457.482Z"
+                                fill="#E2E7F0"
+                        />
+                    </svg>
+                </div>
+                <div>
+                    <header>
+                        <h1><span class="text-502">502 </span>Bad Gateway</h1>
+                        <span class="tag">Request ID: 7f1222fcd3ce2eb1-LAX</span>
+                    </header>
+                    <p>If you are a visitor:</p>
+                    <ul>
+                        <li class="red-radish">Try again later or contact the site owner.</li>
+                    </ul>
+                    <p>If you are the site owner, your application was unable to serve this request. Common reasons include:</p>
+                    <ul>
+                        <li class="aurora-light">
+                            You recently created a service and it has not yet completed a
+                            successful deploy.
+                        </li>
+                        <li class="gold">
+                            Your application has crashed or failed its health check.
+                        </li>
+                    </ul>
+                    <footer>
+                        <a href="https://dashboard.render.com/" class="link-primary">
+                            Check Dashboard
+                        </a>
+                        <span class="text-or">or</span>
+                        <a href="https://status.render.com/" class="link-tertiary"> View System Status </a>
+                    </footer>
+                </div>
+            </div>
+        </main>
+        <div class="powered-by">
+          <div class="logo">
+            <span>Powered by</span>
+            <a href="https://render.com/">
+              <svg width="75" height="24" viewBox="0 0 75 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <title>Render</title>
+                <g clip-path="url(#clip0_70_62)">
+                <path d="M7.21155 9.97638C7.21155 9.87119 7.1692 9.7703 7.09382 9.69593C7.01844 9.62155 6.9162 9.57976 6.8096 9.57976C5.51151 9.56992 4.24737 9.98875 3.21833 10.7696L3.03877 10.9045V10.1549C3.03877 10.0494 2.99628 9.94814 2.92064 9.87351C2.845 9.79887 2.74241 9.75694 2.63544 9.75694H0.401951C0.295222 9.7573 0.192989 9.79939 0.117649 9.87399C0.0423086 9.94858 4.96047e-06 10.0496 5.58636e-06 10.1549V23.3754C-0.000552896 23.4834 0.0407821 23.5874 0.115527 23.6663C0.190273 23.7451 0.292758 23.7927 0.401951 23.7993H2.76252C2.87208 23.7934 2.9751 23.746 3.05021 23.6671C3.12531 23.5881 3.16672 23.4837 3.16585 23.3754V13.1452L3.22386 13.1152C4.47528 12.4678 5.54713 12.1925 6.81513 12.1925C6.9221 12.1925 7.02468 12.1506 7.10032 12.0759C7.17596 12.0013 7.21845 11.9001 7.21845 11.7945L7.21155 9.97638Z" fill="#E2E7F0"/>
+                <path d="M20.4551 15.8927C20.4551 11.9988 18.1595 9.57959 14.4674 9.57959C10.6841 9.57959 8.42578 11.9388 8.42578 15.8927V17.7627C8.42578 23.6996 13.4991 24.0009 14.5171 24.0009C16.8653 24.0009 17.8722 23.8646 19.4675 23.5743C19.8571 23.5088 19.9151 23.3916 19.9151 23.0291V21.3527C19.9151 21.1019 19.6457 21.0801 19.5642 21.0801H19.4869C18.3404 21.1877 16.5862 21.3322 14.7727 21.3322C11.8983 21.3322 11.5958 19.0152 11.5958 18.0135V17.8295H20.0573C20.2452 17.8295 20.4607 17.7695 20.4607 17.3061L20.4551 15.8927ZM17.2658 15.6747H11.6151V15.4648C11.6151 13.5089 12.7339 12.2469 14.4674 12.2469C16.1677 12.2469 17.2658 13.5089 17.2658 15.4648V15.6747Z" fill="#E2E7F0"/>
+                <path d="M34.9269 15.1287C34.9269 12.2433 34.4034 9.57471 30.605 9.57471C28.9254 9.57471 27.9695 9.84729 26.5123 10.7714L26.3438 10.8763V10.1526C26.3438 10.047 26.3013 9.94582 26.2257 9.87118C26.15 9.79654 26.0474 9.75461 25.9405 9.75461H23.7111C23.6044 9.75498 23.5022 9.79706 23.4268 9.87166C23.3515 9.94626 23.3092 10.0473 23.3092 10.1526V23.3731C23.3086 23.4811 23.35 23.5851 23.4247 23.6639C23.4994 23.7428 23.6019 23.7904 23.7111 23.797H26.0731C26.1825 23.7907 26.2853 23.7432 26.3604 23.6644C26.4354 23.5855 26.4769 23.4813 26.4764 23.3731V13.1442L26.5344 13.1143C27.7679 12.4764 28.6767 12.1915 29.4806 12.1915C31.5815 12.1915 31.7694 12.948 31.7694 15.1287V23.3704C31.7688 23.4785 31.8104 23.5828 31.8854 23.6617C31.9604 23.7405 32.0633 23.788 32.1727 23.7943H34.5319C34.6411 23.7876 34.7436 23.74 34.8183 23.6612C34.8931 23.5824 34.9344 23.4783 34.9338 23.3704L34.9269 15.1287Z" fill="#E2E7F0"/>
+                <path d="M49.4493 22.7686V5.17988C49.4507 5.12682 49.4414 5.074 49.4219 5.02454C49.4024 4.97508 49.3731 4.92998 49.3356 4.89188C49.2981 4.85378 49.2533 4.82346 49.2038 4.8027C49.1543 4.78194 49.1011 4.77116 49.0473 4.771H46.6868C46.6332 4.77152 46.5803 4.78256 46.5311 4.80348C46.4819 4.8244 46.4374 4.85478 46.4003 4.89285C46.3631 4.93091 46.334 4.97589 46.3147 5.02517C46.2953 5.07446 46.2861 5.12705 46.2876 5.17988V9.77162L46.1633 9.75526C45.3531 9.6436 44.5364 9.58487 43.7184 9.57945C39.8399 9.57945 37.7086 11.7942 37.7086 15.8108V17.7571C37.7086 21.7805 39.844 23.9953 43.7226 23.9953C45.45 23.9788 47.1693 23.7596 48.8443 23.3424C49.4009 23.2034 49.4493 23.0807 49.4493 22.7686ZM46.2862 21.2898L46.1992 21.3075C45.3768 21.4345 44.5452 21.4942 43.7129 21.4861C41.1852 21.4861 40.862 19.4962 40.862 17.7625V15.8108C40.862 14.0771 41.1852 12.0873 43.7129 12.0873C44.5413 12.1001 45.3682 12.1602 46.1895 12.2672L46.2834 12.2808L46.2862 21.2898Z" fill="#E2E7F0"/>
+                <path d="M64.3337 15.8927C64.3337 11.9988 62.0395 9.57959 58.3446 9.57959C54.5627 9.57959 52.3058 11.9388 52.3058 15.8927V17.7627C52.3058 23.6996 57.3791 24.0009 58.3971 24.0009C60.7452 24.0009 61.7508 23.8646 63.3461 23.5743C63.737 23.5088 63.7964 23.3916 63.7964 23.0291V21.3527C63.7964 21.1019 63.5202 21.0801 63.4442 21.0801H63.3669C62.2204 21.1877 60.4662 21.3322 58.6526 21.3322C55.7796 21.3322 55.4688 19.0152 55.4688 18.0135V17.8295H63.9304C64.1183 17.8295 64.3337 17.7695 64.3337 17.3061V15.8927ZM61.1444 15.6747H55.4937V15.4648C55.4937 13.5089 56.6139 12.2469 58.3446 12.2469C60.0463 12.2469 61.1444 13.5089 61.1444 15.4648V15.6747Z" fill="#E2E7F0"/>
+                <path d="M74.3975 9.97641C74.3975 9.87122 74.3552 9.77034 74.2798 9.69596C74.2044 9.62158 74.1022 9.57979 73.9956 9.57979C72.6954 9.56909 71.429 9.9874 70.3974 10.7683L70.222 10.9046V10.155C70.2212 10.0494 70.1783 9.94837 70.1025 9.87385C70.0268 9.79933 69.9242 9.75733 69.8172 9.75697H67.5893C67.4823 9.75697 67.3797 9.7989 67.3041 9.87354C67.2285 9.94817 67.186 10.0494 67.186 10.155V23.3755C67.1851 23.4837 67.2265 23.5882 67.3016 23.6671C67.3767 23.746 67.4797 23.7934 67.5893 23.7993H69.9457C70.0554 23.7934 70.1586 23.7461 70.2339 23.6672C70.3092 23.5883 70.3509 23.4839 70.3504 23.3755V13.1452L70.407 13.1153C71.6585 12.4679 72.7303 12.1925 73.9983 12.1925C74.105 12.1922 74.2073 12.1501 74.2826 12.0755C74.358 12.0009 74.4003 11.8999 74.4003 11.7946L74.3975 9.97641Z" fill="#E2E7F0"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_70_62">
+                <rect width="74.4" height="24" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+          </div>
+        </body>
+        </html>
+  recorded_at: Thu, 03 Aug 2023 22:53:25 GMT
+- request:
+    method: get
+    uri: https://lend-a-toolza-be.onrender.com/api/v1/users/120/tools
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 502
+      message: Bad Gateway
+    headers:
+      Date:
+      - Thu, 03 Aug 2023 22:53:44 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7f12236dbe9308ac-LAX
+      Cf-Cache-Status:
+      - DYNAMIC
+      X-Render-Routing:
+      - no-deploy
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: UTF-8
+      string: |
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <title>502</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com" />
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+            <link
+                    href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap"
+                    rel="stylesheet"
+            />
+            <style>
+                * {
+                    margin: 0;
+                    padding: 0;
+                }
+
+                html {
+                    font-size: 16px;
+                }
+
+                body {
+                    background: #232a55;
+                    color: #e2e7f0;
+                    font-family: "Inter", sans-serif;
+                    line-height: 1.4;
+                    font-weight: 500;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                    display: flex;
+                    flex-direction: column;
+                    min-height: 100vh;
+                }
+
+                main {
+                    flex: 1;
+                    width: 100%;
+                    max-width: 880px;
+                    margin: 4rem auto;
+                }
+
+                .wrapper {
+                    display: flex;
+                    padding: 0 2rem;
+                }
+
+                h1 {
+                    font-size: 2.25rem;
+                    font-weight: 700;
+                }
+
+                p {
+                    font-weight: 600;
+                    font-size: 1.3rem;
+                }
+
+                .svg-502 {
+                    margin-right: 2.5rem;
+                }
+
+                ul {
+                    list-style: none;
+                    padding-left: 2rem;
+                }
+
+                li {
+                    position: relative;
+                    padding-left: 2rem;
+                    font-size: 1.25rem;
+                }
+
+                li:before {
+                    content: "";
+                    position: absolute;
+                    width: 1rem;
+                    height: 1rem;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    margin: auto;
+                    border-radius: 0.8px 0.8px 0.8px 4.7px;
+                    transform: matrix(-0.91, -0.41, -0.41, 0.91, 0, 0);
+                }
+
+                .red-radish:before {
+                    background: #ff5c88;
+                }
+
+                .aurora-light:before {
+                    background: #8afadc;
+                }
+
+                .gold:before {
+                    background: #ffda5d;
+                }
+
+                a {
+                    color: inherit;
+                    text-decoration: none;
+                }
+
+                h1 {
+                    display: inline-block;
+                    margin-right: 1rem;
+                }
+
+                p {
+                    margin-bottom: 2rem;
+                }
+
+                ul {
+                    margin-bottom: 3.5rem;
+                }
+
+                li {
+                    margin-bottom: 2.5rem;
+                }
+
+                ul:last-of-type li:last-of-type {
+                    margin-bottom: 5rem;
+                }
+
+                header {
+                    margin-top: 0.75rem;
+                    margin-bottom: 1.5rem;
+                }
+
+                .tag {
+                    display: inline-block;
+                    padding: 6px 8px;
+                    font-family: inherit;
+                    font-weight: inherit;
+                    font-size: 1rem;
+                    font-weight: 700;
+                    line-height: 1.2;
+                    border: 1.5px solid #98a2b8;
+                    border-radius: 4px;
+                    color: #98a2b8;
+                    white-space: nowrap;
+                    vertical-align: text-bottom;
+                }
+
+                a {
+                    text-transform: uppercase;
+                    font-size: 0.9375rem;
+                    font-family: inherit;
+                    letter-spacing: 0.4px;
+                    white-space: nowrap;
+                    color: #fff;
+                }
+
+                .link-primary, .link-tertiary {
+                    display: inline-block;
+                    margin-right: 1rem;
+                    margin-bottom: 1rem;
+                }
+
+               .link-tertiary {
+                    border-bottom: 1px solid #fff;
+                }
+
+                .link-primary {
+                    padding: 11px 20px;
+                    background: #4f65f1;
+                    border-radius: 48px;
+                }
+
+                .link-primary:hover {
+                    background: #4448ec;
+                }
+
+                .text-502,
+                .text-or {
+                    display: none;
+                }
+
+                .powered-by {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  width: 100%;
+                  background: #181B38;
+                  padding: 2.5rem 0;
+                }
+
+                .logo {
+                  display: flex;
+                  align-items: baseline;
+                  font-size: 0.75rem;
+                  color: #fff;
+                }
+
+                .logo span {
+                  margin-right: 0.5rem;
+                }
+
+                @media screen and (max-width: 720px) {
+                    ul {
+                        padding-left: 0;
+                    }
+
+                    h1 {
+                        display: block;
+                    }
+
+                    p {
+                        margin-bottom: 1.5rem;
+                    }
+
+                    li {
+                        margin-bottom: 2rem;
+                    }
+
+                    .link-primary, .link-tertiary {
+                        margin-right: 0;
+                    }
+
+                    .tag {
+                        margin: 1rem auto 2rem;
+                    }
+
+                    .svg-502 {
+                        display: none;
+                    }
+
+                    .text-502 {
+                        display: inline;
+                    }
+
+                    footer {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+
+                    .text-or {
+                        display: block;
+                        margin: 1.5rem auto;
+                        text-transform: uppercase;
+                    }
+                }
+            </style>
+        </head>
+        <body>
+        <main>
+            <div class="wrapper">
+                <div>
+                    <svg    class="svg-502"
+                            width="170"
+                            height="600"
+                            viewBox="0 0 170 600"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <title>502</title>
+                        <path
+                                d="M150.708 149.832V147.928C150.708 106.516 120.958 94.854 79.784 94.854H72.882L75.738 62.01H140.474C143.092 62.01 145.234 60.106 145.234 57.488V33.688C145.234 31.07 143.092 29.166 140.474 29.166H47.892C45.512 29.166 43.37 31.308 43.132 33.688L35.754 122.462V122.7C35.754 124.366 37.182 126.032 39.086 126.032H75.976C102.394 126.032 109.772 131.982 109.772 147.928V149.832C109.772 166.254 105.012 175.774 82.402 175.774C73.596 175.774 54.556 174.584 39.562 172.918C39.324 172.918 39.086 172.918 39.086 172.918C36.706 172.918 34.802 174.584 34.802 177.202V196.004C34.802 199.336 37.182 200.526 39.562 201.24C53.366 205.524 71.216 208.142 86.448 208.142C128.098 208.142 150.708 187.436 150.708 149.832Z"
+                                fill="#181B38"
+                        />
+                        <path
+                                d="M156.896 324.936V304.468C156.896 247.348 133.096 224.024 92.636 224.024C52.176 224.024 28.614 247.348 28.614 304.468V324.936C28.614 382.056 52.176 405.142 92.636 405.142C133.096 405.142 156.896 382.056 156.896 324.936ZM116.198 324.936C116.198 362.54 105.964 371.346 92.636 371.346C79.308 371.346 69.312 362.54 69.312 324.936V304.468C69.312 266.864 79.308 257.82 92.636 257.82C105.964 257.82 116.198 266.864 116.198 304.468V324.936Z"
+                                fill="#181B38"
+                        />
+                        <path
+                                d="M151.66 466.482C151.66 436.018 134.762 421.024 90.97 421.024C73.358 421.024 53.604 424.356 40.276 428.402C37.896 429.116 35.754 430.544 35.754 432.924V451.488C35.754 454.106 37.42 456.248 40.038 456.248C40.276 456.248 40.276 456.248 40.514 456.248C55.032 454.82 72.882 453.154 87.4 453.154C106.678 453.154 112.628 457.2 112.628 467.434C112.628 478.62 109.058 480.524 88.352 495.042L66.456 510.512C48.368 523.364 34.088 544.784 34.088 570.964V595.24C34.088 597.858 36.23 600 38.848 600H144.758C147.376 600 149.518 597.858 149.518 595.24V570.726C149.518 568.108 147.376 566.204 144.758 566.204H69.55V565.252C69.55 548.592 83.83 538.358 104.06 524.792L124.29 511.226C141.902 499.326 151.66 485.76 151.66 466.482Z"
+                                fill="#181B38"
+                        />
+                        <path
+                                d="M134.708 140.832V138.928C134.708 97.516 104.958 85.854 63.784 85.854H56.882L59.738 53.01H124.474C127.092 53.01 129.234 51.106 129.234 48.488V24.688C129.234 22.07 127.092 20.166 124.474 20.166H31.892C29.512 20.166 27.37 22.308 27.132 24.688L19.754 113.462V113.7C19.754 115.366 21.182 117.032 23.086 117.032H59.976C86.394 117.032 93.772 122.982 93.772 138.928V140.832C93.772 157.254 89.012 166.774 66.402 166.774C57.596 166.774 38.556 165.584 23.562 163.918C23.324 163.918 23.086 163.918 23.086 163.918C20.706 163.918 18.802 165.584 18.802 168.202V187.004C18.802 190.336 21.182 191.526 23.562 192.24C37.366 196.524 55.216 199.142 70.448 199.142C112.098 199.142 134.708 178.436 134.708 140.832Z"
+                                fill="#E2E7F0"
+                        />
+                        <path
+                                d="M140.896 315.936V295.468C140.896 238.348 117.096 215.024 76.636 215.024C36.176 215.024 12.614 238.348 12.614 295.468V315.936C12.614 373.056 36.176 396.142 76.636 396.142C117.096 396.142 140.896 373.056 140.896 315.936ZM100.198 315.936C100.198 353.54 89.964 362.346 76.636 362.346C63.308 362.346 53.312 353.54 53.312 315.936V295.468C53.312 257.864 63.308 248.82 76.636 248.82C89.964 248.82 100.198 257.864 100.198 295.468V315.936Z"
+                                fill="#E2E7F0"
+                        />
+                        <path
+                                d="M135.66 457.482C135.66 427.018 118.762 412.024 74.97 412.024C57.358 412.024 37.604 415.356 24.276 419.402C21.896 420.116 19.754 421.544 19.754 423.924V442.488C19.754 445.106 21.42 447.248 24.038 447.248C24.276 447.248 24.276 447.248 24.514 447.248C39.032 445.82 56.882 444.154 71.4 444.154C90.678 444.154 96.628 448.2 96.628 458.434C96.628 469.62 93.058 471.524 72.352 486.042L50.456 501.512C32.368 514.364 18.088 535.784 18.088 561.964V586.24C18.088 588.858 20.23 591 22.848 591H128.758C131.376 591 133.518 588.858 133.518 586.24V561.726C133.518 559.108 131.376 557.204 128.758 557.204H53.55V556.252C53.55 539.592 67.83 529.358 88.06 515.792L108.29 502.226C125.902 490.326 135.66 476.76 135.66 457.482Z"
+                                fill="#E2E7F0"
+                        />
+                    </svg>
+                </div>
+                <div>
+                    <header>
+                        <h1><span class="text-502">502 </span>Bad Gateway</h1>
+                        <span class="tag">Request ID: 7f12236dd48108ac-LAX</span>
+                    </header>
+                    <p>If you are a visitor:</p>
+                    <ul>
+                        <li class="red-radish">Try again later or contact the site owner.</li>
+                    </ul>
+                    <p>If you are the site owner, your application was unable to serve this request. Common reasons include:</p>
+                    <ul>
+                        <li class="aurora-light">
+                            You recently created a service and it has not yet completed a
+                            successful deploy.
+                        </li>
+                        <li class="gold">
+                            Your application has crashed or failed its health check.
+                        </li>
+                    </ul>
+                    <footer>
+                        <a href="https://dashboard.render.com/" class="link-primary">
+                            Check Dashboard
+                        </a>
+                        <span class="text-or">or</span>
+                        <a href="https://status.render.com/" class="link-tertiary"> View System Status </a>
+                    </footer>
+                </div>
+            </div>
+        </main>
+        <div class="powered-by">
+          <div class="logo">
+            <span>Powered by</span>
+            <a href="https://render.com/">
+              <svg width="75" height="24" viewBox="0 0 75 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <title>Render</title>
+                <g clip-path="url(#clip0_70_62)">
+                <path d="M7.21155 9.97638C7.21155 9.87119 7.1692 9.7703 7.09382 9.69593C7.01844 9.62155 6.9162 9.57976 6.8096 9.57976C5.51151 9.56992 4.24737 9.98875 3.21833 10.7696L3.03877 10.9045V10.1549C3.03877 10.0494 2.99628 9.94814 2.92064 9.87351C2.845 9.79887 2.74241 9.75694 2.63544 9.75694H0.401951C0.295222 9.7573 0.192989 9.79939 0.117649 9.87399C0.0423086 9.94858 4.96047e-06 10.0496 5.58636e-06 10.1549V23.3754C-0.000552896 23.4834 0.0407821 23.5874 0.115527 23.6663C0.190273 23.7451 0.292758 23.7927 0.401951 23.7993H2.76252C2.87208 23.7934 2.9751 23.746 3.05021 23.6671C3.12531 23.5881 3.16672 23.4837 3.16585 23.3754V13.1452L3.22386 13.1152C4.47528 12.4678 5.54713 12.1925 6.81513 12.1925C6.9221 12.1925 7.02468 12.1506 7.10032 12.0759C7.17596 12.0013 7.21845 11.9001 7.21845 11.7945L7.21155 9.97638Z" fill="#E2E7F0"/>
+                <path d="M20.4551 15.8927C20.4551 11.9988 18.1595 9.57959 14.4674 9.57959C10.6841 9.57959 8.42578 11.9388 8.42578 15.8927V17.7627C8.42578 23.6996 13.4991 24.0009 14.5171 24.0009C16.8653 24.0009 17.8722 23.8646 19.4675 23.5743C19.8571 23.5088 19.9151 23.3916 19.9151 23.0291V21.3527C19.9151 21.1019 19.6457 21.0801 19.5642 21.0801H19.4869C18.3404 21.1877 16.5862 21.3322 14.7727 21.3322C11.8983 21.3322 11.5958 19.0152 11.5958 18.0135V17.8295H20.0573C20.2452 17.8295 20.4607 17.7695 20.4607 17.3061L20.4551 15.8927ZM17.2658 15.6747H11.6151V15.4648C11.6151 13.5089 12.7339 12.2469 14.4674 12.2469C16.1677 12.2469 17.2658 13.5089 17.2658 15.4648V15.6747Z" fill="#E2E7F0"/>
+                <path d="M34.9269 15.1287C34.9269 12.2433 34.4034 9.57471 30.605 9.57471C28.9254 9.57471 27.9695 9.84729 26.5123 10.7714L26.3438 10.8763V10.1526C26.3438 10.047 26.3013 9.94582 26.2257 9.87118C26.15 9.79654 26.0474 9.75461 25.9405 9.75461H23.7111C23.6044 9.75498 23.5022 9.79706 23.4268 9.87166C23.3515 9.94626 23.3092 10.0473 23.3092 10.1526V23.3731C23.3086 23.4811 23.35 23.5851 23.4247 23.6639C23.4994 23.7428 23.6019 23.7904 23.7111 23.797H26.0731C26.1825 23.7907 26.2853 23.7432 26.3604 23.6644C26.4354 23.5855 26.4769 23.4813 26.4764 23.3731V13.1442L26.5344 13.1143C27.7679 12.4764 28.6767 12.1915 29.4806 12.1915C31.5815 12.1915 31.7694 12.948 31.7694 15.1287V23.3704C31.7688 23.4785 31.8104 23.5828 31.8854 23.6617C31.9604 23.7405 32.0633 23.788 32.1727 23.7943H34.5319C34.6411 23.7876 34.7436 23.74 34.8183 23.6612C34.8931 23.5824 34.9344 23.4783 34.9338 23.3704L34.9269 15.1287Z" fill="#E2E7F0"/>
+                <path d="M49.4493 22.7686V5.17988C49.4507 5.12682 49.4414 5.074 49.4219 5.02454C49.4024 4.97508 49.3731 4.92998 49.3356 4.89188C49.2981 4.85378 49.2533 4.82346 49.2038 4.8027C49.1543 4.78194 49.1011 4.77116 49.0473 4.771H46.6868C46.6332 4.77152 46.5803 4.78256 46.5311 4.80348C46.4819 4.8244 46.4374 4.85478 46.4003 4.89285C46.3631 4.93091 46.334 4.97589 46.3147 5.02517C46.2953 5.07446 46.2861 5.12705 46.2876 5.17988V9.77162L46.1633 9.75526C45.3531 9.6436 44.5364 9.58487 43.7184 9.57945C39.8399 9.57945 37.7086 11.7942 37.7086 15.8108V17.7571C37.7086 21.7805 39.844 23.9953 43.7226 23.9953C45.45 23.9788 47.1693 23.7596 48.8443 23.3424C49.4009 23.2034 49.4493 23.0807 49.4493 22.7686ZM46.2862 21.2898L46.1992 21.3075C45.3768 21.4345 44.5452 21.4942 43.7129 21.4861C41.1852 21.4861 40.862 19.4962 40.862 17.7625V15.8108C40.862 14.0771 41.1852 12.0873 43.7129 12.0873C44.5413 12.1001 45.3682 12.1602 46.1895 12.2672L46.2834 12.2808L46.2862 21.2898Z" fill="#E2E7F0"/>
+                <path d="M64.3337 15.8927C64.3337 11.9988 62.0395 9.57959 58.3446 9.57959C54.5627 9.57959 52.3058 11.9388 52.3058 15.8927V17.7627C52.3058 23.6996 57.3791 24.0009 58.3971 24.0009C60.7452 24.0009 61.7508 23.8646 63.3461 23.5743C63.737 23.5088 63.7964 23.3916 63.7964 23.0291V21.3527C63.7964 21.1019 63.5202 21.0801 63.4442 21.0801H63.3669C62.2204 21.1877 60.4662 21.3322 58.6526 21.3322C55.7796 21.3322 55.4688 19.0152 55.4688 18.0135V17.8295H63.9304C64.1183 17.8295 64.3337 17.7695 64.3337 17.3061V15.8927ZM61.1444 15.6747H55.4937V15.4648C55.4937 13.5089 56.6139 12.2469 58.3446 12.2469C60.0463 12.2469 61.1444 13.5089 61.1444 15.4648V15.6747Z" fill="#E2E7F0"/>
+                <path d="M74.3975 9.97641C74.3975 9.87122 74.3552 9.77034 74.2798 9.69596C74.2044 9.62158 74.1022 9.57979 73.9956 9.57979C72.6954 9.56909 71.429 9.9874 70.3974 10.7683L70.222 10.9046V10.155C70.2212 10.0494 70.1783 9.94837 70.1025 9.87385C70.0268 9.79933 69.9242 9.75733 69.8172 9.75697H67.5893C67.4823 9.75697 67.3797 9.7989 67.3041 9.87354C67.2285 9.94817 67.186 10.0494 67.186 10.155V23.3755C67.1851 23.4837 67.2265 23.5882 67.3016 23.6671C67.3767 23.746 67.4797 23.7934 67.5893 23.7993H69.9457C70.0554 23.7934 70.1586 23.7461 70.2339 23.6672C70.3092 23.5883 70.3509 23.4839 70.3504 23.3755V13.1452L70.407 13.1153C71.6585 12.4679 72.7303 12.1925 73.9983 12.1925C74.105 12.1922 74.2073 12.1501 74.2826 12.0755C74.358 12.0009 74.4003 11.8999 74.4003 11.7946L74.3975 9.97641Z" fill="#E2E7F0"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_70_62">
+                <rect width="74.4" height="24" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+          </div>
+        </body>
+        </html>
+  recorded_at: Thu, 03 Aug 2023 22:53:44 GMT
+- request:
+    method: get
+    uri: https://lend-a-toolza-be.onrender.com/api/v1/users/129/tools
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 502
+      message: Bad Gateway
+    headers:
+      Date:
+      - Thu, 03 Aug 2023 22:53:59 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7f1223cb8decdb7e-LAX
+      Cf-Cache-Status:
+      - DYNAMIC
+      X-Render-Routing:
+      - no-deploy
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: UTF-8
+      string: |
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <title>502</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com" />
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+            <link
+                    href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap"
+                    rel="stylesheet"
+            />
+            <style>
+                * {
+                    margin: 0;
+                    padding: 0;
+                }
+
+                html {
+                    font-size: 16px;
+                }
+
+                body {
+                    background: #232a55;
+                    color: #e2e7f0;
+                    font-family: "Inter", sans-serif;
+                    line-height: 1.4;
+                    font-weight: 500;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                    display: flex;
+                    flex-direction: column;
+                    min-height: 100vh;
+                }
+
+                main {
+                    flex: 1;
+                    width: 100%;
+                    max-width: 880px;
+                    margin: 4rem auto;
+                }
+
+                .wrapper {
+                    display: flex;
+                    padding: 0 2rem;
+                }
+
+                h1 {
+                    font-size: 2.25rem;
+                    font-weight: 700;
+                }
+
+                p {
+                    font-weight: 600;
+                    font-size: 1.3rem;
+                }
+
+                .svg-502 {
+                    margin-right: 2.5rem;
+                }
+
+                ul {
+                    list-style: none;
+                    padding-left: 2rem;
+                }
+
+                li {
+                    position: relative;
+                    padding-left: 2rem;
+                    font-size: 1.25rem;
+                }
+
+                li:before {
+                    content: "";
+                    position: absolute;
+                    width: 1rem;
+                    height: 1rem;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    margin: auto;
+                    border-radius: 0.8px 0.8px 0.8px 4.7px;
+                    transform: matrix(-0.91, -0.41, -0.41, 0.91, 0, 0);
+                }
+
+                .red-radish:before {
+                    background: #ff5c88;
+                }
+
+                .aurora-light:before {
+                    background: #8afadc;
+                }
+
+                .gold:before {
+                    background: #ffda5d;
+                }
+
+                a {
+                    color: inherit;
+                    text-decoration: none;
+                }
+
+                h1 {
+                    display: inline-block;
+                    margin-right: 1rem;
+                }
+
+                p {
+                    margin-bottom: 2rem;
+                }
+
+                ul {
+                    margin-bottom: 3.5rem;
+                }
+
+                li {
+                    margin-bottom: 2.5rem;
+                }
+
+                ul:last-of-type li:last-of-type {
+                    margin-bottom: 5rem;
+                }
+
+                header {
+                    margin-top: 0.75rem;
+                    margin-bottom: 1.5rem;
+                }
+
+                .tag {
+                    display: inline-block;
+                    padding: 6px 8px;
+                    font-family: inherit;
+                    font-weight: inherit;
+                    font-size: 1rem;
+                    font-weight: 700;
+                    line-height: 1.2;
+                    border: 1.5px solid #98a2b8;
+                    border-radius: 4px;
+                    color: #98a2b8;
+                    white-space: nowrap;
+                    vertical-align: text-bottom;
+                }
+
+                a {
+                    text-transform: uppercase;
+                    font-size: 0.9375rem;
+                    font-family: inherit;
+                    letter-spacing: 0.4px;
+                    white-space: nowrap;
+                    color: #fff;
+                }
+
+                .link-primary, .link-tertiary {
+                    display: inline-block;
+                    margin-right: 1rem;
+                    margin-bottom: 1rem;
+                }
+
+               .link-tertiary {
+                    border-bottom: 1px solid #fff;
+                }
+
+                .link-primary {
+                    padding: 11px 20px;
+                    background: #4f65f1;
+                    border-radius: 48px;
+                }
+
+                .link-primary:hover {
+                    background: #4448ec;
+                }
+
+                .text-502,
+                .text-or {
+                    display: none;
+                }
+
+                .powered-by {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  width: 100%;
+                  background: #181B38;
+                  padding: 2.5rem 0;
+                }
+
+                .logo {
+                  display: flex;
+                  align-items: baseline;
+                  font-size: 0.75rem;
+                  color: #fff;
+                }
+
+                .logo span {
+                  margin-right: 0.5rem;
+                }
+
+                @media screen and (max-width: 720px) {
+                    ul {
+                        padding-left: 0;
+                    }
+
+                    h1 {
+                        display: block;
+                    }
+
+                    p {
+                        margin-bottom: 1.5rem;
+                    }
+
+                    li {
+                        margin-bottom: 2rem;
+                    }
+
+                    .link-primary, .link-tertiary {
+                        margin-right: 0;
+                    }
+
+                    .tag {
+                        margin: 1rem auto 2rem;
+                    }
+
+                    .svg-502 {
+                        display: none;
+                    }
+
+                    .text-502 {
+                        display: inline;
+                    }
+
+                    footer {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+
+                    .text-or {
+                        display: block;
+                        margin: 1.5rem auto;
+                        text-transform: uppercase;
+                    }
+                }
+            </style>
+        </head>
+        <body>
+        <main>
+            <div class="wrapper">
+                <div>
+                    <svg    class="svg-502"
+                            width="170"
+                            height="600"
+                            viewBox="0 0 170 600"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <title>502</title>
+                        <path
+                                d="M150.708 149.832V147.928C150.708 106.516 120.958 94.854 79.784 94.854H72.882L75.738 62.01H140.474C143.092 62.01 145.234 60.106 145.234 57.488V33.688C145.234 31.07 143.092 29.166 140.474 29.166H47.892C45.512 29.166 43.37 31.308 43.132 33.688L35.754 122.462V122.7C35.754 124.366 37.182 126.032 39.086 126.032H75.976C102.394 126.032 109.772 131.982 109.772 147.928V149.832C109.772 166.254 105.012 175.774 82.402 175.774C73.596 175.774 54.556 174.584 39.562 172.918C39.324 172.918 39.086 172.918 39.086 172.918C36.706 172.918 34.802 174.584 34.802 177.202V196.004C34.802 199.336 37.182 200.526 39.562 201.24C53.366 205.524 71.216 208.142 86.448 208.142C128.098 208.142 150.708 187.436 150.708 149.832Z"
+                                fill="#181B38"
+                        />
+                        <path
+                                d="M156.896 324.936V304.468C156.896 247.348 133.096 224.024 92.636 224.024C52.176 224.024 28.614 247.348 28.614 304.468V324.936C28.614 382.056 52.176 405.142 92.636 405.142C133.096 405.142 156.896 382.056 156.896 324.936ZM116.198 324.936C116.198 362.54 105.964 371.346 92.636 371.346C79.308 371.346 69.312 362.54 69.312 324.936V304.468C69.312 266.864 79.308 257.82 92.636 257.82C105.964 257.82 116.198 266.864 116.198 304.468V324.936Z"
+                                fill="#181B38"
+                        />
+                        <path
+                                d="M151.66 466.482C151.66 436.018 134.762 421.024 90.97 421.024C73.358 421.024 53.604 424.356 40.276 428.402C37.896 429.116 35.754 430.544 35.754 432.924V451.488C35.754 454.106 37.42 456.248 40.038 456.248C40.276 456.248 40.276 456.248 40.514 456.248C55.032 454.82 72.882 453.154 87.4 453.154C106.678 453.154 112.628 457.2 112.628 467.434C112.628 478.62 109.058 480.524 88.352 495.042L66.456 510.512C48.368 523.364 34.088 544.784 34.088 570.964V595.24C34.088 597.858 36.23 600 38.848 600H144.758C147.376 600 149.518 597.858 149.518 595.24V570.726C149.518 568.108 147.376 566.204 144.758 566.204H69.55V565.252C69.55 548.592 83.83 538.358 104.06 524.792L124.29 511.226C141.902 499.326 151.66 485.76 151.66 466.482Z"
+                                fill="#181B38"
+                        />
+                        <path
+                                d="M134.708 140.832V138.928C134.708 97.516 104.958 85.854 63.784 85.854H56.882L59.738 53.01H124.474C127.092 53.01 129.234 51.106 129.234 48.488V24.688C129.234 22.07 127.092 20.166 124.474 20.166H31.892C29.512 20.166 27.37 22.308 27.132 24.688L19.754 113.462V113.7C19.754 115.366 21.182 117.032 23.086 117.032H59.976C86.394 117.032 93.772 122.982 93.772 138.928V140.832C93.772 157.254 89.012 166.774 66.402 166.774C57.596 166.774 38.556 165.584 23.562 163.918C23.324 163.918 23.086 163.918 23.086 163.918C20.706 163.918 18.802 165.584 18.802 168.202V187.004C18.802 190.336 21.182 191.526 23.562 192.24C37.366 196.524 55.216 199.142 70.448 199.142C112.098 199.142 134.708 178.436 134.708 140.832Z"
+                                fill="#E2E7F0"
+                        />
+                        <path
+                                d="M140.896 315.936V295.468C140.896 238.348 117.096 215.024 76.636 215.024C36.176 215.024 12.614 238.348 12.614 295.468V315.936C12.614 373.056 36.176 396.142 76.636 396.142C117.096 396.142 140.896 373.056 140.896 315.936ZM100.198 315.936C100.198 353.54 89.964 362.346 76.636 362.346C63.308 362.346 53.312 353.54 53.312 315.936V295.468C53.312 257.864 63.308 248.82 76.636 248.82C89.964 248.82 100.198 257.864 100.198 295.468V315.936Z"
+                                fill="#E2E7F0"
+                        />
+                        <path
+                                d="M135.66 457.482C135.66 427.018 118.762 412.024 74.97 412.024C57.358 412.024 37.604 415.356 24.276 419.402C21.896 420.116 19.754 421.544 19.754 423.924V442.488C19.754 445.106 21.42 447.248 24.038 447.248C24.276 447.248 24.276 447.248 24.514 447.248C39.032 445.82 56.882 444.154 71.4 444.154C90.678 444.154 96.628 448.2 96.628 458.434C96.628 469.62 93.058 471.524 72.352 486.042L50.456 501.512C32.368 514.364 18.088 535.784 18.088 561.964V586.24C18.088 588.858 20.23 591 22.848 591H128.758C131.376 591 133.518 588.858 133.518 586.24V561.726C133.518 559.108 131.376 557.204 128.758 557.204H53.55V556.252C53.55 539.592 67.83 529.358 88.06 515.792L108.29 502.226C125.902 490.326 135.66 476.76 135.66 457.482Z"
+                                fill="#E2E7F0"
+                        />
+                    </svg>
+                </div>
+                <div>
+                    <header>
+                        <h1><span class="text-502">502 </span>Bad Gateway</h1>
+                        <span class="tag">Request ID: 7f1223cba326db7e-LAX</span>
+                    </header>
+                    <p>If you are a visitor:</p>
+                    <ul>
+                        <li class="red-radish">Try again later or contact the site owner.</li>
+                    </ul>
+                    <p>If you are the site owner, your application was unable to serve this request. Common reasons include:</p>
+                    <ul>
+                        <li class="aurora-light">
+                            You recently created a service and it has not yet completed a
+                            successful deploy.
+                        </li>
+                        <li class="gold">
+                            Your application has crashed or failed its health check.
+                        </li>
+                    </ul>
+                    <footer>
+                        <a href="https://dashboard.render.com/" class="link-primary">
+                            Check Dashboard
+                        </a>
+                        <span class="text-or">or</span>
+                        <a href="https://status.render.com/" class="link-tertiary"> View System Status </a>
+                    </footer>
+                </div>
+            </div>
+        </main>
+        <div class="powered-by">
+          <div class="logo">
+            <span>Powered by</span>
+            <a href="https://render.com/">
+              <svg width="75" height="24" viewBox="0 0 75 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <title>Render</title>
+                <g clip-path="url(#clip0_70_62)">
+                <path d="M7.21155 9.97638C7.21155 9.87119 7.1692 9.7703 7.09382 9.69593C7.01844 9.62155 6.9162 9.57976 6.8096 9.57976C5.51151 9.56992 4.24737 9.98875 3.21833 10.7696L3.03877 10.9045V10.1549C3.03877 10.0494 2.99628 9.94814 2.92064 9.87351C2.845 9.79887 2.74241 9.75694 2.63544 9.75694H0.401951C0.295222 9.7573 0.192989 9.79939 0.117649 9.87399C0.0423086 9.94858 4.96047e-06 10.0496 5.58636e-06 10.1549V23.3754C-0.000552896 23.4834 0.0407821 23.5874 0.115527 23.6663C0.190273 23.7451 0.292758 23.7927 0.401951 23.7993H2.76252C2.87208 23.7934 2.9751 23.746 3.05021 23.6671C3.12531 23.5881 3.16672 23.4837 3.16585 23.3754V13.1452L3.22386 13.1152C4.47528 12.4678 5.54713 12.1925 6.81513 12.1925C6.9221 12.1925 7.02468 12.1506 7.10032 12.0759C7.17596 12.0013 7.21845 11.9001 7.21845 11.7945L7.21155 9.97638Z" fill="#E2E7F0"/>
+                <path d="M20.4551 15.8927C20.4551 11.9988 18.1595 9.57959 14.4674 9.57959C10.6841 9.57959 8.42578 11.9388 8.42578 15.8927V17.7627C8.42578 23.6996 13.4991 24.0009 14.5171 24.0009C16.8653 24.0009 17.8722 23.8646 19.4675 23.5743C19.8571 23.5088 19.9151 23.3916 19.9151 23.0291V21.3527C19.9151 21.1019 19.6457 21.0801 19.5642 21.0801H19.4869C18.3404 21.1877 16.5862 21.3322 14.7727 21.3322C11.8983 21.3322 11.5958 19.0152 11.5958 18.0135V17.8295H20.0573C20.2452 17.8295 20.4607 17.7695 20.4607 17.3061L20.4551 15.8927ZM17.2658 15.6747H11.6151V15.4648C11.6151 13.5089 12.7339 12.2469 14.4674 12.2469C16.1677 12.2469 17.2658 13.5089 17.2658 15.4648V15.6747Z" fill="#E2E7F0"/>
+                <path d="M34.9269 15.1287C34.9269 12.2433 34.4034 9.57471 30.605 9.57471C28.9254 9.57471 27.9695 9.84729 26.5123 10.7714L26.3438 10.8763V10.1526C26.3438 10.047 26.3013 9.94582 26.2257 9.87118C26.15 9.79654 26.0474 9.75461 25.9405 9.75461H23.7111C23.6044 9.75498 23.5022 9.79706 23.4268 9.87166C23.3515 9.94626 23.3092 10.0473 23.3092 10.1526V23.3731C23.3086 23.4811 23.35 23.5851 23.4247 23.6639C23.4994 23.7428 23.6019 23.7904 23.7111 23.797H26.0731C26.1825 23.7907 26.2853 23.7432 26.3604 23.6644C26.4354 23.5855 26.4769 23.4813 26.4764 23.3731V13.1442L26.5344 13.1143C27.7679 12.4764 28.6767 12.1915 29.4806 12.1915C31.5815 12.1915 31.7694 12.948 31.7694 15.1287V23.3704C31.7688 23.4785 31.8104 23.5828 31.8854 23.6617C31.9604 23.7405 32.0633 23.788 32.1727 23.7943H34.5319C34.6411 23.7876 34.7436 23.74 34.8183 23.6612C34.8931 23.5824 34.9344 23.4783 34.9338 23.3704L34.9269 15.1287Z" fill="#E2E7F0"/>
+                <path d="M49.4493 22.7686V5.17988C49.4507 5.12682 49.4414 5.074 49.4219 5.02454C49.4024 4.97508 49.3731 4.92998 49.3356 4.89188C49.2981 4.85378 49.2533 4.82346 49.2038 4.8027C49.1543 4.78194 49.1011 4.77116 49.0473 4.771H46.6868C46.6332 4.77152 46.5803 4.78256 46.5311 4.80348C46.4819 4.8244 46.4374 4.85478 46.4003 4.89285C46.3631 4.93091 46.334 4.97589 46.3147 5.02517C46.2953 5.07446 46.2861 5.12705 46.2876 5.17988V9.77162L46.1633 9.75526C45.3531 9.6436 44.5364 9.58487 43.7184 9.57945C39.8399 9.57945 37.7086 11.7942 37.7086 15.8108V17.7571C37.7086 21.7805 39.844 23.9953 43.7226 23.9953C45.45 23.9788 47.1693 23.7596 48.8443 23.3424C49.4009 23.2034 49.4493 23.0807 49.4493 22.7686ZM46.2862 21.2898L46.1992 21.3075C45.3768 21.4345 44.5452 21.4942 43.7129 21.4861C41.1852 21.4861 40.862 19.4962 40.862 17.7625V15.8108C40.862 14.0771 41.1852 12.0873 43.7129 12.0873C44.5413 12.1001 45.3682 12.1602 46.1895 12.2672L46.2834 12.2808L46.2862 21.2898Z" fill="#E2E7F0"/>
+                <path d="M64.3337 15.8927C64.3337 11.9988 62.0395 9.57959 58.3446 9.57959C54.5627 9.57959 52.3058 11.9388 52.3058 15.8927V17.7627C52.3058 23.6996 57.3791 24.0009 58.3971 24.0009C60.7452 24.0009 61.7508 23.8646 63.3461 23.5743C63.737 23.5088 63.7964 23.3916 63.7964 23.0291V21.3527C63.7964 21.1019 63.5202 21.0801 63.4442 21.0801H63.3669C62.2204 21.1877 60.4662 21.3322 58.6526 21.3322C55.7796 21.3322 55.4688 19.0152 55.4688 18.0135V17.8295H63.9304C64.1183 17.8295 64.3337 17.7695 64.3337 17.3061V15.8927ZM61.1444 15.6747H55.4937V15.4648C55.4937 13.5089 56.6139 12.2469 58.3446 12.2469C60.0463 12.2469 61.1444 13.5089 61.1444 15.4648V15.6747Z" fill="#E2E7F0"/>
+                <path d="M74.3975 9.97641C74.3975 9.87122 74.3552 9.77034 74.2798 9.69596C74.2044 9.62158 74.1022 9.57979 73.9956 9.57979C72.6954 9.56909 71.429 9.9874 70.3974 10.7683L70.222 10.9046V10.155C70.2212 10.0494 70.1783 9.94837 70.1025 9.87385C70.0268 9.79933 69.9242 9.75733 69.8172 9.75697H67.5893C67.4823 9.75697 67.3797 9.7989 67.3041 9.87354C67.2285 9.94817 67.186 10.0494 67.186 10.155V23.3755C67.1851 23.4837 67.2265 23.5882 67.3016 23.6671C67.3767 23.746 67.4797 23.7934 67.5893 23.7993H69.9457C70.0554 23.7934 70.1586 23.7461 70.2339 23.6672C70.3092 23.5883 70.3509 23.4839 70.3504 23.3755V13.1452L70.407 13.1153C71.6585 12.4679 72.7303 12.1925 73.9983 12.1925C74.105 12.1922 74.2073 12.1501 74.2826 12.0755C74.358 12.0009 74.4003 11.8999 74.4003 11.7946L74.3975 9.97641Z" fill="#E2E7F0"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_70_62">
+                <rect width="74.4" height="24" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+          </div>
+        </body>
+        </html>
+  recorded_at: Thu, 03 Aug 2023 22:53:59 GMT
+- request:
+    method: get
+    uri: https://lend-a-toolza-be.onrender.com/api/v1/users/156/tools
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 502
+      message: Bad Gateway
+    headers:
+      Date:
+      - Thu, 03 Aug 2023 22:57:29 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7f1228edeb5f0fd0-LAX
+      Cf-Cache-Status:
+      - DYNAMIC
+      X-Render-Routing:
+      - no-deploy
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: UTF-8
+      string: |
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <title>502</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com" />
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+            <link
+                    href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap"
+                    rel="stylesheet"
+            />
+            <style>
+                * {
+                    margin: 0;
+                    padding: 0;
+                }
+
+                html {
+                    font-size: 16px;
+                }
+
+                body {
+                    background: #232a55;
+                    color: #e2e7f0;
+                    font-family: "Inter", sans-serif;
+                    line-height: 1.4;
+                    font-weight: 500;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                    display: flex;
+                    flex-direction: column;
+                    min-height: 100vh;
+                }
+
+                main {
+                    flex: 1;
+                    width: 100%;
+                    max-width: 880px;
+                    margin: 4rem auto;
+                }
+
+                .wrapper {
+                    display: flex;
+                    padding: 0 2rem;
+                }
+
+                h1 {
+                    font-size: 2.25rem;
+                    font-weight: 700;
+                }
+
+                p {
+                    font-weight: 600;
+                    font-size: 1.3rem;
+                }
+
+                .svg-502 {
+                    margin-right: 2.5rem;
+                }
+
+                ul {
+                    list-style: none;
+                    padding-left: 2rem;
+                }
+
+                li {
+                    position: relative;
+                    padding-left: 2rem;
+                    font-size: 1.25rem;
+                }
+
+                li:before {
+                    content: "";
+                    position: absolute;
+                    width: 1rem;
+                    height: 1rem;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    margin: auto;
+                    border-radius: 0.8px 0.8px 0.8px 4.7px;
+                    transform: matrix(-0.91, -0.41, -0.41, 0.91, 0, 0);
+                }
+
+                .red-radish:before {
+                    background: #ff5c88;
+                }
+
+                .aurora-light:before {
+                    background: #8afadc;
+                }
+
+                .gold:before {
+                    background: #ffda5d;
+                }
+
+                a {
+                    color: inherit;
+                    text-decoration: none;
+                }
+
+                h1 {
+                    display: inline-block;
+                    margin-right: 1rem;
+                }
+
+                p {
+                    margin-bottom: 2rem;
+                }
+
+                ul {
+                    margin-bottom: 3.5rem;
+                }
+
+                li {
+                    margin-bottom: 2.5rem;
+                }
+
+                ul:last-of-type li:last-of-type {
+                    margin-bottom: 5rem;
+                }
+
+                header {
+                    margin-top: 0.75rem;
+                    margin-bottom: 1.5rem;
+                }
+
+                .tag {
+                    display: inline-block;
+                    padding: 6px 8px;
+                    font-family: inherit;
+                    font-weight: inherit;
+                    font-size: 1rem;
+                    font-weight: 700;
+                    line-height: 1.2;
+                    border: 1.5px solid #98a2b8;
+                    border-radius: 4px;
+                    color: #98a2b8;
+                    white-space: nowrap;
+                    vertical-align: text-bottom;
+                }
+
+                a {
+                    text-transform: uppercase;
+                    font-size: 0.9375rem;
+                    font-family: inherit;
+                    letter-spacing: 0.4px;
+                    white-space: nowrap;
+                    color: #fff;
+                }
+
+                .link-primary, .link-tertiary {
+                    display: inline-block;
+                    margin-right: 1rem;
+                    margin-bottom: 1rem;
+                }
+
+               .link-tertiary {
+                    border-bottom: 1px solid #fff;
+                }
+
+                .link-primary {
+                    padding: 11px 20px;
+                    background: #4f65f1;
+                    border-radius: 48px;
+                }
+
+                .link-primary:hover {
+                    background: #4448ec;
+                }
+
+                .text-502,
+                .text-or {
+                    display: none;
+                }
+
+                .powered-by {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  width: 100%;
+                  background: #181B38;
+                  padding: 2.5rem 0;
+                }
+
+                .logo {
+                  display: flex;
+                  align-items: baseline;
+                  font-size: 0.75rem;
+                  color: #fff;
+                }
+
+                .logo span {
+                  margin-right: 0.5rem;
+                }
+
+                @media screen and (max-width: 720px) {
+                    ul {
+                        padding-left: 0;
+                    }
+
+                    h1 {
+                        display: block;
+                    }
+
+                    p {
+                        margin-bottom: 1.5rem;
+                    }
+
+                    li {
+                        margin-bottom: 2rem;
+                    }
+
+                    .link-primary, .link-tertiary {
+                        margin-right: 0;
+                    }
+
+                    .tag {
+                        margin: 1rem auto 2rem;
+                    }
+
+                    .svg-502 {
+                        display: none;
+                    }
+
+                    .text-502 {
+                        display: inline;
+                    }
+
+                    footer {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+
+                    .text-or {
+                        display: block;
+                        margin: 1.5rem auto;
+                        text-transform: uppercase;
+                    }
+                }
+            </style>
+        </head>
+        <body>
+        <main>
+            <div class="wrapper">
+                <div>
+                    <svg    class="svg-502"
+                            width="170"
+                            height="600"
+                            viewBox="0 0 170 600"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <title>502</title>
+                        <path
+                                d="M150.708 149.832V147.928C150.708 106.516 120.958 94.854 79.784 94.854H72.882L75.738 62.01H140.474C143.092 62.01 145.234 60.106 145.234 57.488V33.688C145.234 31.07 143.092 29.166 140.474 29.166H47.892C45.512 29.166 43.37 31.308 43.132 33.688L35.754 122.462V122.7C35.754 124.366 37.182 126.032 39.086 126.032H75.976C102.394 126.032 109.772 131.982 109.772 147.928V149.832C109.772 166.254 105.012 175.774 82.402 175.774C73.596 175.774 54.556 174.584 39.562 172.918C39.324 172.918 39.086 172.918 39.086 172.918C36.706 172.918 34.802 174.584 34.802 177.202V196.004C34.802 199.336 37.182 200.526 39.562 201.24C53.366 205.524 71.216 208.142 86.448 208.142C128.098 208.142 150.708 187.436 150.708 149.832Z"
+                                fill="#181B38"
+                        />
+                        <path
+                                d="M156.896 324.936V304.468C156.896 247.348 133.096 224.024 92.636 224.024C52.176 224.024 28.614 247.348 28.614 304.468V324.936C28.614 382.056 52.176 405.142 92.636 405.142C133.096 405.142 156.896 382.056 156.896 324.936ZM116.198 324.936C116.198 362.54 105.964 371.346 92.636 371.346C79.308 371.346 69.312 362.54 69.312 324.936V304.468C69.312 266.864 79.308 257.82 92.636 257.82C105.964 257.82 116.198 266.864 116.198 304.468V324.936Z"
+                                fill="#181B38"
+                        />
+                        <path
+                                d="M151.66 466.482C151.66 436.018 134.762 421.024 90.97 421.024C73.358 421.024 53.604 424.356 40.276 428.402C37.896 429.116 35.754 430.544 35.754 432.924V451.488C35.754 454.106 37.42 456.248 40.038 456.248C40.276 456.248 40.276 456.248 40.514 456.248C55.032 454.82 72.882 453.154 87.4 453.154C106.678 453.154 112.628 457.2 112.628 467.434C112.628 478.62 109.058 480.524 88.352 495.042L66.456 510.512C48.368 523.364 34.088 544.784 34.088 570.964V595.24C34.088 597.858 36.23 600 38.848 600H144.758C147.376 600 149.518 597.858 149.518 595.24V570.726C149.518 568.108 147.376 566.204 144.758 566.204H69.55V565.252C69.55 548.592 83.83 538.358 104.06 524.792L124.29 511.226C141.902 499.326 151.66 485.76 151.66 466.482Z"
+                                fill="#181B38"
+                        />
+                        <path
+                                d="M134.708 140.832V138.928C134.708 97.516 104.958 85.854 63.784 85.854H56.882L59.738 53.01H124.474C127.092 53.01 129.234 51.106 129.234 48.488V24.688C129.234 22.07 127.092 20.166 124.474 20.166H31.892C29.512 20.166 27.37 22.308 27.132 24.688L19.754 113.462V113.7C19.754 115.366 21.182 117.032 23.086 117.032H59.976C86.394 117.032 93.772 122.982 93.772 138.928V140.832C93.772 157.254 89.012 166.774 66.402 166.774C57.596 166.774 38.556 165.584 23.562 163.918C23.324 163.918 23.086 163.918 23.086 163.918C20.706 163.918 18.802 165.584 18.802 168.202V187.004C18.802 190.336 21.182 191.526 23.562 192.24C37.366 196.524 55.216 199.142 70.448 199.142C112.098 199.142 134.708 178.436 134.708 140.832Z"
+                                fill="#E2E7F0"
+                        />
+                        <path
+                                d="M140.896 315.936V295.468C140.896 238.348 117.096 215.024 76.636 215.024C36.176 215.024 12.614 238.348 12.614 295.468V315.936C12.614 373.056 36.176 396.142 76.636 396.142C117.096 396.142 140.896 373.056 140.896 315.936ZM100.198 315.936C100.198 353.54 89.964 362.346 76.636 362.346C63.308 362.346 53.312 353.54 53.312 315.936V295.468C53.312 257.864 63.308 248.82 76.636 248.82C89.964 248.82 100.198 257.864 100.198 295.468V315.936Z"
+                                fill="#E2E7F0"
+                        />
+                        <path
+                                d="M135.66 457.482C135.66 427.018 118.762 412.024 74.97 412.024C57.358 412.024 37.604 415.356 24.276 419.402C21.896 420.116 19.754 421.544 19.754 423.924V442.488C19.754 445.106 21.42 447.248 24.038 447.248C24.276 447.248 24.276 447.248 24.514 447.248C39.032 445.82 56.882 444.154 71.4 444.154C90.678 444.154 96.628 448.2 96.628 458.434C96.628 469.62 93.058 471.524 72.352 486.042L50.456 501.512C32.368 514.364 18.088 535.784 18.088 561.964V586.24C18.088 588.858 20.23 591 22.848 591H128.758C131.376 591 133.518 588.858 133.518 586.24V561.726C133.518 559.108 131.376 557.204 128.758 557.204H53.55V556.252C53.55 539.592 67.83 529.358 88.06 515.792L108.29 502.226C125.902 490.326 135.66 476.76 135.66 457.482Z"
+                                fill="#E2E7F0"
+                        />
+                    </svg>
+                </div>
+                <div>
+                    <header>
+                        <h1><span class="text-502">502 </span>Bad Gateway</h1>
+                        <span class="tag">Request ID: 7f1228edf5640fd0-LAX</span>
+                    </header>
+                    <p>If you are a visitor:</p>
+                    <ul>
+                        <li class="red-radish">Try again later or contact the site owner.</li>
+                    </ul>
+                    <p>If you are the site owner, your application was unable to serve this request. Common reasons include:</p>
+                    <ul>
+                        <li class="aurora-light">
+                            You recently created a service and it has not yet completed a
+                            successful deploy.
+                        </li>
+                        <li class="gold">
+                            Your application has crashed or failed its health check.
+                        </li>
+                    </ul>
+                    <footer>
+                        <a href="https://dashboard.render.com/" class="link-primary">
+                            Check Dashboard
+                        </a>
+                        <span class="text-or">or</span>
+                        <a href="https://status.render.com/" class="link-tertiary"> View System Status </a>
+                    </footer>
+                </div>
+            </div>
+        </main>
+        <div class="powered-by">
+          <div class="logo">
+            <span>Powered by</span>
+            <a href="https://render.com/">
+              <svg width="75" height="24" viewBox="0 0 75 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <title>Render</title>
+                <g clip-path="url(#clip0_70_62)">
+                <path d="M7.21155 9.97638C7.21155 9.87119 7.1692 9.7703 7.09382 9.69593C7.01844 9.62155 6.9162 9.57976 6.8096 9.57976C5.51151 9.56992 4.24737 9.98875 3.21833 10.7696L3.03877 10.9045V10.1549C3.03877 10.0494 2.99628 9.94814 2.92064 9.87351C2.845 9.79887 2.74241 9.75694 2.63544 9.75694H0.401951C0.295222 9.7573 0.192989 9.79939 0.117649 9.87399C0.0423086 9.94858 4.96047e-06 10.0496 5.58636e-06 10.1549V23.3754C-0.000552896 23.4834 0.0407821 23.5874 0.115527 23.6663C0.190273 23.7451 0.292758 23.7927 0.401951 23.7993H2.76252C2.87208 23.7934 2.9751 23.746 3.05021 23.6671C3.12531 23.5881 3.16672 23.4837 3.16585 23.3754V13.1452L3.22386 13.1152C4.47528 12.4678 5.54713 12.1925 6.81513 12.1925C6.9221 12.1925 7.02468 12.1506 7.10032 12.0759C7.17596 12.0013 7.21845 11.9001 7.21845 11.7945L7.21155 9.97638Z" fill="#E2E7F0"/>
+                <path d="M20.4551 15.8927C20.4551 11.9988 18.1595 9.57959 14.4674 9.57959C10.6841 9.57959 8.42578 11.9388 8.42578 15.8927V17.7627C8.42578 23.6996 13.4991 24.0009 14.5171 24.0009C16.8653 24.0009 17.8722 23.8646 19.4675 23.5743C19.8571 23.5088 19.9151 23.3916 19.9151 23.0291V21.3527C19.9151 21.1019 19.6457 21.0801 19.5642 21.0801H19.4869C18.3404 21.1877 16.5862 21.3322 14.7727 21.3322C11.8983 21.3322 11.5958 19.0152 11.5958 18.0135V17.8295H20.0573C20.2452 17.8295 20.4607 17.7695 20.4607 17.3061L20.4551 15.8927ZM17.2658 15.6747H11.6151V15.4648C11.6151 13.5089 12.7339 12.2469 14.4674 12.2469C16.1677 12.2469 17.2658 13.5089 17.2658 15.4648V15.6747Z" fill="#E2E7F0"/>
+                <path d="M34.9269 15.1287C34.9269 12.2433 34.4034 9.57471 30.605 9.57471C28.9254 9.57471 27.9695 9.84729 26.5123 10.7714L26.3438 10.8763V10.1526C26.3438 10.047 26.3013 9.94582 26.2257 9.87118C26.15 9.79654 26.0474 9.75461 25.9405 9.75461H23.7111C23.6044 9.75498 23.5022 9.79706 23.4268 9.87166C23.3515 9.94626 23.3092 10.0473 23.3092 10.1526V23.3731C23.3086 23.4811 23.35 23.5851 23.4247 23.6639C23.4994 23.7428 23.6019 23.7904 23.7111 23.797H26.0731C26.1825 23.7907 26.2853 23.7432 26.3604 23.6644C26.4354 23.5855 26.4769 23.4813 26.4764 23.3731V13.1442L26.5344 13.1143C27.7679 12.4764 28.6767 12.1915 29.4806 12.1915C31.5815 12.1915 31.7694 12.948 31.7694 15.1287V23.3704C31.7688 23.4785 31.8104 23.5828 31.8854 23.6617C31.9604 23.7405 32.0633 23.788 32.1727 23.7943H34.5319C34.6411 23.7876 34.7436 23.74 34.8183 23.6612C34.8931 23.5824 34.9344 23.4783 34.9338 23.3704L34.9269 15.1287Z" fill="#E2E7F0"/>
+                <path d="M49.4493 22.7686V5.17988C49.4507 5.12682 49.4414 5.074 49.4219 5.02454C49.4024 4.97508 49.3731 4.92998 49.3356 4.89188C49.2981 4.85378 49.2533 4.82346 49.2038 4.8027C49.1543 4.78194 49.1011 4.77116 49.0473 4.771H46.6868C46.6332 4.77152 46.5803 4.78256 46.5311 4.80348C46.4819 4.8244 46.4374 4.85478 46.4003 4.89285C46.3631 4.93091 46.334 4.97589 46.3147 5.02517C46.2953 5.07446 46.2861 5.12705 46.2876 5.17988V9.77162L46.1633 9.75526C45.3531 9.6436 44.5364 9.58487 43.7184 9.57945C39.8399 9.57945 37.7086 11.7942 37.7086 15.8108V17.7571C37.7086 21.7805 39.844 23.9953 43.7226 23.9953C45.45 23.9788 47.1693 23.7596 48.8443 23.3424C49.4009 23.2034 49.4493 23.0807 49.4493 22.7686ZM46.2862 21.2898L46.1992 21.3075C45.3768 21.4345 44.5452 21.4942 43.7129 21.4861C41.1852 21.4861 40.862 19.4962 40.862 17.7625V15.8108C40.862 14.0771 41.1852 12.0873 43.7129 12.0873C44.5413 12.1001 45.3682 12.1602 46.1895 12.2672L46.2834 12.2808L46.2862 21.2898Z" fill="#E2E7F0"/>
+                <path d="M64.3337 15.8927C64.3337 11.9988 62.0395 9.57959 58.3446 9.57959C54.5627 9.57959 52.3058 11.9388 52.3058 15.8927V17.7627C52.3058 23.6996 57.3791 24.0009 58.3971 24.0009C60.7452 24.0009 61.7508 23.8646 63.3461 23.5743C63.737 23.5088 63.7964 23.3916 63.7964 23.0291V21.3527C63.7964 21.1019 63.5202 21.0801 63.4442 21.0801H63.3669C62.2204 21.1877 60.4662 21.3322 58.6526 21.3322C55.7796 21.3322 55.4688 19.0152 55.4688 18.0135V17.8295H63.9304C64.1183 17.8295 64.3337 17.7695 64.3337 17.3061V15.8927ZM61.1444 15.6747H55.4937V15.4648C55.4937 13.5089 56.6139 12.2469 58.3446 12.2469C60.0463 12.2469 61.1444 13.5089 61.1444 15.4648V15.6747Z" fill="#E2E7F0"/>
+                <path d="M74.3975 9.97641C74.3975 9.87122 74.3552 9.77034 74.2798 9.69596C74.2044 9.62158 74.1022 9.57979 73.9956 9.57979C72.6954 9.56909 71.429 9.9874 70.3974 10.7683L70.222 10.9046V10.155C70.2212 10.0494 70.1783 9.94837 70.1025 9.87385C70.0268 9.79933 69.9242 9.75733 69.8172 9.75697H67.5893C67.4823 9.75697 67.3797 9.7989 67.3041 9.87354C67.2285 9.94817 67.186 10.0494 67.186 10.155V23.3755C67.1851 23.4837 67.2265 23.5882 67.3016 23.6671C67.3767 23.746 67.4797 23.7934 67.5893 23.7993H69.9457C70.0554 23.7934 70.1586 23.7461 70.2339 23.6672C70.3092 23.5883 70.3509 23.4839 70.3504 23.3755V13.1452L70.407 13.1153C71.6585 12.4679 72.7303 12.1925 73.9983 12.1925C74.105 12.1922 74.2073 12.1501 74.2826 12.0755C74.358 12.0009 74.4003 11.8999 74.4003 11.7946L74.3975 9.97641Z" fill="#E2E7F0"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_70_62">
+                <rect width="74.4" height="24" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+          </div>
+        </body>
+        </html>
+  recorded_at: Thu, 03 Aug 2023 22:57:29 GMT
+- request:
+    method: get
+    uri: https://lend-a-toolza-be.onrender.com/api/v1/users/171/tools
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 502
+      message: Bad Gateway
+    headers:
+      Date:
+      - Thu, 03 Aug 2023 23:01:12 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7f122e5cbbbe1007-LAX
+      Cf-Cache-Status:
+      - DYNAMIC
+      X-Render-Routing:
+      - no-deploy
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: UTF-8
+      string: |
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <title>502</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com" />
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+            <link
+                    href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap"
+                    rel="stylesheet"
+            />
+            <style>
+                * {
+                    margin: 0;
+                    padding: 0;
+                }
+
+                html {
+                    font-size: 16px;
+                }
+
+                body {
+                    background: #232a55;
+                    color: #e2e7f0;
+                    font-family: "Inter", sans-serif;
+                    line-height: 1.4;
+                    font-weight: 500;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                    display: flex;
+                    flex-direction: column;
+                    min-height: 100vh;
+                }
+
+                main {
+                    flex: 1;
+                    width: 100%;
+                    max-width: 880px;
+                    margin: 4rem auto;
+                }
+
+                .wrapper {
+                    display: flex;
+                    padding: 0 2rem;
+                }
+
+                h1 {
+                    font-size: 2.25rem;
+                    font-weight: 700;
+                }
+
+                p {
+                    font-weight: 600;
+                    font-size: 1.3rem;
+                }
+
+                .svg-502 {
+                    margin-right: 2.5rem;
+                }
+
+                ul {
+                    list-style: none;
+                    padding-left: 2rem;
+                }
+
+                li {
+                    position: relative;
+                    padding-left: 2rem;
+                    font-size: 1.25rem;
+                }
+
+                li:before {
+                    content: "";
+                    position: absolute;
+                    width: 1rem;
+                    height: 1rem;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    margin: auto;
+                    border-radius: 0.8px 0.8px 0.8px 4.7px;
+                    transform: matrix(-0.91, -0.41, -0.41, 0.91, 0, 0);
+                }
+
+                .red-radish:before {
+                    background: #ff5c88;
+                }
+
+                .aurora-light:before {
+                    background: #8afadc;
+                }
+
+                .gold:before {
+                    background: #ffda5d;
+                }
+
+                a {
+                    color: inherit;
+                    text-decoration: none;
+                }
+
+                h1 {
+                    display: inline-block;
+                    margin-right: 1rem;
+                }
+
+                p {
+                    margin-bottom: 2rem;
+                }
+
+                ul {
+                    margin-bottom: 3.5rem;
+                }
+
+                li {
+                    margin-bottom: 2.5rem;
+                }
+
+                ul:last-of-type li:last-of-type {
+                    margin-bottom: 5rem;
+                }
+
+                header {
+                    margin-top: 0.75rem;
+                    margin-bottom: 1.5rem;
+                }
+
+                .tag {
+                    display: inline-block;
+                    padding: 6px 8px;
+                    font-family: inherit;
+                    font-weight: inherit;
+                    font-size: 1rem;
+                    font-weight: 700;
+                    line-height: 1.2;
+                    border: 1.5px solid #98a2b8;
+                    border-radius: 4px;
+                    color: #98a2b8;
+                    white-space: nowrap;
+                    vertical-align: text-bottom;
+                }
+
+                a {
+                    text-transform: uppercase;
+                    font-size: 0.9375rem;
+                    font-family: inherit;
+                    letter-spacing: 0.4px;
+                    white-space: nowrap;
+                    color: #fff;
+                }
+
+                .link-primary, .link-tertiary {
+                    display: inline-block;
+                    margin-right: 1rem;
+                    margin-bottom: 1rem;
+                }
+
+               .link-tertiary {
+                    border-bottom: 1px solid #fff;
+                }
+
+                .link-primary {
+                    padding: 11px 20px;
+                    background: #4f65f1;
+                    border-radius: 48px;
+                }
+
+                .link-primary:hover {
+                    background: #4448ec;
+                }
+
+                .text-502,
+                .text-or {
+                    display: none;
+                }
+
+                .powered-by {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  width: 100%;
+                  background: #181B38;
+                  padding: 2.5rem 0;
+                }
+
+                .logo {
+                  display: flex;
+                  align-items: baseline;
+                  font-size: 0.75rem;
+                  color: #fff;
+                }
+
+                .logo span {
+                  margin-right: 0.5rem;
+                }
+
+                @media screen and (max-width: 720px) {
+                    ul {
+                        padding-left: 0;
+                    }
+
+                    h1 {
+                        display: block;
+                    }
+
+                    p {
+                        margin-bottom: 1.5rem;
+                    }
+
+                    li {
+                        margin-bottom: 2rem;
+                    }
+
+                    .link-primary, .link-tertiary {
+                        margin-right: 0;
+                    }
+
+                    .tag {
+                        margin: 1rem auto 2rem;
+                    }
+
+                    .svg-502 {
+                        display: none;
+                    }
+
+                    .text-502 {
+                        display: inline;
+                    }
+
+                    footer {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+
+                    .text-or {
+                        display: block;
+                        margin: 1.5rem auto;
+                        text-transform: uppercase;
+                    }
+                }
+            </style>
+        </head>
+        <body>
+        <main>
+            <div class="wrapper">
+                <div>
+                    <svg    class="svg-502"
+                            width="170"
+                            height="600"
+                            viewBox="0 0 170 600"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <title>502</title>
+                        <path
+                                d="M150.708 149.832V147.928C150.708 106.516 120.958 94.854 79.784 94.854H72.882L75.738 62.01H140.474C143.092 62.01 145.234 60.106 145.234 57.488V33.688C145.234 31.07 143.092 29.166 140.474 29.166H47.892C45.512 29.166 43.37 31.308 43.132 33.688L35.754 122.462V122.7C35.754 124.366 37.182 126.032 39.086 126.032H75.976C102.394 126.032 109.772 131.982 109.772 147.928V149.832C109.772 166.254 105.012 175.774 82.402 175.774C73.596 175.774 54.556 174.584 39.562 172.918C39.324 172.918 39.086 172.918 39.086 172.918C36.706 172.918 34.802 174.584 34.802 177.202V196.004C34.802 199.336 37.182 200.526 39.562 201.24C53.366 205.524 71.216 208.142 86.448 208.142C128.098 208.142 150.708 187.436 150.708 149.832Z"
+                                fill="#181B38"
+                        />
+                        <path
+                                d="M156.896 324.936V304.468C156.896 247.348 133.096 224.024 92.636 224.024C52.176 224.024 28.614 247.348 28.614 304.468V324.936C28.614 382.056 52.176 405.142 92.636 405.142C133.096 405.142 156.896 382.056 156.896 324.936ZM116.198 324.936C116.198 362.54 105.964 371.346 92.636 371.346C79.308 371.346 69.312 362.54 69.312 324.936V304.468C69.312 266.864 79.308 257.82 92.636 257.82C105.964 257.82 116.198 266.864 116.198 304.468V324.936Z"
+                                fill="#181B38"
+                        />
+                        <path
+                                d="M151.66 466.482C151.66 436.018 134.762 421.024 90.97 421.024C73.358 421.024 53.604 424.356 40.276 428.402C37.896 429.116 35.754 430.544 35.754 432.924V451.488C35.754 454.106 37.42 456.248 40.038 456.248C40.276 456.248 40.276 456.248 40.514 456.248C55.032 454.82 72.882 453.154 87.4 453.154C106.678 453.154 112.628 457.2 112.628 467.434C112.628 478.62 109.058 480.524 88.352 495.042L66.456 510.512C48.368 523.364 34.088 544.784 34.088 570.964V595.24C34.088 597.858 36.23 600 38.848 600H144.758C147.376 600 149.518 597.858 149.518 595.24V570.726C149.518 568.108 147.376 566.204 144.758 566.204H69.55V565.252C69.55 548.592 83.83 538.358 104.06 524.792L124.29 511.226C141.902 499.326 151.66 485.76 151.66 466.482Z"
+                                fill="#181B38"
+                        />
+                        <path
+                                d="M134.708 140.832V138.928C134.708 97.516 104.958 85.854 63.784 85.854H56.882L59.738 53.01H124.474C127.092 53.01 129.234 51.106 129.234 48.488V24.688C129.234 22.07 127.092 20.166 124.474 20.166H31.892C29.512 20.166 27.37 22.308 27.132 24.688L19.754 113.462V113.7C19.754 115.366 21.182 117.032 23.086 117.032H59.976C86.394 117.032 93.772 122.982 93.772 138.928V140.832C93.772 157.254 89.012 166.774 66.402 166.774C57.596 166.774 38.556 165.584 23.562 163.918C23.324 163.918 23.086 163.918 23.086 163.918C20.706 163.918 18.802 165.584 18.802 168.202V187.004C18.802 190.336 21.182 191.526 23.562 192.24C37.366 196.524 55.216 199.142 70.448 199.142C112.098 199.142 134.708 178.436 134.708 140.832Z"
+                                fill="#E2E7F0"
+                        />
+                        <path
+                                d="M140.896 315.936V295.468C140.896 238.348 117.096 215.024 76.636 215.024C36.176 215.024 12.614 238.348 12.614 295.468V315.936C12.614 373.056 36.176 396.142 76.636 396.142C117.096 396.142 140.896 373.056 140.896 315.936ZM100.198 315.936C100.198 353.54 89.964 362.346 76.636 362.346C63.308 362.346 53.312 353.54 53.312 315.936V295.468C53.312 257.864 63.308 248.82 76.636 248.82C89.964 248.82 100.198 257.864 100.198 295.468V315.936Z"
+                                fill="#E2E7F0"
+                        />
+                        <path
+                                d="M135.66 457.482C135.66 427.018 118.762 412.024 74.97 412.024C57.358 412.024 37.604 415.356 24.276 419.402C21.896 420.116 19.754 421.544 19.754 423.924V442.488C19.754 445.106 21.42 447.248 24.038 447.248C24.276 447.248 24.276 447.248 24.514 447.248C39.032 445.82 56.882 444.154 71.4 444.154C90.678 444.154 96.628 448.2 96.628 458.434C96.628 469.62 93.058 471.524 72.352 486.042L50.456 501.512C32.368 514.364 18.088 535.784 18.088 561.964V586.24C18.088 588.858 20.23 591 22.848 591H128.758C131.376 591 133.518 588.858 133.518 586.24V561.726C133.518 559.108 131.376 557.204 128.758 557.204H53.55V556.252C53.55 539.592 67.83 529.358 88.06 515.792L108.29 502.226C125.902 490.326 135.66 476.76 135.66 457.482Z"
+                                fill="#E2E7F0"
+                        />
+                    </svg>
+                </div>
+                <div>
+                    <header>
+                        <h1><span class="text-502">502 </span>Bad Gateway</h1>
+                        <span class="tag">Request ID: 7f122e5ce20f1007-LAX</span>
+                    </header>
+                    <p>If you are a visitor:</p>
+                    <ul>
+                        <li class="red-radish">Try again later or contact the site owner.</li>
+                    </ul>
+                    <p>If you are the site owner, your application was unable to serve this request. Common reasons include:</p>
+                    <ul>
+                        <li class="aurora-light">
+                            You recently created a service and it has not yet completed a
+                            successful deploy.
+                        </li>
+                        <li class="gold">
+                            Your application has crashed or failed its health check.
+                        </li>
+                    </ul>
+                    <footer>
+                        <a href="https://dashboard.render.com/" class="link-primary">
+                            Check Dashboard
+                        </a>
+                        <span class="text-or">or</span>
+                        <a href="https://status.render.com/" class="link-tertiary"> View System Status </a>
+                    </footer>
+                </div>
+            </div>
+        </main>
+        <div class="powered-by">
+          <div class="logo">
+            <span>Powered by</span>
+            <a href="https://render.com/">
+              <svg width="75" height="24" viewBox="0 0 75 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <title>Render</title>
+                <g clip-path="url(#clip0_70_62)">
+                <path d="M7.21155 9.97638C7.21155 9.87119 7.1692 9.7703 7.09382 9.69593C7.01844 9.62155 6.9162 9.57976 6.8096 9.57976C5.51151 9.56992 4.24737 9.98875 3.21833 10.7696L3.03877 10.9045V10.1549C3.03877 10.0494 2.99628 9.94814 2.92064 9.87351C2.845 9.79887 2.74241 9.75694 2.63544 9.75694H0.401951C0.295222 9.7573 0.192989 9.79939 0.117649 9.87399C0.0423086 9.94858 4.96047e-06 10.0496 5.58636e-06 10.1549V23.3754C-0.000552896 23.4834 0.0407821 23.5874 0.115527 23.6663C0.190273 23.7451 0.292758 23.7927 0.401951 23.7993H2.76252C2.87208 23.7934 2.9751 23.746 3.05021 23.6671C3.12531 23.5881 3.16672 23.4837 3.16585 23.3754V13.1452L3.22386 13.1152C4.47528 12.4678 5.54713 12.1925 6.81513 12.1925C6.9221 12.1925 7.02468 12.1506 7.10032 12.0759C7.17596 12.0013 7.21845 11.9001 7.21845 11.7945L7.21155 9.97638Z" fill="#E2E7F0"/>
+                <path d="M20.4551 15.8927C20.4551 11.9988 18.1595 9.57959 14.4674 9.57959C10.6841 9.57959 8.42578 11.9388 8.42578 15.8927V17.7627C8.42578 23.6996 13.4991 24.0009 14.5171 24.0009C16.8653 24.0009 17.8722 23.8646 19.4675 23.5743C19.8571 23.5088 19.9151 23.3916 19.9151 23.0291V21.3527C19.9151 21.1019 19.6457 21.0801 19.5642 21.0801H19.4869C18.3404 21.1877 16.5862 21.3322 14.7727 21.3322C11.8983 21.3322 11.5958 19.0152 11.5958 18.0135V17.8295H20.0573C20.2452 17.8295 20.4607 17.7695 20.4607 17.3061L20.4551 15.8927ZM17.2658 15.6747H11.6151V15.4648C11.6151 13.5089 12.7339 12.2469 14.4674 12.2469C16.1677 12.2469 17.2658 13.5089 17.2658 15.4648V15.6747Z" fill="#E2E7F0"/>
+                <path d="M34.9269 15.1287C34.9269 12.2433 34.4034 9.57471 30.605 9.57471C28.9254 9.57471 27.9695 9.84729 26.5123 10.7714L26.3438 10.8763V10.1526C26.3438 10.047 26.3013 9.94582 26.2257 9.87118C26.15 9.79654 26.0474 9.75461 25.9405 9.75461H23.7111C23.6044 9.75498 23.5022 9.79706 23.4268 9.87166C23.3515 9.94626 23.3092 10.0473 23.3092 10.1526V23.3731C23.3086 23.4811 23.35 23.5851 23.4247 23.6639C23.4994 23.7428 23.6019 23.7904 23.7111 23.797H26.0731C26.1825 23.7907 26.2853 23.7432 26.3604 23.6644C26.4354 23.5855 26.4769 23.4813 26.4764 23.3731V13.1442L26.5344 13.1143C27.7679 12.4764 28.6767 12.1915 29.4806 12.1915C31.5815 12.1915 31.7694 12.948 31.7694 15.1287V23.3704C31.7688 23.4785 31.8104 23.5828 31.8854 23.6617C31.9604 23.7405 32.0633 23.788 32.1727 23.7943H34.5319C34.6411 23.7876 34.7436 23.74 34.8183 23.6612C34.8931 23.5824 34.9344 23.4783 34.9338 23.3704L34.9269 15.1287Z" fill="#E2E7F0"/>
+                <path d="M49.4493 22.7686V5.17988C49.4507 5.12682 49.4414 5.074 49.4219 5.02454C49.4024 4.97508 49.3731 4.92998 49.3356 4.89188C49.2981 4.85378 49.2533 4.82346 49.2038 4.8027C49.1543 4.78194 49.1011 4.77116 49.0473 4.771H46.6868C46.6332 4.77152 46.5803 4.78256 46.5311 4.80348C46.4819 4.8244 46.4374 4.85478 46.4003 4.89285C46.3631 4.93091 46.334 4.97589 46.3147 5.02517C46.2953 5.07446 46.2861 5.12705 46.2876 5.17988V9.77162L46.1633 9.75526C45.3531 9.6436 44.5364 9.58487 43.7184 9.57945C39.8399 9.57945 37.7086 11.7942 37.7086 15.8108V17.7571C37.7086 21.7805 39.844 23.9953 43.7226 23.9953C45.45 23.9788 47.1693 23.7596 48.8443 23.3424C49.4009 23.2034 49.4493 23.0807 49.4493 22.7686ZM46.2862 21.2898L46.1992 21.3075C45.3768 21.4345 44.5452 21.4942 43.7129 21.4861C41.1852 21.4861 40.862 19.4962 40.862 17.7625V15.8108C40.862 14.0771 41.1852 12.0873 43.7129 12.0873C44.5413 12.1001 45.3682 12.1602 46.1895 12.2672L46.2834 12.2808L46.2862 21.2898Z" fill="#E2E7F0"/>
+                <path d="M64.3337 15.8927C64.3337 11.9988 62.0395 9.57959 58.3446 9.57959C54.5627 9.57959 52.3058 11.9388 52.3058 15.8927V17.7627C52.3058 23.6996 57.3791 24.0009 58.3971 24.0009C60.7452 24.0009 61.7508 23.8646 63.3461 23.5743C63.737 23.5088 63.7964 23.3916 63.7964 23.0291V21.3527C63.7964 21.1019 63.5202 21.0801 63.4442 21.0801H63.3669C62.2204 21.1877 60.4662 21.3322 58.6526 21.3322C55.7796 21.3322 55.4688 19.0152 55.4688 18.0135V17.8295H63.9304C64.1183 17.8295 64.3337 17.7695 64.3337 17.3061V15.8927ZM61.1444 15.6747H55.4937V15.4648C55.4937 13.5089 56.6139 12.2469 58.3446 12.2469C60.0463 12.2469 61.1444 13.5089 61.1444 15.4648V15.6747Z" fill="#E2E7F0"/>
+                <path d="M74.3975 9.97641C74.3975 9.87122 74.3552 9.77034 74.2798 9.69596C74.2044 9.62158 74.1022 9.57979 73.9956 9.57979C72.6954 9.56909 71.429 9.9874 70.3974 10.7683L70.222 10.9046V10.155C70.2212 10.0494 70.1783 9.94837 70.1025 9.87385C70.0268 9.79933 69.9242 9.75733 69.8172 9.75697H67.5893C67.4823 9.75697 67.3797 9.7989 67.3041 9.87354C67.2285 9.94817 67.186 10.0494 67.186 10.155V23.3755C67.1851 23.4837 67.2265 23.5882 67.3016 23.6671C67.3767 23.746 67.4797 23.7934 67.5893 23.7993H69.9457C70.0554 23.7934 70.1586 23.7461 70.2339 23.6672C70.3092 23.5883 70.3509 23.4839 70.3504 23.3755V13.1452L70.407 13.1153C71.6585 12.4679 72.7303 12.1925 73.9983 12.1925C74.105 12.1922 74.2073 12.1501 74.2826 12.0755C74.358 12.0009 74.4003 11.8999 74.4003 11.7946L74.3975 9.97641Z" fill="#E2E7F0"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_70_62">
+                <rect width="74.4" height="24" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+          </div>
+        </body>
+        </html>
+  recorded_at: Thu, 03 Aug 2023 23:01:12 GMT
+- request:
+    method: get
+    uri: https://lend-a-toolza-be.onrender.com/api/v1/users/230/tools
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 03 Aug 2023 23:36:40 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7f12624ccab70fe9-LAX
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"8fe32e407a1038ee38753b70e5374b3a"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 8947d014-1ab9-4bce-b36d-810a38c39ff6
+      X-Runtime:
+      - '0.699749'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[]}'
+  recorded_at: Thu, 03 Aug 2023 23:36:40 GMT
+- request:
+    method: get
+    uri: https://lend-a-toolza-be.onrender.com/api/v1/users/239/tools
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 03 Aug 2023 23:45:43 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7f126f967bef7bfd-LAX
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"8fe32e407a1038ee38753b70e5374b3a"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 2c1e55a3-8212-4b6d-ac14-f2f5946cc00e
+      X-Runtime:
+      - '0.059987'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[]}'
+  recorded_at: Thu, 03 Aug 2023 23:45:43 GMT
+- request:
+    method: get
+    uri: https://lend-a-toolza-be.onrender.com/api/v1/users/257/tools
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 03 Aug 2023 23:53:48 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7f127b69e8587c71-LAX
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"8fe32e407a1038ee38753b70e5374b3a"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 86e1c5a6-c045-403d-8160-1d7382ef60aa
+      X-Runtime:
+      - '0.040183'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[]}'
+  recorded_at: Thu, 03 Aug 2023 23:53:48 GMT
+- request:
+    method: get
+    uri: https://lend-a-toolza-be.onrender.com/api/v1/users/266/tools
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 04 Aug 2023 00:02:19 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7f1287e8de7a2b6e-LAX
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"8fe32e407a1038ee38753b70e5374b3a"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - ac8c1481-b477-41ba-9317-d70f968e384c
+      X-Runtime:
+      - '0.051369'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[]}'
+  recorded_at: Fri, 04 Aug 2023 00:02:19 GMT
+- request:
+    method: get
+    uri: https://lend-a-toolza-be.onrender.com/api/v1/users/275/tools
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 04 Aug 2023 00:05:40 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7f128cccfc3b52a1-LAX
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"8fe32e407a1038ee38753b70e5374b3a"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 804e8ec4-4634-4981-aa02-d259fb78ba40
+      X-Runtime:
+      - '0.006708'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[]}'
+  recorded_at: Fri, 04 Aug 2023 00:05:40 GMT
+- request:
+    method: get
+    uri: https://lend-a-toolza-be.onrender.com/api/v1/users/284/tools
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 04 Aug 2023 00:08:11 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7f12907d8df314fa-LAX
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"8fe32e407a1038ee38753b70e5374b3a"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - dd4b84ca-9039-44b1-ac45-70bf72870d5b
+      X-Runtime:
+      - '0.006596'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[]}'
+  recorded_at: Fri, 04 Aug 2023 00:08:11 GMT
+- request:
+    method: get
+    uri: https://lend-a-toolza-be.onrender.com/api/v1/users/293/tools
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 04 Aug 2023 00:11:00 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7f12949c6ca6090a-LAX
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"8fe32e407a1038ee38753b70e5374b3a"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - bc3365ab-f774-4e49-9cd3-10478bdc1c1b
+      X-Runtime:
+      - '0.077591'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[]}'
+  recorded_at: Fri, 04 Aug 2023 00:11:00 GMT
+- request:
+    method: get
+    uri: https://lend-a-toolza-be.onrender.com/api/v1/users/308/tools
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 04 Aug 2023 00:25:15 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7f12a97ebabc3191-LAX
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"8fe32e407a1038ee38753b70e5374b3a"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 87166d18-21fd-4873-a3c5-cf1afde1cf22
+      X-Runtime:
+      - '0.039350'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[]}'
+  recorded_at: Fri, 04 Aug 2023 00:25:15 GMT
+- request:
+    method: get
+    uri: https://lend-a-toolza-be.onrender.com/api/v1/users/317/tools
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 04 Aug 2023 00:43:27 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7f12c424ba3e2eff-LAX
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"8fe32e407a1038ee38753b70e5374b3a"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 441a2d07-b1cf-4fa9-b45c-66c018356aba
+      X-Runtime:
+      - '0.040254'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[]}'
+  recorded_at: Fri, 04 Aug 2023 00:43:27 GMT
 recorded_with: VCR 6.2.0

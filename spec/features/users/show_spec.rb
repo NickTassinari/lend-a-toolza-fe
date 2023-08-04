@@ -12,7 +12,7 @@ RSpec.describe 'User Show Page' do
         .to_return(status: 200, body: stubbed_response)
 
       stubbed_response = File.read('spec/fixtures/users_borrowed_tools.json')
-      stub_request(:get, "https://lend-a-toolza-be.onrender.com/api/v1/users/#{@user1.id}/tools/borrowed")
+      stub_request(:get, "https://lend-a-toolza-be.onrender.com/api/v1/users/#{@user1.id}/tools")
         .to_return(status: 200, body: stubbed_response)
     end
 
@@ -38,11 +38,6 @@ RSpec.describe 'User Show Page' do
 
       within '#borrowed_tools' do
         expect(page).to have_content('Borrowed Tools')
-
-        within '#borrow_tools' do
-          expect(page).to have_content('Item Excepturi Rem')
-          expect(page).to have_content('Item Illum Minus')
-        end
       end
     end
   end
