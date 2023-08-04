@@ -110,9 +110,23 @@ git push origin feature/AmazingFeature
 ```
 
 ## How To Use Lend-A-Toolza
- (this is where we will do a basic walk thru with screen shots of working app)
- ```
- ```
+ Login with the Login Button and Sign in with Google
+ ![welcome screen](toolza_images/welcome_login.png)
+ Not sure what tools you need for your project? Ask our OpenAI for a suggestion of tools to use
+ ![welcome logged in](toolza_images/logged_in.png)
+ This page lists potential tools for your project and allows you to search for tools in your area
+ ![chat results](toolza_images/chat_results.png)
+ Search results from your area and request to borrow 
+ ![search results](toolza_images/tool_search.png)
+ If we don't have the tool you're looking for you can search for a hardware store in your area that might
+ ![store search](toolza_images/store_search.png)
+ Here is the results for the store search
+ ![store results](toolza_images/store_search_result.png)
+Click on My Tool Shed and you will be brought to your dashboard where you can see the tools you own, tools you have borrowed and the ability to add a tool
+![tool shed](toolza_images/tool_shed.png)
+This is the add tool form
+![add tool](toolza_images/add_tool.png)
+
 
 ## Schema
 ```
