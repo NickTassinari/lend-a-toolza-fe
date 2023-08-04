@@ -10,6 +10,7 @@ RSpec.describe 'welcome result page' do
     fill_in :project, with: 'deck'
 
     click_button('Submit')
+   
     expect(current_path).to eq(result_path)
     expect(page).to have_content(["1. Hammer", "2. Nails", "3. Drill", "4. Screws", "5. Safety glasses", "6. Circular saw", "7. Tape measure", "8. Level", "9. Posthole digger", "10. Deck screws", "11. Deck boards", "12. Joist hangers", "13. Lag screws", "14. Decking screws", "15. Decking materials (wood or composite)", "16. Railing materials (wood or composite)", "17. Sealant", "18. Paint or stain", "19. Sandpaper", "20. Protective clothing"])
   end
@@ -25,7 +26,6 @@ RSpec.describe 'welcome result page' do
     fill_in :location, with: 'IN'
 
     click_button('Search')
-
     expect(current_path).to eq('/tools')
     expect(page).to have_content('Slammer Hammer')
   end
