@@ -1,0 +1,69 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://lend-a-toolza-be.onrender.com/api/v1/users/2/tools
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 04 Aug 2023 14:33:50 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7f178487af9428ef-ORD
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"3fa46fd862c9cd97032111b3b5fcaae9"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 437696a2-c50f-4627-825b-e1ba2fccc5c9
+      X-Runtime:
+      - '0.005962'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"id":"5","type":"tool","attributes":{"name":"Hammer","description":"Smashem","image":"image.jpg","status":"available","address":"123
+        Sunnyside Dr, Lebanon, IN, 46052","user_id":2,"borrower_id":null}},{"id":"6","type":"tool","attributes":{"name":"Saw","description":"Cutem","image":"image.jpg","status":"available","address":"123
+        Sunnyside Dr, Lebanon, IN, 46052","user_id":2,"borrower_id":null}},{"id":"7","type":"tool","attributes":{"name":"Drill","description":"Drillem","image":"image.jpg","status":"available","address":"1234
+        Sunnyside Dr, Lebanon, IN, 46052","user_id":4,"borrower_id":2}},{"id":"8","type":"tool","attributes":{"name":"Screwdriver","description":"Screwem","image":"image.jpg","status":"available","address":"1237
+        Sunnyside Dr, Lebanon, IN, 46052","user_id":7,"borrower_id":2}}]}'
+  recorded_at: Fri, 04 Aug 2023 14:33:50 GMT
+recorded_with: VCR 6.2.0

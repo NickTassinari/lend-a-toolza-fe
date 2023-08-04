@@ -22,14 +22,22 @@ class ToolFacade
   end
 
   def self.users_tools(user_id)
-    ToolsService.user_tools(user_id)[:data].map do |tool|
-      Tool.new(tool)
+    tools = []
+    ToolsService.user_tools(user_id)[:data].select do |tool|
+      if tool[:attributes][:borrower_id] == nil
+        tools << Tool.new(tool)
+      end
     end
+    tools
   end
 
-  # def self.users_b_tools(user_id)
-  #   ToolsService.user_b_tools(user_id)[:data].map do |tool|
-  #     Tool.new(tool)
-  #   end
-  # end
+  def self.borrowed_tools(user_id)
+    tools = []
+    ToolsService.user_tools(user_id)[:data].select do |tool|
+      if tool[:attributes][:borrower_id] != nil
+        tools << Tool.new(tool)
+      end
+    end
+    tools
+  end
 end

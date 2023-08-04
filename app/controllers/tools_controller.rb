@@ -4,19 +4,22 @@ class ToolsController < ApplicationController
   def new; end
 
   def create
-    attributes = {
-      name: params[:name],
-      status: params[:status],
-      description: params[:description],
-      user_id: current_user.id,
-      address: params[:address]
-    }
-    ToolsService.post_tool(attributes, current_user.id)
-    if status == 200 && params_check(params)
+    if params_check(params)
       Aws.config.update(access_key_id: ENV['AWS_ACCESS_KEY'], secret_access_key: ENV['AWS_SECRET_ACCESS_KEY'])
       bucket = Aws::S3::Resource.new.bucket(ENV['BUCKET_NAME'])
       file = bucket.object(params[:image].original_filename)
       file.upload_file(params[:image], acl: 'public-read')
+
+      attributes = {
+        name: params[:name],
+        status: params[:status],
+        description: params[:description],
+        image: file.public_url,
+        user_id: current_user.id,
+        address: params[:address]
+      }
+
+      ToolsService.post_tool(attributes, current_user.id)
       redirect_to dashboard_path(current_user.id)
     else
       redirect_to new_tool_path
