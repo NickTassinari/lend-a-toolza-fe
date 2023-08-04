@@ -6,7 +6,7 @@ class ToolsService
     begin
       JSON.parse(response.body, symbolize_names: true)
     rescue JSON::ParserError
-    {}
+    []
     end
   end
 
