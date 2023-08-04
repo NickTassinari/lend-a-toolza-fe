@@ -12,6 +12,6 @@ RSpec.describe ChatFacade do
     project = 'deck'
 
     chat = ChatFacade.chat_request(project)
-    expect(chat).to be_a(Array)
+    expect(chat).to be_a(String)
   end
 end

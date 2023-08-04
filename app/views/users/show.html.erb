@@ -1,16 +1,116 @@
-<h1 id="title"><%= @user.name %>'s Shed</h1>
-<div id="tool_box">
-  <h2>My Toolbox</h2>
-  <ul id="tools">
-    <% @user_tools.each do |tool| %>
-      <li><%= tool.name %> <%= tool.status %></li>
-    <% end %>
-  </ul>
-<div id="borrowed_tools">
-  <h2>Borrowed Tools</h2>
-    <ul id="borrow_tools">
-    
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= @user.name %>'s Shed</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <link href="https://fonts.googleapis.com/css?family=Helvetica" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Helvetica', sans-serif;
+      color: #193549;
+      background-color: #17A589;
+    }
+
+    .bebas-neue-font {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 36px;
+      font-weight: 800;
+    }
+
+    #title {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    #tool_box {
+      width: 80%;
+      margin: 0 auto;
+      background-color: #E1FF33;
+      padding: 20px;
+      border: 2px solid #193549;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    #tools {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    #tools li {
+      margin-bottom: 5px;
+    }
+
+    #borrowed_tools {
+      margin-top: 20px;
+      border-top: 2px solid #193549;
+      padding-top: 20px;
+    }
+
+    #borrow_tools {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    #borrow_tools li {
+      margin-bottom: 5px;
+    }
+
+    /* Style the form fields to align with each other and make them rounded */
+    .centered-text-field {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      margin: 0 auto;
+      border: 2px solid #193549; /* Add a border to the text fields */
+      border-radius: 10px; /* Make the text fields rounded */
+      padding: 8px; /* Add some padding to the text fields */
+      font-size: 16px; /* Set the font size for the text fields */
+      color: #193549; /* Set the text color for the text fields */
+    }
+
+    .add-tool-button {
+      display: block;
+      margin: 20px auto;
+      background-color: #193549; /* Set the background color to the nav bar color */
+      color: #E1FF33; /* Set the text color to the opposite of the background color */
+      border: none;
+      border-radius: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 id="title"><span class="bebas-neue-font"><%= @user.name %>'s Shed</span></h1>
+
+  <div id="tool_box">
+    <h2>My Toolbox</h2>
+    <ul id="tools">
+      <% @user_tools.each do |tool| %>
+        <li><%= tool.name %> <%= tool.status %></li>
+      <% end %>
     </ul>
+    
+    <%= button_to "Add Tool", new_tool_path, method: :get, class: "add-tool-button" %>
+
+    <div id="borrowed_tools">
+      <h2>Borrowed Tools</h2>
+      <ul id="borrow_tools">
+        
+      </ul>
+    </div>
   </div>
-<%= button_to "Add Tool", new_tool_path, method: :get %>
-</div>
+</body>
+</html>

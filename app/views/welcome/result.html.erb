@@ -1,10 +1,103 @@
-<p>Chat Results: <%= @chat_results%></p>
-<h1>Search For Your Tools Buddy</h1>
-<%= form_with url: "/tools", method: :get, local: true do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-  <%= f.label :location %>
-  <%= f.text_field :location %>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search for Your Tools Buddy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <link href="https://fonts.googleapis.com/css?family=Helvetica" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
 
-  <%= f.submit "Search" %>
-<% end %>
+<style>
+  body {
+    font-family: 'Helvetica', sans-serif;
+    color: #193549;
+    background-color: #17A589;
+    padding: 20px;
+  }
+
+  .bebas-neue-font {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+  }
+
+  .search-container {
+    background-color: #DAF7A6;
+    color: #193549;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+
+  .search-container h1 {
+    margin-top: 10px;
+  }
+
+  .chat-results {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .search-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .search-container label {
+    font-size: 18px;
+  }
+
+  .search-container input[type="text"] {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border: 2px solid #193549;
+    border-radius: 10px;
+    padding: 8px;
+    font-size: 16px;
+    color: #193549;
+  }
+
+  .search-container input[type="submit"] {
+    background-color: #FF3346;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #193549;
+    cursor: pointer;
+  }
+
+  .search-container input[type="submit"]:hover {
+    background-color: #E73546;
+  }
+</style>
+
+<body>
+  <div class="search-container">
+    <div class="bebas-neue-font">Here is what you need:</div>
+    <div class="chat-results"><%= @chat_results %></div>
+    <h1><span class="bebas-neue-font">Search For Your Tools Buddy</span></h1>
+    <%= form_with url: "/tools", method: :get, local: true do |f| %>
+      <div>
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+      </div>
+      <div>
+        <%= f.label :location %>
+        <%= f.text_field :location %>
+      </div>
+
+      <%= f.submit "Search" %>
+    <% end %>
+  </div>
+</body>
+</html>

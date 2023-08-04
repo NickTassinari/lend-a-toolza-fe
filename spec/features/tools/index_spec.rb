@@ -11,9 +11,8 @@ RSpec.describe 'Tool Index Page' do
 
     fill_in :tool, with: 'saw'
     fill_in :location, with: 'CA'
-
     click_button('Search')
-
+     
     expect(current_path).to eq('/tools')
     expect(page).to have_content('Slammer Saw')
     expect(page).to have_content('Description: This bad boy will cover all your framing needs. Crooked stud? Nail popping up? Wanna just whack something? This hammer is the perfect tool!')

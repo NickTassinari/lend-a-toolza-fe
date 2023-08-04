@@ -9,7 +9,6 @@ RSpec.describe 'Tool Show Page' do
       .to_return(status: 200, body: saw_show, headers: { 'Content-Type': 'application/json' })
 
     visit '/tools/1266'
-
     expect(page).to have_content('Slammer Saw')
   end
 end
