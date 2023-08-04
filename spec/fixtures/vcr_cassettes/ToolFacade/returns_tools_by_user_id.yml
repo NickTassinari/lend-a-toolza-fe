@@ -1,0 +1,259 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://lend-a-toolza-be.onrender.com/api/v1/users/12/tools
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 04 Aug 2023 14:24:07 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7f17764c0affe180-ORD
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"8fe32e407a1038ee38753b70e5374b3a"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - cc17f1c4-a06e-4504-b248-b7e82a5596ff
+      X-Runtime:
+      - '0.004807'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[]}'
+  recorded_at: Fri, 04 Aug 2023 14:24:07 GMT
+- request:
+    method: get
+    uri: https://lend-a-toolza-be.onrender.com/api/v1/users/12/tools
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 04 Aug 2023 14:24:07 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7f17764e594c2238-ORD
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"8fe32e407a1038ee38753b70e5374b3a"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - fa70fb7d-e46e-45c3-9869-e83317f5884e
+      X-Runtime:
+      - '0.005740'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[]}'
+  recorded_at: Fri, 04 Aug 2023 14:24:07 GMT
+- request:
+    method: get
+    uri: https://lend-a-toolza-be.onrender.com/api/v1/users/2/tools
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 04 Aug 2023 14:24:34 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7f1776f80e8afdd1-ORD
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"3fa46fd862c9cd97032111b3b5fcaae9"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 48250d63-0cef-4b54-8103-f0cdacd56c0c
+      X-Runtime:
+      - '0.006713'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"id":"5","type":"tool","attributes":{"name":"Hammer","description":"Smashem","image":"image.jpg","status":"available","address":"123
+        Sunnyside Dr, Lebanon, IN, 46052","user_id":2,"borrower_id":null}},{"id":"6","type":"tool","attributes":{"name":"Saw","description":"Cutem","image":"image.jpg","status":"available","address":"123
+        Sunnyside Dr, Lebanon, IN, 46052","user_id":2,"borrower_id":null}},{"id":"7","type":"tool","attributes":{"name":"Drill","description":"Drillem","image":"image.jpg","status":"available","address":"1234
+        Sunnyside Dr, Lebanon, IN, 46052","user_id":4,"borrower_id":2}},{"id":"8","type":"tool","attributes":{"name":"Screwdriver","description":"Screwem","image":"image.jpg","status":"available","address":"1237
+        Sunnyside Dr, Lebanon, IN, 46052","user_id":7,"borrower_id":2}}]}'
+  recorded_at: Fri, 04 Aug 2023 14:24:34 GMT
+- request:
+    method: get
+    uri: https://lend-a-toolza-be.onrender.com/api/v1/users/2/tools
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 04 Aug 2023 14:24:35 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7f1776f9cdfa104c-ORD
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"3fa46fd862c9cd97032111b3b5fcaae9"
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Render-Origin-Server:
+      - Render
+      X-Request-Id:
+      - 5f7f4531-dc0e-44ee-ab38-74a78655a05e
+      X-Runtime:
+      - '0.007364'
+      X-Xss-Protection:
+      - '0'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"id":"5","type":"tool","attributes":{"name":"Hammer","description":"Smashem","image":"image.jpg","status":"available","address":"123
+        Sunnyside Dr, Lebanon, IN, 46052","user_id":2,"borrower_id":null}},{"id":"6","type":"tool","attributes":{"name":"Saw","description":"Cutem","image":"image.jpg","status":"available","address":"123
+        Sunnyside Dr, Lebanon, IN, 46052","user_id":2,"borrower_id":null}},{"id":"7","type":"tool","attributes":{"name":"Drill","description":"Drillem","image":"image.jpg","status":"available","address":"1234
+        Sunnyside Dr, Lebanon, IN, 46052","user_id":4,"borrower_id":2}},{"id":"8","type":"tool","attributes":{"name":"Screwdriver","description":"Screwem","image":"image.jpg","status":"available","address":"1237
+        Sunnyside Dr, Lebanon, IN, 46052","user_id":7,"borrower_id":2}}]}'
+  recorded_at: Fri, 04 Aug 2023 14:24:35 GMT
+recorded_with: VCR 6.2.0

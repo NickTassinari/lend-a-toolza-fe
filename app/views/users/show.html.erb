@@ -24,6 +24,7 @@
     #title {
       text-align: center;
       margin-top: 20px;
+      color: #E1FF33;
     }
 
     #tool_box {
@@ -89,6 +90,13 @@
       font-size: 16px;
       cursor: pointer;
     }
+
+    img {
+      width: 400px;
+      height: 200px;
+      position: relative;
+      left: 25%;
+    }
   </style>
 </head>
 
@@ -99,16 +107,18 @@
     <h2>My Toolbox</h2>
     <ul id="tools">
       <% @user_tools.each do |tool| %>
-        <li><%= tool.name %> <%= tool.status %></li>
+        <li><%= tool.name %> <%= tool.status %> <img src="<%= tool.image %>"> </li>
       <% end %>
     </ul>
-    
+
     <%= button_to "Add Tool", new_tool_path, method: :get, class: "add-tool-button" %>
 
     <div id="borrowed_tools">
       <h2>Borrowed Tools</h2>
       <ul id="borrow_tools">
-        
+        <% @borrowed_tools.each do |tool| %>
+          <li><%= tool.name %></li>
+        <% end %>
       </ul>
     </div>
   </div>

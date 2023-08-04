@@ -2,23 +2,12 @@
 
 require 'rails_helper'
 
-RSpec.describe 'New Tool Page' do
+RSpec.describe 'New Tool Page', :vcr do
   before :each do
     @user1 = User.create!(name: 'Test User', email: 'test@example.com', google_id: '123456789', location: '46052')
-    stubbed_response = File.read('spec/fixtures/new_tool.json')
-    stub_request(:post, "https://lend-a-toolza-be.onrender.com/api/v1/users/#{@user1.id}/tools")
-      .to_return(status: 200, body: stubbed_response)
 
     stub_request(:put, 'https://lend-a-toolza.s3.us-east-2.amazonaws.com/astro.jpeg')
       .to_return(status: 200, body: '', headers: {})
-
-    stubbed_response = File.read('spec/fixtures/users_tools.json')
-    stub_request(:get, "https://lend-a-toolza-be.onrender.com/api/v1/users/#{@user1.id}/tools")
-      .to_return(status: 200, body: stubbed_response)
-
-    stubbed_response = File.read('spec/fixtures/users_borrowed_tools.json')
-    stub_request(:get, "https://lend-a-toolza-be.onrender.com/api/v1/users/#{@user1.id}/tools")
-      .to_return(status: 200, body: stubbed_response)
   end
 
   describe 'As a visitor' do
@@ -51,6 +40,11 @@ RSpec.describe 'New Tool Page' do
       end
 
       click_button 'Add Tool'
+
+      expect(current_path).to eq(dashboard_path(@user1.id))
+      expect(page).to have_content('Hammer')
+      expect(page).to have_content('available')
+      expect(page).to have_css("img[src*='astro.jpeg']")
     end
 
     it "Flashes an error if all fields aren't filled out" do
@@ -60,7 +54,6 @@ RSpec.describe 'New Tool Page' do
 
       within('#tool_form') do
         fill_in 'Name', with: 'Hammer'
-
         attach_file('image', Rails.root.join('spec/images/astro.jpeg'))
       end
 
