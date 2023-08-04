@@ -38,11 +38,6 @@ RSpec.describe 'User Show Page' do
 
       within '#borrowed_tools' do
         expect(page).to have_content('Borrowed Tools')
-
-        within '#borrow_tools' do
-          expect(page).to have_content('Item Excepturi Rem')
-          expect(page).to have_content('Item Illum Minus')
-        end
       end
     end
   end

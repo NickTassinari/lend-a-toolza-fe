@@ -9,9 +9,7 @@
 <div id="borrowed_tools">
   <h2>Borrowed Tools</h2>
     <ul id="borrow_tools">
-      <% @borrowed_tools.each do |tool| %>
-        <li><%= tool.name %></li>
-      <% end %>
+    
     </ul>
   </div>
 <%= button_to "Add Tool", new_tool_path, method: :get %>
