@@ -46,5 +46,16 @@ RSpec.describe ToolFacade, :vcr do
   end
 
   it 'returns tools by id' do
+    saw_show = File.read('spec/fixtures/slam_saw_show.json')
+    stub_request(:get, "https://lend-a-toolza-be.onrender.com/api/v1/tools/1266")
+      .to_return(status: 200, body: saw_show, headers: { 'Content-Type': 'application/json' })
+      
+    expect(ToolFacade.get_tools_by_id(1266)).to be_a(Tool)
+    tool = ToolFacade.get_tools_by_id(1266)
+
+    expect(tool.address).to eq("123 Sunnyside Dr, Lebanon, CA, 46052")
+    expect(tool.borrower_id).to eq("nil")
+    expect(tool.id).to eq("1266")
+    expect(tool.name).to eq("Slammer Saw")
   end
 end

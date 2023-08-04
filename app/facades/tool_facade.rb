@@ -27,9 +27,9 @@ class ToolFacade
     end
   end
 
-  def self.users_b_tools(user_id)
-    ToolsService.user_b_tools(user_id)[:data].map do |tool|
-      Tool.new(tool)
-    end
-  end
+  # def self.users_b_tools(user_id)
+  #   ToolsService.user_b_tools(user_id)[:data].map do |tool|
+  #     Tool.new(tool)
+  #   end
+  # end
 end
