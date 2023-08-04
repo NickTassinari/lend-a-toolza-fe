@@ -1,4 +1,136 @@
-<p><% @stores.each do |store| %>
-  <p><%= store.name %></p>
-  <p><%= store.formatted_address %>
-<% end %>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to Lend-A-Toolza</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <link href="https://fonts.googleapis.com/css?family=Helvetica" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<style>
+  body {
+    font-family: 'Helvetica', sans-serif;
+    color: #193549;
+    background-color: #17A589;
+  }
+  .welcome-message {
+    background-color: #DAF7A6;
+    color: #193549;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+  .bebas-neue-font {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+  }
+  .form-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 24px;
+    margin-top: 20px;
+  }
+  .search-form, .project-form {
+    background-color: #E1FF33;
+    padding: 20px;
+    border: 2px solid #193549;
+    border-radius: 10px;
+  }
+  body, .welcome-message h1, .welcome-message p {
+    font-family: 'Helvetica', sans-serif;
+    color: #193549;
+  }
+  .centered-text-field {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border: 2px solid #193549;
+    border-radius: 10px;
+    padding: 8px;
+    font-size: 16px;
+    color: #193549;
+  }
+  input[type="submit"] {
+    background-color: #FF3346;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #193549;
+    cursor: pointer;
+  }
+  .form-field {
+    margin-bottom: 10px;
+  }
+  .search-form {
+    width: 48%;
+    margin-right: 24px;
+  }
+  .project-form .centered-text-field {
+    border: 2px solid #193549;
+    border-radius: 10px;
+    padding: 8px;
+    font-size: 16px;
+    color: #193549;
+  }
+  .tool-container {
+    background-color: #E1FF33;
+    padding: 20px;
+    border: 2px solid #193549;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  .tool-container h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #193549;
+    margin-bottom: 10px;
+  }
+  .tool-container p {
+    font-size: 16px;
+    color: #193549;
+    margin-bottom: 5px;
+  }
+</style>
+<body>
+  <div class="welcome-message">
+    <h1>
+      <span class="bebas-neue-font">Lend-A-Toolza</span>
+    </h1>
+    <p>We are here to help you find the right tools for your projects!</p>
+  </div>
+  <% if @search_results.present? %>
+    <% @search_results.each do |tool| %>
+      <div class="tool-container" id="tool<%= tool.id %>">
+        <h3><%= link_to(tool.name, "/tools/#{tool.id}") %></h3>
+        <p>Description: <%= tool.description %></p>
+        <p>Status: <%= tool.status %></p>
+      </div>
+    <% end %>
+  <% else %>
+    <% @stores.each do |store| %>
+      <div class="tool-container">
+        <h3><%= store.name %></h3>
+        <p><%= store.formatted_address %></p>
+      </div>
+    <% end %>
+    <%= form_with url: "/stores", method: :get, local: true do |f| %>
+      <div class="form-container">
+        <div class="search-form">
+          <%= f.label :location %>
+          <%= f.text_field :location, class: "centered-text-field" %>
+          <%= f.label :radius %>
+          <%= f.number_field :radius, min: 0, class: "centered-text-field" %>
+          <%= f.submit "Submit" %>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+</body>
+</html>

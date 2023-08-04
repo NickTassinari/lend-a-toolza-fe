@@ -1,11 +1,85 @@
-<h1><%= @tool.name %></h1>
-<p><%= @tool.description %></p>
-<img src="<%= @tool.image %>" alt="<%= @tool.name %>">
-<p><%= @tool.address %></p>
-<p><%= @tool.status %></p>
-<% if @tool.status == "available" %>
-  <%= form_with url: "/tools/#{@tool_id}", method: :patch do |form| %>
-    <%= form.hidden_field :status, value: "unavailable" %>
-    <%= form.submit "Borrow This Tool" %>
-  <% end %>
-<% end %>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tool Details - Lend-A-Toolza</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <link href="https://fonts.googleapis.com/css?family=Helvetica" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<style>
+  body {
+    font-family: 'Helvetica', sans-serif;
+    color: #193549;
+    background-color: #17A589;
+    padding: 20px;
+  }
+
+  .bebas-neue-font {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+  }
+
+  .tool-details {
+    background-color: #DAF7A6;
+    color: #193549;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+
+  .tool-details h1, .tool-details p {
+    margin: 10px 0;
+  }
+
+  .tool-details img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 10px 0;
+  }
+
+  .tool-details .borrow-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .borrow-form input[type="submit"] {
+    background-color: #FF3346;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #193549;
+    cursor: pointer;
+  }
+
+  .borrow-form input[type="submit"]:hover {
+    background-color: #E73546;
+  }
+</style>
+
+<body>
+  <div class="tool-details">
+    <h1><span class="bebas-neue-font"><%= @tool.name %></span></h1>
+    <p><%= @tool.description %></p>
+    <img src="<%= @tool.image %>" alt="<%= @tool.name %>">
+    <p><%= @tool.address %></p>
+    <p><%= @tool.status %></p>
+    <% if @tool.status == "available" %>
+      <div class="borrow-form">
+        <%= form_with url: "/tools/#{@tool_id}", method: :patch do |form| %>
+          <%= form.hidden_field :status, value: "unavailable" %>
+          <%= form.submit "Borrow This Tool" %>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</body>
+</html>

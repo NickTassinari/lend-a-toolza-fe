@@ -3,7 +3,7 @@
 require 'rails_helper'
 # require 'webmock/rspec'
 
-RSpec.describe ToolsService do
+RSpec.describe ToolsService, :vcr do
   before(:each) do
     # @user1 = User.create!(id: 2, name: "Test User", email: "test@example.com", google_id: '123456789', location: "46052")
   end
@@ -90,5 +90,48 @@ RSpec.describe ToolsService do
       .to_return(status: 200, body: saw_show, headers: { 'Content-Type': 'application/json' })
 
     expect(ToolsService.get_tools_by_id(1266)).to be_a(Hash)
+  end
+
+  it "returns tools by user id" do
+    user_tools = ToolsService.user_tools(2)
+
+    expect(user_tools).to be_a(Hash)
+    expect(user_tools).to have_key(:data)
+    expect(user_tools[:data]).to be_an(Array)
+    expect(user_tools[:data][0]).to have_key(:id)
+    expect(user_tools[:data][0][:id]).to be_a(String)
+    expect(user_tools[:data][0]).to have_key(:attributes)
+    expect(user_tools[:data][0][:attributes]).to be_a(Hash)
+    expect(user_tools[:data][0][:attributes]).to have_key(:name)
+    expect(user_tools[:data][0][:attributes][:name]).to be_a(String)
+    expect(user_tools[:data][0][:attributes]).to have_key(:description)
+    expect(user_tools[:data][0][:attributes][:description]).to be_a(String)
+    expect(user_tools[:data][0][:attributes]).to have_key(:image)
+    expect(user_tools[:data][0][:attributes][:image]).to be_a(String)
+    expect(user_tools[:data][0][:attributes]).to have_key(:status)
+    expect(user_tools[:data][0][:attributes][:status]).to be_a(String)
+    expect(user_tools[:data][0][:attributes]).to have_key(:address)
+    expect(user_tools[:data][0][:attributes][:address]).to be_a(String)
+    expect(user_tools[:data][0][:attributes]).to have_key(:user_id)
+    expect(user_tools[:data][0][:attributes][:user_id]).to be_a(Integer)
+    expect(user_tools[:data][0][:attributes]).to have_key(:borrower_id)
+
+    expect(user_tools[:data][1]).to have_key(:id)
+    expect(user_tools[:data][1][:id]).to be_a(String)
+    expect(user_tools[:data][1]).to have_key(:attributes)
+    expect(user_tools[:data][1][:attributes]).to be_a(Hash)
+    expect(user_tools[:data][1][:attributes]).to have_key(:name)
+    expect(user_tools[:data][1][:attributes][:name]).to be_a(String)
+    expect(user_tools[:data][1][:attributes]).to have_key(:description)
+    expect(user_tools[:data][1][:attributes][:description]).to be_a(String)
+    expect(user_tools[:data][1][:attributes]).to have_key(:image)
+    expect(user_tools[:data][1][:attributes][:image]).to be_a(String)
+    expect(user_tools[:data][1][:attributes]).to have_key(:status)
+    expect(user_tools[:data][1][:attributes][:status]).to be_a(String)
+    expect(user_tools[:data][1][:attributes]).to have_key(:address)
+    expect(user_tools[:data][1][:attributes][:address]).to be_a(String)
+    expect(user_tools[:data][1][:attributes]).to have_key(:user_id)
+    expect(user_tools[:data][1][:attributes][:user_id]).to be_a(Integer)
+    expect(user_tools[:data][1][:attributes]).to have_key(:borrower_id)
   end
 end

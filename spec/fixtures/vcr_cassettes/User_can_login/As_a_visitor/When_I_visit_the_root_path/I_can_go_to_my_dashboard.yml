@@ -1129,5 +1129,5 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: '{"data":[]}'
-  recorded_at: Thu, 03 Aug 2023 21:29:47 GMT
+
 recorded_with: VCR 6.2.0

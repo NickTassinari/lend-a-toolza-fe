@@ -1,28 +1,139 @@
-<h1>Add a New Tool</h1>
-<div id="tool_form">
-  <%= form_with url: dashboard_tools_path(current_user.id), method: :post do |f| %>
-    <%= f.hidden_field :status, value: "available"%>
-    <%= f.hidden_field :borrower_id, value: nil %>
-    <p>
-      <%= f.label :name %><br />
-      <%= f.text_field :name %>
-    </p>
-    <p>
-      <%= f.label :address %><br/>
-      <%= f.text_field :address %>
-    </p>
-    <p>
-      <%= f.label :description %><br />
-      <%= f.text_area :description %>
-    </p>
-    <p>
-      <%= f.file_field :image, id: "upload_image", name: "image" %>
-    </p>
-    <p>
-      <%= f.submit "Add Tool" %>
-    </p>
-    <% flash.each do |type, message| %>
-      <h4 class="error_msg"><%= message %></h4>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add a New Tool</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <link href="https://fonts.googleapis.com/css?family=Helvetica" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<style>
+  body {
+    font-family: 'Helvetica', sans-serif;
+    color: #193549;
+    background-color: #17A589;
+  }
+
+  h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    color: #193549;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  #tool_form {
+    background-color: #E1FF33;
+    padding: 20px;
+    border: 2px solid #193549;
+    border-radius: 10px;
+    margin-top: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #193549;
+  }
+
+  input[type="text"],
+  textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border: 2px solid #193549;
+    border-radius: 10px;
+    padding: 8px;
+    font-size: 16px;
+    color: #193549;
+  }
+
+  input[type="file"] {
+    display: none;
+  }
+
+   #upload_image_label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #193549; /* Color of the nav bar */
+    border: solid 2px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #E1FF33; /* Text color */
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  #upload_image_label:hover {
+    background-color: #E1FF33;
+    color: #193549;
+    transition: background-color 0.3s ease;
+  }
+
+  .submit-button {
+    background-color: #FF3346;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #193549;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+
+  .error-msg {
+    font-size: 16px;
+    color: #FF3346;
+    text-align: center;
+    margin-top: 10px;
+  }
+</style>
+
+<body>
+  <h1>Add a New Tool</h1>
+  <div id="tool_form">
+    <%= form_with url: dashboard_tools_path(current_user.id), method: :post do |f| %>
+      <%= f.hidden_field :status, value: "available"%>
+      <%= f.hidden_field :borrower_id, value: nil %>
+      <p>
+        <%= f.label :name %><br />
+        <%= f.text_field :name %>
+      </p>
+      <p>
+        <%= f.label :address %><br/>
+        <%= f.text_field :address %>
+      </p>
+      <p>
+        <%= f.label :description %><br />
+        <%= f.text_area :description %>
+      </p>
+      <p>
+        <%= label_tag :upload_image_label, "Upload Image", for: "upload_image" %>
+        <%= f.file_field :image, id: "upload_image", name: "image" %>
+      </p>
+      <p>
+        <%= f.submit "Add Tool", class: "submit-button" %>
+      </p>
     <% end %>
-  <% end %>
-</div>
+
+    <% flash.each do |type, message| %>
+      <h4 class="error-msg"><%= message %></h4>
+    <% end %>
+  </div>
+</body>
+
+</html>

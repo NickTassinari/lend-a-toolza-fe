@@ -4,8 +4,8 @@ require 'rails_helper'
 require './app/facades/tool_facade'
 
 RSpec.describe ToolFacade, :vcr do
-  
-  it "exists and returns attributes" do 
+
+  it "exists and returns attributes" do
     tools_response = File.read('spec/fixtures/tools_index.json')
     stub_request(:get, 'https://lend-a-toolza-be.onrender.com/api/v1/tools')
       .to_return(status: 200, body: tools_response)
@@ -49,7 +49,7 @@ RSpec.describe ToolFacade, :vcr do
     saw_show = File.read('spec/fixtures/slam_saw_show.json')
     stub_request(:get, "https://lend-a-toolza-be.onrender.com/api/v1/tools/1266")
       .to_return(status: 200, body: saw_show, headers: { 'Content-Type': 'application/json' })
-      
+
     expect(ToolFacade.get_tools_by_id(1266)).to be_a(Tool)
     tool = ToolFacade.get_tools_by_id(1266)
 
@@ -57,5 +57,41 @@ RSpec.describe ToolFacade, :vcr do
     expect(tool.borrower_id).to eq("nil")
     expect(tool.id).to eq("1266")
     expect(tool.name).to eq("Slammer Saw")
+  end
+
+  it "returns tools by user id" do
+    expect(ToolFacade.users_tools(2)).to be_a(Array)
+    tools = ToolFacade.users_tools(2)
+
+    expect(tools.count).to eq(2)
+    expect(tools.first).to be_a(Tool)
+    expect(tools.first.address).to eq("123 Sunnyside Dr, Lebanon, IN, 46052")
+    expect(tools.first.borrower_id).to eq(nil)
+    expect(tools.first.id).to eq("5")
+    expect(tools.first.name).to eq("Hammer")
+
+    expect(tools.last).to be_a(Tool)
+    expect(tools.last.address).to eq("123 Sunnyside Dr, Lebanon, IN, 46052")
+    expect(tools.last.borrower_id).to eq(nil)
+    expect(tools.last.id).to eq("6")
+    expect(tools.last.name).to eq("Saw")
+  end
+
+  it "returns borrowed tools by user id" do
+    expect(ToolFacade.borrowed_tools(2)).to be_a(Array)
+    tools = ToolFacade.borrowed_tools(2)
+
+    expect(tools.count).to eq(2)
+    expect(tools.first).to be_a(Tool)
+    expect(tools.first.address).to eq("1234 Sunnyside Dr, Lebanon, IN, 46052")
+    expect(tools.first.borrower_id).to eq(2)
+    expect(tools.first.id).to eq("7")
+    expect(tools.first.name).to eq("Drill")
+
+    expect(tools.last).to be_a(Tool)
+    expect(tools.last.address).to eq("1237 Sunnyside Dr, Lebanon, IN, 46052")
+    expect(tools.last.borrower_id).to eq(2)
+    expect(tools.last.id).to eq("8")
+    expect(tools.last.name).to eq("Screwdriver")
   end
 end
